@@ -1,0 +1,1 @@
+"""Command-line scripts for Pet First Aid Assistant."""
