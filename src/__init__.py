@@ -1,0 +1,1 @@
+"""Pet First Aid Assistant application package."""
