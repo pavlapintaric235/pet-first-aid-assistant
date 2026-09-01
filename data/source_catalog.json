@@ -1,0 +1,110 @@
+[
+  {
+    "source_id": "avma_first_aid_tips",
+    "publisher": "American Veterinary Medical Association",
+    "title": "First Aid Tips for Pet Owners",
+    "url": "https://www.avma.org/resources-tools/pet-owners/emergencycare/first-aid-tips-pet-owners",
+    "source_type": "web_page",
+    "authority_level": "primary_professional_organization",
+    "species": ["dog", "cat"],
+    "topics": [
+      "general_first_aid",
+      "bleeding",
+      "fractures",
+      "burns",
+      "poisoning",
+      "seizures",
+      "transport"
+    ],
+    "language": "en",
+    "ingestion_status": "planned"
+  },
+  {
+    "source_id": "merck_dog_cat_emergency",
+    "publisher": "Merck Veterinary Manual",
+    "title": "What to Do in a Dog or Cat Emergency",
+    "url": "https://www.merckvetmanual.com/en/special-pet-topics/emergencies/what-to-do-in-a-dog-or-cat-emergency",
+    "source_type": "web_page",
+    "authority_level": "veterinary_reference_manual",
+    "species": ["dog", "cat"],
+    "topics": [
+      "emergency_triage",
+      "breathing",
+      "circulation",
+      "trauma",
+      "veterinary_escalation"
+    ],
+    "language": "en",
+    "ingestion_status": "planned"
+  },
+  {
+    "source_id": "merck_first_aid_transport",
+    "publisher": "Merck Veterinary Manual",
+    "title": "First Aid and Transport of Small Animals",
+    "url": "https://www.merckvetmanual.com/emergency-medicine-and-critical-care/emergency-medicine-introduction/first-aid-and-transport-of-small-animals",
+    "source_type": "web_page",
+    "authority_level": "veterinary_reference_manual",
+    "species": ["dog", "cat"],
+    "topics": [
+      "first_aid",
+      "cpr",
+      "bleeding",
+      "shock",
+      "transport"
+    ],
+    "language": "en",
+    "ingestion_status": "planned"
+  },
+  {
+    "source_id": "vca_first_aid_dogs",
+    "publisher": "VCA Animal Hospitals",
+    "title": "First Aid for Dogs",
+    "url": "https://vcahospitals.com/know-your-pet/first-aid-for-dogs",
+    "source_type": "web_page",
+    "authority_level": "veterinary_hospital_reference",
+    "species": ["dog"],
+    "topics": [
+      "shock",
+      "airway",
+      "breathing",
+      "cpr",
+      "transport"
+    ],
+    "language": "en",
+    "ingestion_status": "planned"
+  },
+  {
+    "source_id": "vca_first_aid_cats",
+    "publisher": "VCA Animal Hospitals",
+    "title": "First Aid for Cats",
+    "url": "https://vcahospitals.com/know-your-pet/first-aid-for-cats",
+    "source_type": "web_page",
+    "authority_level": "veterinary_hospital_reference",
+    "species": ["cat"],
+    "topics": [
+      "shock",
+      "airway",
+      "breathing",
+      "cpr",
+      "transport"
+    ],
+    "language": "en",
+    "ingestion_status": "planned"
+  },
+  {
+    "source_id": "red_cross_pet_cpr",
+    "publisher": "American Red Cross",
+    "title": "How to Perform Pet CPR",
+    "url": "https://www.redcross.org/take-a-class/cpr/performing-cpr/pet-cpr",
+    "source_type": "web_page",
+    "authority_level": "recognized_emergency_care_organization",
+    "species": ["dog", "cat"],
+    "topics": [
+      "cpr",
+      "cardiac_arrest",
+      "rescue_breathing"
+    ],
+    "language": "en",
+    "ingestion_status": "planned"
+  }
+]
