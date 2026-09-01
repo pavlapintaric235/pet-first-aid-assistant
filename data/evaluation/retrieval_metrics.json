@@ -1,0 +1,1975 @@
+{
+  "settings": {
+    "num_questions": 20,
+    "num_results": 5,
+    "rrf_k": 60,
+    "relevance_level": "source_id"
+  },
+  "methods": {
+    "keyword": {
+      "hit_rate": 0.95,
+      "mrr": 0.8875,
+      "num_questions": 20,
+      "num_results": 5,
+      "questions": [
+        {
+          "id": "gt_001",
+          "question": "My dog cannot get enough air and is becoming weak.",
+          "species": "dog",
+          "category": "breathing_difficulty",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "merck_first_aid_transport_0000_98ac1ce5bba1b65e",
+            "vca_first_aid_dogs_0005_20f8f540e81044bc",
+            "vca_first_aid_dogs_0006_6b33a571173456dc",
+            "vca_first_aid_dogs_0004_99d16ea86040833e",
+            "vca_first_aid_dogs_0000_24113fedd957adf6"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_002",
+          "question": "My cat is breathing strangely and looks like it may collapse.",
+          "species": "cat",
+          "category": "breathing_difficulty",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0003_16d6996968e565d3",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
+            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
+            "vca_first_aid_cats_0004_92b10eebf0c249be"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_003",
+          "question": "My dog may have something stuck in its throat and cannot breathe normally.",
+          "species": "dog",
+          "category": "choking",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0005_20f8f540e81044bc",
+            "vca_first_aid_dogs_0006_6b33a571173456dc",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
+            "merck_dog_cat_emergency_0003_16d6996968e565d3",
+            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_004",
+          "question": "My cat is unconscious. How should I check whether it is breathing?",
+          "species": "cat",
+          "category": "unconsciousness",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "merck_first_aid_transport",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "merck_first_aid_transport_0003_348d00807f586c5b",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
+            "merck_first_aid_transport_0002_3e7c81ffb0414d60",
+            "vca_first_aid_cats_0004_92b10eebf0c249be"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_005",
+          "question": "My dog is unconscious and I cannot detect a heartbeat.",
+          "species": "dog",
+          "category": "cardiac_arrest",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0004_99d16ea86040833e",
+            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
+            "vca_first_aid_dogs_0005_20f8f540e81044bc",
+            "vca_first_aid_dogs_0006_6b33a571173456dc",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_006",
+          "question": "How do I perform CPR on a cat that is not breathing?",
+          "species": "cat",
+          "category": "cpr",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "merck_first_aid_transport",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0004_92b10eebf0c249be",
+            "merck_first_aid_transport_0002_3e7c81ffb0414d60",
+            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
+            "vca_first_aid_cats_0001_a746563b483e054b"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_007",
+          "question": "My dog has a deep wound and the bleeding will not stop.",
+          "species": "dog",
+          "category": "severe_bleeding",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
+            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
+            "merck_first_aid_transport_0006_aceab29347cbfdf2",
+            "merck_first_aid_transport_0002_3e7c81ffb0414d60",
+            "vca_first_aid_dogs_0001_e75a913aafea56c5"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_008",
+          "question": "My injured cat is losing a lot of blood. What can I do during transport?",
+          "species": "cat",
+          "category": "severe_bleeding",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_first_aid_transport",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
+            "vca_first_aid_cats_0002_33e45777e899e904",
+            "merck_first_aid_transport_0004_32a60d46d44631cf",
+            "merck_first_aid_transport_0000_98ac1ce5bba1b65e",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_009",
+          "question": "My cat touched a hot surface and has a serious burn.",
+          "species": "cat",
+          "category": "burns",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "merck_first_aid_transport",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0003_16d6996968e565d3",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
+            "merck_first_aid_transport_0001_e06421735e9c7839",
+            "merck_first_aid_transport_0000_98ac1ce5bba1b65e",
+            "vca_first_aid_cats_0004_92b10eebf0c249be"
+          ],
+          "relevance": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_010",
+          "question": "My dog cannot put weight on its leg after an accident and I think it is broken.",
+          "species": "dog",
+          "category": "suspected_fracture",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
+            "vca_first_aid_dogs_0006_6b33a571173456dc",
+            "vca_first_aid_dogs_0005_20f8f540e81044bc",
+            "vca_first_aid_dogs_0000_24113fedd957adf6",
+            "merck_dog_cat_emergency_0000_d45ad400c5bbb582"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_011",
+          "question": "How can I safely move a large injured dog into my car?",
+          "species": "dog",
+          "category": "safe_transport",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
+            "vca_first_aid_dogs_0000_24113fedd957adf6",
+            "vca_first_aid_dogs_0004_99d16ea86040833e",
+            "merck_first_aid_transport_0000_98ac1ce5bba1b65e",
+            "vca_first_aid_dogs_0002_90ae701483101ce9"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_012",
+          "question": "How should I put an injured cat into a carrier without making the injury worse?",
+          "species": "cat",
+          "category": "safe_transport",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0000_781e8e22f54c5835",
+            "vca_first_aid_cats_0001_a746563b483e054b",
+            "vca_first_aid_cats_0002_33e45777e899e904",
+            "vca_first_aid_cats_0004_92b10eebf0c249be",
+            "merck_dog_cat_emergency_0000_d45ad400c5bbb582"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_013",
+          "question": "My dog has pale gums, cold feet, rapid breathing, and is becoming quiet.",
+          "species": "dog",
+          "category": "shock",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
+            "merck_dog_cat_emergency_0003_16d6996968e565d3",
+            "vca_first_aid_dogs_0002_90ae701483101ce9",
+            "vca_first_aid_dogs_0000_24113fedd957adf6",
+            "vca_first_aid_dogs_0004_99d16ea86040833e"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_014",
+          "question": "My cat is weak, cold, and has very pale gums after being injured.",
+          "species": "cat",
+          "category": "shock",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0002_33e45777e899e904",
+            "merck_dog_cat_emergency_0003_16d6996968e565d3",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
+            "vca_first_aid_cats_0004_92b10eebf0c249be"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_015",
+          "question": "My dog may have swallowed something poisonous. What should I do first?",
+          "species": "dog",
+          "category": "poisoning",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
+            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
+            "vca_first_aid_dogs_0004_99d16ea86040833e",
+            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
+            "vca_first_aid_dogs_0000_24113fedd957adf6"
+          ],
+          "relevance": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "gt_016",
+          "question": "My cat injured its eye and is keeping it closed.",
+          "species": "cat",
+          "category": "eye_injury",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
+            "merck_first_aid_transport_0003_348d00807f586c5b",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
+            "vca_first_aid_cats_0000_781e8e22f54c5835",
+            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b"
+          ],
+          "relevance": [
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_017",
+          "question": "My dog was hit by a car. How do I help it without causing more damage?",
+          "species": "dog",
+          "category": "major_trauma",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
+            "merck_first_aid_transport_0004_32a60d46d44631cf",
+            "vca_first_aid_dogs_0000_24113fedd957adf6",
+            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
+            "merck_dog_cat_emergency_0002_ae99682d7dbbe923"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_018",
+          "question": "My injured cat is frightened and trying to bite me while I move it.",
+          "species": "cat",
+          "category": "handler_safety",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0001_a746563b483e054b",
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
+            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
+            "vca_first_aid_cats_0000_781e8e22f54c5835",
+            "vca_first_aid_cats_0004_92b10eebf0c249be"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_019",
+          "question": "My dog is having repeated seizures and is not recovering normally.",
+          "species": "dog",
+          "category": "seizures",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0000_24113fedd957adf6",
+            "merck_first_aid_transport_0001_e06421735e9c7839",
+            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
+            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
+            "vca_first_aid_dogs_0006_6b33a571173456dc"
+          ],
+          "relevance": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "id": "gt_020",
+          "question": "My pet is in extreme pain and the symptoms are getting worse very quickly.",
+          "species": null,
+          "category": "emergency_escalation",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0002_33e45777e899e904",
+            "vca_first_aid_cats_0000_781e8e22f54c5835",
+            "vca_first_aid_dogs_0000_24113fedd957adf6",
+            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
+            "vca_first_aid_dogs_0006_6b33a571173456dc"
+          ],
+          "relevance": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "first_relevant_rank": 4
+        }
+      ]
+    },
+    "vector": {
+      "hit_rate": 0.95,
+      "mrr": 0.8916666666666666,
+      "num_questions": 20,
+      "num_results": 5,
+      "questions": [
+        {
+          "id": "gt_001",
+          "question": "My dog cannot get enough air and is becoming weak.",
+          "species": "dog",
+          "category": "breathing_difficulty",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0006_6b33a571173456dc",
+            "vca_first_aid_dogs_0005_20f8f540e81044bc",
+            "vca_first_aid_dogs_0001_e75a913aafea56c5",
+            "vca_first_aid_dogs_0008_e793f4e88e160cd2",
+            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_002",
+          "question": "My cat is breathing strangely and looks like it may collapse.",
+          "species": "cat",
+          "category": "breathing_difficulty",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
+            "vca_first_aid_cats_0004_92b10eebf0c249be",
+            "vca_first_aid_cats_0006_25632f10fb551881",
+            "vca_first_aid_cats_0001_a746563b483e054b"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_003",
+          "question": "My dog may have something stuck in its throat and cannot breathe normally.",
+          "species": "dog",
+          "category": "choking",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0005_20f8f540e81044bc",
+            "vca_first_aid_dogs_0006_6b33a571173456dc",
+            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
+            "vca_first_aid_dogs_0002_90ae701483101ce9",
+            "vca_first_aid_dogs_0004_99d16ea86040833e"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_004",
+          "question": "My cat is unconscious. How should I check whether it is breathing?",
+          "species": "cat",
+          "category": "unconsciousness",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0004_92b10eebf0c249be",
+            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
+            "vca_first_aid_cats_0006_25632f10fb551881"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_005",
+          "question": "My dog is unconscious and I cannot detect a heartbeat.",
+          "species": "dog",
+          "category": "cardiac_arrest",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0004_99d16ea86040833e",
+            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
+            "vca_first_aid_dogs_0006_6b33a571173456dc",
+            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec"
+          ],
+          "relevance": [
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_006",
+          "question": "How do I perform CPR on a cat that is not breathing?",
+          "species": "cat",
+          "category": "cpr",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0004_92b10eebf0c249be",
+            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
+            "vca_first_aid_cats_0006_25632f10fb551881",
+            "vca_first_aid_cats_0001_a746563b483e054b",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_007",
+          "question": "My dog has a deep wound and the bleeding will not stop.",
+          "species": "dog",
+          "category": "severe_bleeding",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
+            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
+            "merck_first_aid_transport_0004_32a60d46d44631cf",
+            "vca_first_aid_dogs_0006_6b33a571173456dc",
+            "vca_first_aid_dogs_0002_90ae701483101ce9"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_008",
+          "question": "My injured cat is losing a lot of blood. What can I do during transport?",
+          "species": "cat",
+          "category": "severe_bleeding",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0001_a746563b483e054b",
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
+            "vca_first_aid_cats_0004_92b10eebf0c249be",
+            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_009",
+          "question": "My cat touched a hot surface and has a serious burn.",
+          "species": "cat",
+          "category": "burns",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0003_16d6996968e565d3",
+            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+          ],
+          "relevance": [
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_010",
+          "question": "My dog cannot put weight on its leg after an accident and I think it is broken.",
+          "species": "dog",
+          "category": "suspected_fracture",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0001_e75a913aafea56c5",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
+            "vca_first_aid_dogs_0008_e793f4e88e160cd2",
+            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
+            "vca_first_aid_dogs_0006_6b33a571173456dc"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_011",
+          "question": "How can I safely move a large injured dog into my car?",
+          "species": "dog",
+          "category": "safe_transport",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0001_e75a913aafea56c5",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
+            "merck_first_aid_transport_0001_e06421735e9c7839",
+            "vca_first_aid_dogs_0008_e793f4e88e160cd2",
+            "vca_first_aid_dogs_0006_6b33a571173456dc"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_012",
+          "question": "How should I put an injured cat into a carrier without making the injury worse?",
+          "species": "cat",
+          "category": "safe_transport",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0001_a746563b483e054b",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
+            "vca_first_aid_cats_0002_33e45777e899e904",
+            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_013",
+          "question": "My dog has pale gums, cold feet, rapid breathing, and is becoming quiet.",
+          "species": "dog",
+          "category": "shock",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
+            "vca_first_aid_dogs_0006_6b33a571173456dc",
+            "vca_first_aid_dogs_0005_20f8f540e81044bc",
+            "vca_first_aid_dogs_0004_99d16ea86040833e",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_014",
+          "question": "My cat is weak, cold, and has very pale gums after being injured.",
+          "species": "cat",
+          "category": "shock",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
+            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
+            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
+            "vca_first_aid_cats_0006_25632f10fb551881",
+            "vca_first_aid_cats_0001_a746563b483e054b"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_015",
+          "question": "My dog may have swallowed something poisonous. What should I do first?",
+          "species": "dog",
+          "category": "poisoning",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
+            "vca_first_aid_dogs_0005_20f8f540e81044bc",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
+            "vca_first_aid_dogs_0006_6b33a571173456dc",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f"
+          ],
+          "relevance": [
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_016",
+          "question": "My cat injured its eye and is keeping it closed.",
+          "species": "cat",
+          "category": "eye_injury",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0001_a746563b483e054b",
+            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
+            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65"
+          ],
+          "relevance": [
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "first_relevant_rank": 3
+        },
+        {
+          "id": "gt_017",
+          "question": "My dog was hit by a car. How do I help it without causing more damage?",
+          "species": "dog",
+          "category": "major_trauma",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0001_e75a913aafea56c5",
+            "vca_first_aid_dogs_0004_99d16ea86040833e",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
+            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
+            "vca_first_aid_dogs_0006_6b33a571173456dc"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_018",
+          "question": "My injured cat is frightened and trying to bite me while I move it.",
+          "species": "cat",
+          "category": "handler_safety",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0001_a746563b483e054b",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
+            "vca_first_aid_cats_0002_33e45777e899e904",
+            "vca_first_aid_cats_0004_92b10eebf0c249be",
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_019",
+          "question": "My dog is having repeated seizures and is not recovering normally.",
+          "species": "dog",
+          "category": "seizures",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0004_99d16ea86040833e",
+            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
+            "vca_first_aid_dogs_0006_6b33a571173456dc",
+            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
+            "vca_first_aid_dogs_0001_e75a913aafea56c5"
+          ],
+          "relevance": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "id": "gt_020",
+          "question": "My pet is in extreme pain and the symptoms are getting worse very quickly.",
+          "species": null,
+          "category": "emergency_escalation",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
+            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
+            "vca_first_aid_dogs_0001_e75a913aafea56c5"
+          ],
+          "relevance": [
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "first_relevant_rank": 2
+        }
+      ]
+    },
+    "hybrid": {
+      "hit_rate": 0.95,
+      "mrr": 0.8625,
+      "num_questions": 20,
+      "num_results": 5,
+      "questions": [
+        {
+          "id": "gt_001",
+          "question": "My dog cannot get enough air and is becoming weak.",
+          "species": "dog",
+          "category": "breathing_difficulty",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0006_6b33a571173456dc",
+            "vca_first_aid_dogs_0005_20f8f540e81044bc",
+            "vca_first_aid_dogs_0001_e75a913aafea56c5",
+            "vca_first_aid_dogs_0004_99d16ea86040833e",
+            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_002",
+          "question": "My cat is breathing strangely and looks like it may collapse.",
+          "species": "cat",
+          "category": "breathing_difficulty",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
+            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
+            "vca_first_aid_cats_0004_92b10eebf0c249be",
+            "merck_dog_cat_emergency_0000_d45ad400c5bbb582"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_003",
+          "question": "My dog may have something stuck in its throat and cannot breathe normally.",
+          "species": "dog",
+          "category": "choking",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0005_20f8f540e81044bc",
+            "vca_first_aid_dogs_0006_6b33a571173456dc",
+            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
+            "vca_first_aid_dogs_0004_99d16ea86040833e",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_004",
+          "question": "My cat is unconscious. How should I check whether it is breathing?",
+          "species": "cat",
+          "category": "unconsciousness",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0004_92b10eebf0c249be",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
+            "vca_first_aid_cats_0006_25632f10fb551881",
+            "merck_first_aid_transport_0003_348d00807f586c5b"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_005",
+          "question": "My dog is unconscious and I cannot detect a heartbeat.",
+          "species": "dog",
+          "category": "cardiac_arrest",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0004_99d16ea86040833e",
+            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
+            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
+            "vca_first_aid_dogs_0006_6b33a571173456dc"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_006",
+          "question": "How do I perform CPR on a cat that is not breathing?",
+          "species": "cat",
+          "category": "cpr",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0004_92b10eebf0c249be",
+            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
+            "vca_first_aid_cats_0001_a746563b483e054b",
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_007",
+          "question": "My dog has a deep wound and the bleeding will not stop.",
+          "species": "dog",
+          "category": "severe_bleeding",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
+            "merck_first_aid_transport_0002_3e7c81ffb0414d60",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
+            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
+            "vca_first_aid_dogs_0001_e75a913aafea56c5"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_008",
+          "question": "My injured cat is losing a lot of blood. What can I do during transport?",
+          "species": "cat",
+          "category": "severe_bleeding",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
+            "vca_first_aid_cats_0001_a746563b483e054b",
+            "vca_first_aid_cats_0004_92b10eebf0c249be",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
+            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_009",
+          "question": "My cat touched a hot surface and has a serious burn.",
+          "species": "cat",
+          "category": "burns",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0003_16d6996968e565d3",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
+            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
+            "vca_first_aid_cats_0002_33e45777e899e904"
+          ],
+          "relevance": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_010",
+          "question": "My dog cannot put weight on its leg after an accident and I think it is broken.",
+          "species": "dog",
+          "category": "suspected_fracture",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
+            "vca_first_aid_dogs_0006_6b33a571173456dc",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
+            "vca_first_aid_dogs_0008_e793f4e88e160cd2",
+            "merck_dog_cat_emergency_0000_d45ad400c5bbb582"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_011",
+          "question": "How can I safely move a large injured dog into my car?",
+          "species": "dog",
+          "category": "safe_transport",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0001_e75a913aafea56c5",
+            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
+            "merck_first_aid_transport_0000_98ac1ce5bba1b65e",
+            "vca_first_aid_dogs_0000_24113fedd957adf6"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_012",
+          "question": "How should I put an injured cat into a carrier without making the injury worse?",
+          "species": "cat",
+          "category": "safe_transport",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0001_a746563b483e054b",
+            "vca_first_aid_cats_0002_33e45777e899e904",
+            "vca_first_aid_cats_0000_781e8e22f54c5835",
+            "vca_first_aid_cats_0004_92b10eebf0c249be",
+            "merck_dog_cat_emergency_0000_d45ad400c5bbb582"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_013",
+          "question": "My dog has pale gums, cold feet, rapid breathing, and is becoming quiet.",
+          "species": "dog",
+          "category": "shock",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
+            "vca_first_aid_dogs_0006_6b33a571173456dc",
+            "vca_first_aid_dogs_0004_99d16ea86040833e",
+            "vca_first_aid_dogs_0002_90ae701483101ce9",
+            "vca_first_aid_dogs_0005_20f8f540e81044bc"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_014",
+          "question": "My cat is weak, cold, and has very pale gums after being injured.",
+          "species": "cat",
+          "category": "shock",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
+            "vca_first_aid_cats_0002_33e45777e899e904",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
+            "vca_first_aid_cats_0006_25632f10fb551881",
+            "vca_first_aid_cats_0004_92b10eebf0c249be"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_015",
+          "question": "My dog may have swallowed something poisonous. What should I do first?",
+          "species": "dog",
+          "category": "poisoning",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
+            "vca_first_aid_dogs_0004_99d16ea86040833e",
+            "vca_first_aid_dogs_0006_6b33a571173456dc",
+            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
+            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c"
+          ],
+          "relevance": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "first_relevant_rank": 4
+        },
+        {
+          "id": "gt_016",
+          "question": "My cat injured its eye and is keeping it closed.",
+          "species": "cat",
+          "category": "eye_injury",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
+            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
+            "vca_first_aid_cats_0001_a746563b483e054b",
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+          ],
+          "relevance": [
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "gt_017",
+          "question": "My dog was hit by a car. How do I help it without causing more damage?",
+          "species": "dog",
+          "category": "major_trauma",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
+            "vca_first_aid_dogs_0004_99d16ea86040833e",
+            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
+            "vca_first_aid_dogs_0000_24113fedd957adf6",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_018",
+          "question": "My injured cat is frightened and trying to bite me while I move it.",
+          "species": "cat",
+          "category": "handler_safety",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0001_a746563b483e054b",
+            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
+            "vca_first_aid_cats_0004_92b10eebf0c249be",
+            "vca_first_aid_cats_0002_33e45777e899e904"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_019",
+          "question": "My dog is having repeated seizures and is not recovering normally.",
+          "species": "dog",
+          "category": "seizures",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
+            "vca_first_aid_dogs_0004_99d16ea86040833e",
+            "vca_first_aid_dogs_0006_6b33a571173456dc",
+            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
+            "vca_first_aid_dogs_0000_24113fedd957adf6"
+          ],
+          "relevance": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "id": "gt_020",
+          "question": "My pet is in extreme pain and the symptoms are getting worse very quickly.",
+          "species": null,
+          "category": "emergency_escalation",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
+            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
+            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
+            "vca_first_aid_dogs_0006_6b33a571173456dc",
+            "vca_first_aid_dogs_0000_24113fedd957adf6"
+          ],
+          "relevance": [
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "first_relevant_rank": 2
+        }
+      ]
+    }
+  }
+}
