@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environment
+.venv/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated and downloaded data
+data/raw/*
+data/processed/*
+data/evaluation/generated/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/evaluation/.gitkeep
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Models and vector indexes
+models/
+vector_index/
+
+# Operating systems and editors
+.DS_Store
+.vscode/
