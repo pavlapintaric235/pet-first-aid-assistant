@@ -1,0 +1,209 @@
+[
+  {
+    "id": "gt_001",
+    "question": "My dog cannot get enough air and is becoming weak.",
+    "species": "dog",
+    "category": "breathing_difficulty",
+    "relevant_source_ids": [
+      "vca_first_aid_dogs",
+      "merck_dog_cat_emergency",
+      "merck_first_aid_transport"
+    ]
+  },
+  {
+    "id": "gt_002",
+    "question": "My cat is breathing strangely and looks like it may collapse.",
+    "species": "cat",
+    "category": "breathing_difficulty",
+    "relevant_source_ids": [
+      "vca_first_aid_cats",
+      "merck_dog_cat_emergency",
+      "merck_first_aid_transport"
+    ]
+  },
+  {
+    "id": "gt_003",
+    "question": "My dog may have something stuck in its throat and cannot breathe normally.",
+    "species": "dog",
+    "category": "choking",
+    "relevant_source_ids": [
+      "vca_first_aid_dogs",
+      "merck_dog_cat_emergency"
+    ]
+  },
+  {
+    "id": "gt_004",
+    "question": "My cat is unconscious. How should I check whether it is breathing?",
+    "species": "cat",
+    "category": "unconsciousness",
+    "relevant_source_ids": [
+      "vca_first_aid_cats",
+      "merck_dog_cat_emergency",
+      "merck_first_aid_transport"
+    ]
+  },
+  {
+    "id": "gt_005",
+    "question": "My dog is unconscious and I cannot detect a heartbeat.",
+    "species": "dog",
+    "category": "cardiac_arrest",
+    "relevant_source_ids": [
+      "vca_first_aid_dogs",
+      "merck_first_aid_transport"
+    ]
+  },
+  {
+    "id": "gt_006",
+    "question": "How do I perform CPR on a cat that is not breathing?",
+    "species": "cat",
+    "category": "cpr",
+    "relevant_source_ids": [
+      "vca_first_aid_cats",
+      "merck_first_aid_transport"
+    ]
+  },
+  {
+    "id": "gt_007",
+    "question": "My dog has a deep wound and the bleeding will not stop.",
+    "species": "dog",
+    "category": "severe_bleeding",
+    "relevant_source_ids": [
+      "merck_dog_cat_emergency",
+      "merck_first_aid_transport",
+      "vca_first_aid_dogs"
+    ]
+  },
+  {
+    "id": "gt_008",
+    "question": "My injured cat is losing a lot of blood. What can I do during transport?",
+    "species": "cat",
+    "category": "severe_bleeding",
+    "relevant_source_ids": [
+      "merck_dog_cat_emergency",
+      "merck_first_aid_transport",
+      "vca_first_aid_cats"
+    ]
+  },
+  {
+    "id": "gt_009",
+    "question": "My cat touched a hot surface and has a serious burn.",
+    "species": "cat",
+    "category": "burns",
+    "relevant_source_ids": [
+      "merck_dog_cat_emergency"
+    ]
+  },
+  {
+    "id": "gt_010",
+    "question": "My dog cannot put weight on its leg after an accident and I think it is broken.",
+    "species": "dog",
+    "category": "suspected_fracture",
+    "relevant_source_ids": [
+      "merck_dog_cat_emergency",
+      "vca_first_aid_dogs"
+    ]
+  },
+  {
+    "id": "gt_011",
+    "question": "How can I safely move a large injured dog into my car?",
+    "species": "dog",
+    "category": "safe_transport",
+    "relevant_source_ids": [
+      "vca_first_aid_dogs",
+      "merck_first_aid_transport",
+      "merck_dog_cat_emergency"
+    ]
+  },
+  {
+    "id": "gt_012",
+    "question": "How should I put an injured cat into a carrier without making the injury worse?",
+    "species": "cat",
+    "category": "safe_transport",
+    "relevant_source_ids": [
+      "vca_first_aid_cats",
+      "merck_first_aid_transport",
+      "merck_dog_cat_emergency"
+    ]
+  },
+  {
+    "id": "gt_013",
+    "question": "My dog has pale gums, cold feet, rapid breathing, and is becoming quiet.",
+    "species": "dog",
+    "category": "shock",
+    "relevant_source_ids": [
+      "vca_first_aid_dogs",
+      "merck_first_aid_transport",
+      "merck_dog_cat_emergency"
+    ]
+  },
+  {
+    "id": "gt_014",
+    "question": "My cat is weak, cold, and has very pale gums after being injured.",
+    "species": "cat",
+    "category": "shock",
+    "relevant_source_ids": [
+      "vca_first_aid_cats",
+      "merck_first_aid_transport",
+      "merck_dog_cat_emergency"
+    ]
+  },
+  {
+    "id": "gt_015",
+    "question": "My dog may have swallowed something poisonous. What should I do first?",
+    "species": "dog",
+    "category": "poisoning",
+    "relevant_source_ids": [
+      "merck_dog_cat_emergency"
+    ]
+  },
+  {
+    "id": "gt_016",
+    "question": "My cat injured its eye and is keeping it closed.",
+    "species": "cat",
+    "category": "eye_injury",
+    "relevant_source_ids": [
+      "merck_dog_cat_emergency"
+    ]
+  },
+  {
+    "id": "gt_017",
+    "question": "My dog was hit by a car. How do I help it without causing more damage?",
+    "species": "dog",
+    "category": "major_trauma",
+    "relevant_source_ids": [
+      "merck_dog_cat_emergency",
+      "merck_first_aid_transport",
+      "vca_first_aid_dogs"
+    ]
+  },
+  {
+    "id": "gt_018",
+    "question": "My injured cat is frightened and trying to bite me while I move it.",
+    "species": "cat",
+    "category": "handler_safety",
+    "relevant_source_ids": [
+      "vca_first_aid_cats",
+      "merck_dog_cat_emergency",
+      "merck_first_aid_transport"
+    ]
+  },
+  {
+    "id": "gt_019",
+    "question": "My dog is having repeated seizures and is not recovering normally.",
+    "species": "dog",
+    "category": "seizures",
+    "relevant_source_ids": [
+      "merck_dog_cat_emergency"
+    ]
+  },
+  {
+    "id": "gt_020",
+    "question": "My pet is in extreme pain and the symptoms are getting worse very quickly.",
+    "species": null,
+    "category": "emergency_escalation",
+    "relevant_source_ids": [
+      "merck_dog_cat_emergency",
+      "merck_first_aid_transport"
+    ]
+  }
+]
