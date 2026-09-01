@@ -17,11 +17,13 @@ SOURCE_CATALOG_PATH = PROJECT_ROOT / "data" / "source_catalog.json"
 RAW_DATA_DIRECTORY = PROJECT_ROOT / "data" / "raw"
 
 REQUEST_TIMEOUT_SECONDS = 30
+MINIMUM_EXTRACTED_CHARACTERS = 500
 
 REQUEST_HEADERS = {
     "User-Agent": (
         "PetFirstAidAssistant/0.1 "
-        "(educational LLM Zoomcamp project; source attribution preserved)"
+        "(educational LLM Zoomcamp project; "
+        "source attribution preserved)"
     ),
     "Accept": (
         "text/html,application/xhtml+xml,"
@@ -54,6 +56,15 @@ CONTENT_TAGS = {
     "blockquote",
 }
 
+HEADING_TAGS = {
+    "h1",
+    "h2",
+    "h3",
+    "h4",
+    "h5",
+    "h6",
+}
+
 
 def load_source_catalog(
     catalog_path: Path = SOURCE_CATALOG_PATH,
@@ -69,7 +80,9 @@ def load_source_catalog(
         sources = json.load(file)
 
     if not isinstance(sources, list):
-        raise ValueError("The source catalogue must contain a JSON list.")
+        raise ValueError(
+            "The source catalogue must contain a JSON list."
+        )
 
     required_fields = {
         "source_id",
@@ -84,7 +97,8 @@ def load_source_catalog(
     for position, source in enumerate(sources):
         if not isinstance(source, dict):
             raise ValueError(
-                f"Source at position {position} must be a JSON object."
+                f"Source at position {position} "
+                "must be a JSON object."
             )
 
         missing_fields = required_fields - source.keys()
@@ -92,7 +106,8 @@ def load_source_catalog(
         if missing_fields:
             missing = ", ".join(sorted(missing_fields))
             raise ValueError(
-                f"Source {position} is missing required fields: {missing}"
+                f"Source {position} is missing required fields: "
+                f"{missing}"
             )
 
     return sources
@@ -119,7 +134,7 @@ def find_source(
 
 
 def create_http_session() -> requests.Session:
-    """Create an HTTP session with the project's identifying headers."""
+    """Create an HTTP session with identifying headers."""
 
     session = requests.Session()
     session.headers.update(REQUEST_HEADERS)
@@ -131,7 +146,7 @@ def download_html(
     source: dict[str, Any],
     session: requests.Session | None = None,
 ) -> tuple[str, str]:
-    """Download a source page and return its HTML and final URL."""
+    """Download a source page and return HTML and final URL."""
 
     active_session = session or create_http_session()
 
@@ -142,19 +157,25 @@ def download_html(
 
     response.raise_for_status()
 
-    content_type = response.headers.get("Content-Type", "").lower()
+    content_type = response.headers.get(
+        "Content-Type",
+        "",
+    ).lower()
 
     if "text/html" not in content_type:
         raise ValueError(
-            f"Expected an HTML page for {source['source_id']}, "
-            f"but received Content-Type: {content_type or 'unknown'}"
+            f"Expected an HTML page for "
+            f"{source['source_id']}, but received "
+            f"Content-Type: {content_type or 'unknown'}"
         )
 
     return response.text, response.url
 
 
-def remove_unwanted_elements(soup: BeautifulSoup) -> None:
-    """Remove elements that should not become retrieval documents."""
+def remove_unwanted_elements(
+    soup: BeautifulSoup,
+) -> None:
+    """Remove elements that should not enter retrieval."""
 
     for tag_name in REMOVABLE_TAGS:
         for element in soup.find_all(tag_name):
@@ -183,8 +204,10 @@ def remove_unwanted_elements(soup: BeautifulSoup) -> None:
             element.decompose()
 
 
-def find_main_container(soup: BeautifulSoup) -> Tag:
-    """Find the element most likely to contain the article content."""
+def find_main_container(
+    soup: BeautifulSoup,
+) -> Tag:
+    """Find the element most likely to contain the article."""
 
     selectors = [
         "main article",
@@ -205,55 +228,211 @@ def find_main_container(soup: BeautifulSoup) -> Tag:
             return container
 
     if soup.body is None:
-        raise ValueError("The downloaded page does not contain a body.")
+        raise ValueError(
+            "The downloaded page does not contain a body."
+        )
 
     return soup.body
 
 
 def normalize_text(value: str) -> str:
-    """Normalize whitespace while keeping the original wording."""
+    """Normalize whitespace while preserving wording."""
 
     return re.sub(r"\s+", " ", value).strip()
 
 
-def extract_main_text(html: str) -> str:
-    """Extract readable main content from an HTML document."""
+def is_nested_content_wrapper(
+    element: Tag,
+) -> bool:
+    """
+    Return True when a paragraph-like element contains another
+    supported content element.
+
+    Skipping wrapper elements prevents the same sentence from
+    appearing once through the parent and again through a child.
+    """
+
+    if element.name in HEADING_TAGS:
+        return False
+
+    nested_element = element.find(
+        list(CONTENT_TAGS),
+        recursive=True,
+    )
+
+    return nested_element is not None
+
+
+def heading_level(element: Tag) -> int:
+    """Return the numeric level of an HTML heading."""
+
+    if element.name not in HEADING_TAGS:
+        raise ValueError(
+            f"{element.name} is not a supported heading tag."
+        )
+
+    return int(element.name[1])
+
+
+def build_heading_path(
+    heading_stack: list[tuple[int, str]],
+) -> list[str]:
+    """Return only heading text from the active hierarchy."""
+
+    return [
+        heading_text
+        for _, heading_text in heading_stack
+    ]
+
+
+def extract_structured_content(
+    html: str,
+) -> tuple[str, list[dict[str, Any]]]:
+    """
+    Extract article content while preserving HTML sections.
+
+    Each heading starts a section. Text before the first heading
+    is placed in an Introduction section.
+    """
 
     soup = BeautifulSoup(html, "lxml")
     remove_unwanted_elements(soup)
 
     container = find_main_container(soup)
 
-    text_blocks: list[str] = []
-    previously_seen: set[str] = set()
+    sections: list[dict[str, Any]] = []
+    seen_blocks: set[str] = set()
+    heading_stack: list[tuple[int, str]] = []
 
-    for element in container.find_all(CONTENT_TAGS):
+    current_heading = "Introduction"
+    current_heading_level = 0
+    current_heading_path = ["Introduction"]
+    current_blocks: list[str] = []
+
+    def save_current_section() -> None:
+        nonlocal current_blocks
+
+        section_content = "\n\n".join(
+            current_blocks
+        ).strip()
+
+        if not section_content:
+            current_blocks = []
+            return
+
+        sections.append(
+            {
+                "heading": current_heading,
+                "heading_level": current_heading_level,
+                "heading_path": current_heading_path.copy(),
+                "content": section_content,
+                "word_count": len(
+                    section_content.split()
+                ),
+            }
+        )
+
+        current_blocks = []
+
+    for element in container.find_all(
+        list(CONTENT_TAGS)
+    ):
+        if not isinstance(element, Tag):
+            continue
+
+        if is_nested_content_wrapper(element):
+            continue
+
         text = normalize_text(
-            element.get_text(separator=" ", strip=True)
+            element.get_text(
+                separator=" ",
+                strip=True,
+            )
         )
 
         if not text:
             continue
 
-        if text in previously_seen:
+        normalized_key = text.casefold()
+
+        if normalized_key in seen_blocks:
             continue
 
-        previously_seen.add(text)
-        text_blocks.append(text)
+        seen_blocks.add(normalized_key)
 
-    extracted_text = "\n\n".join(text_blocks).strip()
+        if element.name in HEADING_TAGS:
+            save_current_section()
 
-    if len(extracted_text) < 500:
-        raise ValueError(
-            "The extracted source content is unexpectedly short. "
-            "The page structure may require a source-specific extractor."
+            current_heading = text
+            current_heading_level = heading_level(
+                element
+            )
+
+            heading_stack = [
+                (level, heading_text)
+                for level, heading_text in heading_stack
+                if level < current_heading_level
+            ]
+
+            heading_stack.append(
+                (
+                    current_heading_level,
+                    current_heading,
+                )
+            )
+
+            current_heading_path = (
+                build_heading_path(heading_stack)
+            )
+
+            continue
+
+        current_blocks.append(text)
+
+    save_current_section()
+
+    flattened_blocks: list[str] = []
+
+    for section in sections:
+        flattened_blocks.append(
+            section["heading"]
+        )
+        flattened_blocks.append(
+            section["content"]
         )
 
-    return extracted_text
+    extracted_text = "\n\n".join(
+        flattened_blocks
+    ).strip()
+
+    if len(extracted_text) < MINIMUM_EXTRACTED_CHARACTERS:
+        raise ValueError(
+            "The extracted source content is unexpectedly "
+            "short. The page structure may require a "
+            "source-specific extractor."
+        )
+
+    for index, section in enumerate(sections):
+        section["section_index"] = index
+
+    return extracted_text, sections
+
+
+def extract_main_text(html: str) -> str:
+    """
+    Extract readable main content from an HTML document.
+
+    This compatibility helper keeps the previous interface used
+    by tests and other project code.
+    """
+
+    content, _ = extract_structured_content(html)
+
+    return content
 
 
 def calculate_content_hash(content: str) -> str:
-    """Calculate a stable SHA-256 hash for change detection."""
+    """Calculate a stable SHA-256 content hash."""
 
     return hashlib.sha256(
         content.encode("utf-8")
@@ -264,10 +443,13 @@ def create_raw_record(
     source: dict[str, Any],
     final_url: str,
     content: str,
+    sections: list[dict[str, Any]],
 ) -> dict[str, Any]:
-    """Create the structured representation saved to raw data."""
+    """Create the structured raw-data representation."""
 
-    retrieved_at = datetime.now(timezone.utc).isoformat()
+    retrieved_at = datetime.now(
+        timezone.utc
+    ).isoformat()
 
     return {
         "source_id": source["source_id"],
@@ -276,13 +458,26 @@ def create_raw_record(
         "original_url": source["url"],
         "final_url": final_url,
         "source_type": source["source_type"],
-        "authority_level": source.get("authority_level"),
+        "authority_level": source.get(
+            "authority_level"
+        ),
+        "source_status": source.get(
+            "source_status",
+            "approved",
+        ),
         "species": source["species"],
         "topics": source["topics"],
-        "language": source.get("language", "en"),
+        "language": source.get(
+            "language",
+            "en",
+        ),
         "retrieved_at": retrieved_at,
-        "content_hash": calculate_content_hash(content),
+        "content_hash": calculate_content_hash(
+            content
+        ),
         "content_length": len(content),
+        "section_count": len(sections),
+        "sections": sections,
         "content": content,
     }
 
@@ -293,13 +488,20 @@ def save_raw_record(
 ) -> Path:
     """Save one raw source record as formatted JSON."""
 
-    output_directory.mkdir(parents=True, exist_ok=True)
-
-    output_path = (
-        output_directory / f"{record['source_id']}.json"
+    output_directory.mkdir(
+        parents=True,
+        exist_ok=True,
     )
 
-    with output_path.open("w", encoding="utf-8") as file:
+    output_path = (
+        output_directory
+        / f"{record['source_id']}.json"
+    )
+
+    with output_path.open(
+        "w",
+        encoding="utf-8",
+    ) as file:
         json.dump(
             record,
             file,
@@ -311,18 +513,25 @@ def save_raw_record(
 
 
 def fetch_source(source_id: str) -> Path:
-    """Download, extract, structure, and save one source."""
+    """Download, structure and save one source."""
 
     sources = load_source_catalog()
-    source = find_source(sources, source_id)
+    source = find_source(
+        sources,
+        source_id,
+    )
 
     html, final_url = download_html(source)
-    content = extract_main_text(html)
+
+    content, sections = extract_structured_content(
+        html
+    )
 
     record = create_raw_record(
         source=source,
         final_url=final_url,
         content=content,
+        sections=sections,
     )
 
     return save_raw_record(record)
@@ -333,33 +542,49 @@ def parse_arguments() -> argparse.Namespace:
 
     parser = argparse.ArgumentParser(
         description=(
-            "Download one approved veterinary source and save "
-            "its extracted content."
+            "Download one approved veterinary source "
+            "and preserve its article sections."
         )
     )
 
     parser.add_argument(
         "--source-id",
         required=True,
-        help="Stable source_id from data/source_catalog.json",
+        help=(
+            "Stable source_id from "
+            "data/source_catalog.json"
+        ),
     )
 
     return parser.parse_args()
 
 
 def main() -> None:
-    """Run the command-line ingestion operation."""
+    """Run one source-ingestion operation."""
 
     arguments = parse_arguments()
-    output_path = fetch_source(arguments.source_id)
 
-    relative_output_path = output_path.relative_to(
-        PROJECT_ROOT
+    output_path = fetch_source(
+        arguments.source_id
     )
 
+    relative_output_path = (
+        output_path.relative_to(PROJECT_ROOT)
+    )
+
+    with output_path.open(
+        "r",
+        encoding="utf-8",
+    ) as file:
+        record = json.load(file)
+
     print(
-        f"Source downloaded successfully: "
+        "Source downloaded successfully: "
         f"{relative_output_path}"
+    )
+    print(
+        "Sections extracted: "
+        f"{record['section_count']}"
     )
 
 
