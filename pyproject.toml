@@ -17,6 +17,7 @@ dependencies = [
     "pydantic>=2.13.5",
     "pytest>=9.1.1",
     "python-dotenv>=1.2.3",
+    "rank-bm25>=0.2.2",
     "requests>=2.34.2",
     "uvicorn[standard]>=0.52.4",
 ]

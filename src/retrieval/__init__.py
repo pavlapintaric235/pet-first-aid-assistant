@@ -1,0 +1,1 @@
+"""Search and retrieval components for veterinary documents."""
