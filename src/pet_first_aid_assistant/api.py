@@ -4,7 +4,9 @@ import logging
 from collections.abc import Callable
 from contextlib import asynccontextmanager
 from pathlib import Path
+from time import perf_counter
 from typing import Any, Literal, Protocol
+from uuid import UUID, uuid4
 
 from fastapi import (
     Depends,
@@ -25,6 +27,11 @@ from src.pet_first_aid_assistant.assistant import (
 )
 from src.pet_first_aid_assistant.emergency_conditions import (
     list_emergency_conditions,
+)
+from src.pet_first_aid_assistant.monitoring import (
+    MonitoringStore,
+    NullMonitoringStore,
+    build_monitoring_store,
 )
 
 
@@ -55,6 +62,11 @@ class AssistantService(Protocol):
 AssistantFactory = Callable[
     [],
     AssistantService,
+]
+
+MonitoringFactory = Callable[
+    [],
+    MonitoringStore,
 ]
 
 
@@ -122,6 +134,8 @@ class RetrievalResponse(BaseModel):
 class AskResponse(BaseModel):
     """Successful response returned by POST /ask."""
 
+    interaction_id: str
+
     answer: str
 
     species: Literal[
@@ -143,6 +157,7 @@ class HealthResponse(BaseModel):
 
     status: str
     service: str
+    monitoring_enabled: bool
 
 
 class EmergencyConditionResponse(BaseModel):
@@ -175,6 +190,38 @@ class EmergencyCatalogResponse(BaseModel):
     ]
 
 
+class FeedbackRequest(BaseModel):
+    """Thumbs-up/down feedback for one generated answer."""
+
+    interaction_id: UUID
+
+    rating: Literal[
+        -1,
+        1,
+    ]
+
+
+class FeedbackResponse(BaseModel):
+    """Result of recording user feedback."""
+
+    accepted: bool
+    monitoring_enabled: bool
+    message: str
+
+
+class MetricsResponse(BaseModel):
+    """Anonymous aggregate monitoring metrics."""
+
+    enabled: bool
+    total_requests: int
+    requests_last_24_hours: int
+    average_latency_ms: float | None
+    feedback_total: int
+    feedback_positive: int
+    feedback_negative: int
+    positive_feedback_rate: float | None
+
+
 def get_assistant(
     request: Request,
 ) -> AssistantService:
@@ -197,29 +244,73 @@ def get_assistant(
     return assistant
 
 
+def get_monitoring_store(
+    request: Request,
+) -> MonitoringStore:
+    """Return the monitoring store initialized during startup."""
+
+    monitoring = getattr(
+        request.app.state,
+        "monitoring",
+        None,
+    )
+
+    if monitoring is None:
+        return NullMonitoringStore()
+
+    return monitoring
+
+
 def create_app(
     assistant_factory: AssistantFactory | None = None,
+    monitoring_factory: MonitoringFactory | None = None,
 ) -> FastAPI:
     """
     Create the FastAPI application.
 
-    A factory is injectable so tests can use a fake assistant
-    without loading ONNX or calling the OpenAI API.
+    Factories are injectable so unit tests can avoid loading
+    ONNX, OpenAI, and PostgreSQL.
     """
 
-    factory = (
+    assistant_builder = (
         assistant_factory
         or PetFirstAidAssistant
+    )
+
+    monitoring_builder = (
+        monitoring_factory
+        or build_monitoring_store
     )
 
     @asynccontextmanager
     async def lifespan(
         app: FastAPI,
     ):
-        """Create expensive resources once at application startup."""
+        """Create expensive application resources once."""
 
         app.state.assistant = (
-            factory()
+            assistant_builder()
+        )
+
+        try:
+            monitoring = (
+                monitoring_builder()
+            )
+
+            monitoring.initialize()
+
+        except Exception:
+            logger.exception(
+                "Monitoring initialization failed. "
+                "Continuing without persistent monitoring."
+            )
+
+            monitoring = (
+                NullMonitoringStore()
+            )
+
+        app.state.monitoring = (
+            monitoring
         )
 
         try:
@@ -227,6 +318,7 @@ def create_app(
 
         finally:
             app.state.assistant = None
+            app.state.monitoring = None
 
     app = FastAPI(
         title=(
@@ -238,7 +330,7 @@ def create_app(
             "This application does not diagnose conditions "
             "and does not replace a veterinarian."
         ),
-        version="0.3.0",
+        version="0.4.0",
         lifespan=lifespan,
     )
 
@@ -269,13 +361,20 @@ def create_app(
             "system",
         ],
     )
-    def health() -> HealthResponse:
-        """Return a lightweight service health check."""
+    def health(
+        monitoring: MonitoringStore = Depends(
+            get_monitoring_store
+        ),
+    ) -> HealthResponse:
+        """Return application health and monitoring availability."""
 
         return HealthResponse(
             status="ok",
             service=(
                 "pet-first-aid-assistant"
+            ),
+            monitoring_enabled=(
+                monitoring.enabled
             ),
         )
 
@@ -289,12 +388,7 @@ def create_app(
         ],
     )
     def emergencies() -> EmergencyCatalogResponse:
-        """
-        Return predefined non-diagnostic emergency topics.
-
-        The frontend uses starter_question to populate
-        the normal /ask workflow.
-        """
+        """Return predefined non-diagnostic emergency topics."""
 
         return (
             EmergencyCatalogResponse(
@@ -316,11 +410,19 @@ def create_app(
         assistant: AssistantService = Depends(
             get_assistant
         ),
+        monitoring: MonitoringStore = Depends(
+            get_monitoring_store
+        ),
     ) -> AskResponse:
         """
-        Retrieve authoritative veterinary context and
-        generate one grounded first-aid response.
+        Retrieve veterinary context and generate a grounded answer.
+
+        Monitoring failures never block the medical response.
         """
+
+        started_at = (
+            perf_counter()
+        )
 
         try:
             result = assistant.ask(
@@ -354,8 +456,163 @@ def create_app(
                 ),
             ) from exc
 
-        return AskResponse.model_validate(
+        latency_ms = (
+            perf_counter()
+            - started_at
+        ) * 1000
+
+        interaction_id = str(
+            uuid4()
+        )
+
+        try:
+            monitoring.record_interaction(
+                interaction_id=interaction_id,
+                question=(
+                    request_body.question
+                ),
+                species=(
+                    request_body.species
+                ),
+                answer=str(
+                    result.get(
+                        "answer",
+                        "",
+                    )
+                ),
+                model=str(
+                    result.get(
+                        "model",
+                        "",
+                    )
+                ),
+                latency_ms=latency_ms,
+                sources=list(
+                    result.get(
+                        "sources",
+                        [],
+                    )
+                ),
+            )
+
+        except Exception:
+            logger.exception(
+                "Monitoring record failed for interaction %s.",
+                interaction_id,
+            )
+
+        response_payload = dict(
             result
+        )
+
+        response_payload[
+            "interaction_id"
+        ] = interaction_id
+
+        return AskResponse.model_validate(
+            response_payload
+        )
+
+    @app.post(
+        "/feedback",
+        response_model=FeedbackResponse,
+        tags=[
+            "monitoring",
+        ],
+    )
+    def feedback(
+        request_body: FeedbackRequest,
+        monitoring: MonitoringStore = Depends(
+            get_monitoring_store
+        ),
+    ) -> FeedbackResponse:
+        """Store thumbs-up or thumbs-down feedback."""
+
+        if not monitoring.enabled:
+            return FeedbackResponse(
+                accepted=False,
+                monitoring_enabled=False,
+                message=(
+                    "Persistent feedback storage "
+                    "is not enabled."
+                ),
+            )
+
+        try:
+            accepted = (
+                monitoring.record_feedback(
+                    interaction_id=str(
+                        request_body.interaction_id
+                    ),
+                    rating=(
+                        request_body.rating
+                    ),
+                )
+            )
+
+        except Exception as exc:
+            logger.exception(
+                "Feedback storage failed."
+            )
+
+            raise HTTPException(
+                status_code=503,
+                detail=(
+                    "Feedback could not be stored "
+                    "at this time."
+                ),
+            ) from exc
+
+        if not accepted:
+            raise HTTPException(
+                status_code=404,
+                detail=(
+                    "The referenced interaction "
+                    "was not found."
+                ),
+            )
+
+        return FeedbackResponse(
+            accepted=True,
+            monitoring_enabled=True,
+            message=(
+                "Thank you for your feedback."
+            ),
+        )
+
+    @app.get(
+        "/metrics",
+        response_model=MetricsResponse,
+        tags=[
+            "monitoring",
+        ],
+    )
+    def metrics(
+        monitoring: MonitoringStore = Depends(
+            get_monitoring_store
+        ),
+    ) -> MetricsResponse:
+        """Return aggregate anonymous usage and feedback metrics."""
+
+        try:
+            values = (
+                monitoring.metrics()
+            )
+
+        except Exception as exc:
+            logger.exception(
+                "Monitoring metrics query failed."
+            )
+
+            raise HTTPException(
+                status_code=503,
+                detail=(
+                    "Monitoring metrics are temporarily unavailable."
+                ),
+            ) from exc
+
+        return MetricsResponse.model_validate(
+            values
         )
 
     return app

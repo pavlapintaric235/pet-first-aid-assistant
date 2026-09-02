@@ -185,6 +185,7 @@ def test_health_endpoint():
         "service": (
             "pet-first-aid-assistant"
         ),
+        "monitoring_enabled": False,
     }
 
 
@@ -326,6 +327,15 @@ def test_ask_endpoint_returns_grounded_response():
     assert (
         body["model"]
         == "fake-model"
+    )
+
+    assert (
+        "interaction_id"
+        in body
+    )
+
+    assert (
+        body["interaction_id"]
     )
 
     assert (

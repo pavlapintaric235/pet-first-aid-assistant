@@ -2,6 +2,7 @@
 
 
 let selectedSpecies = null;
+let currentInteractionId = null;
 
 
 const emergencyGrid = document.getElementById(
@@ -50,6 +51,18 @@ const answerText = document.getElementById(
 
 const sourcesList = document.getElementById(
     "sources-list"
+);
+
+const feedbackSection = document.getElementById(
+    "feedback-section"
+);
+
+const feedbackButtons = document.querySelectorAll(
+    ".feedback-button"
+);
+
+const feedbackStatus = document.getElementById(
+    "feedback-status"
 );
 
 
@@ -175,7 +188,8 @@ async function loadEmergencyConditions() {
             );
         }
 
-        const payload = await response.json();
+        const payload =
+            await response.json();
 
         emergencyGrid.replaceChildren();
 
@@ -189,14 +203,16 @@ async function loadEmergencyConditions() {
             }
         );
 
-    } catch (error) {
+    } catch {
         emergencyGrid.replaceChildren();
 
-        const message = document.createElement(
-            "p"
-        );
+        const message =
+            document.createElement(
+                "p"
+            );
 
-        message.className = "muted";
+        message.className =
+            "muted";
 
         message.textContent =
             "Emergency shortcuts are temporarily unavailable. " +
@@ -257,12 +273,18 @@ function safeHttpUrl(value) {
 function renderSources(sources) {
     sourcesList.replaceChildren();
 
-    if (!sources || sources.length === 0) {
-        const empty = document.createElement(
-            "p"
-        );
+    if (
+        !sources
+        ||
+        sources.length === 0
+    ) {
+        const empty =
+            document.createElement(
+                "p"
+            );
 
-        empty.className = "muted";
+        empty.className =
+            "muted";
 
         empty.textContent =
             "No source metadata was returned.";
@@ -275,29 +297,36 @@ function renderSources(sources) {
     }
 
     sources.forEach((source) => {
-        const card = document.createElement(
-            "article"
-        );
+        const card =
+            document.createElement(
+                "article"
+            );
 
-        card.className = "source-card";
+        card.className =
+            "source-card";
 
-        const label = document.createElement(
-            "div"
-        );
+        const label =
+            document.createElement(
+                "div"
+            );
 
-        label.className = "source-label";
+        label.className =
+            "source-label";
 
         label.textContent =
             `[${source.label}]`;
 
-        const title = document.createElement(
-            "div"
-        );
+        const title =
+            document.createElement(
+                "div"
+            );
 
-        title.className = "source-title";
+        title.className =
+            "source-title";
 
         title.textContent =
-            source.title || "Veterinary source";
+            source.title
+            || "Veterinary source";
 
         const publisher =
             document.createElement(
@@ -308,7 +337,8 @@ function renderSources(sources) {
             "source-meta";
 
         publisher.textContent =
-            source.publisher || "";
+            source.publisher
+            || "";
 
         card.append(
             label,
@@ -333,9 +363,10 @@ function renderSources(sources) {
             );
         }
 
-        const validUrl = safeHttpUrl(
-            source.url
-        );
+        const validUrl =
+            safeHttpUrl(
+                source.url
+            );
 
         if (validUrl) {
             const link =
@@ -346,9 +377,11 @@ function renderSources(sources) {
             link.className =
                 "source-link";
 
-            link.href = validUrl;
+            link.href =
+                validUrl;
 
-            link.target = "_blank";
+            link.target =
+                "_blank";
 
             link.rel =
                 "noopener noreferrer";
@@ -368,7 +401,30 @@ function renderSources(sources) {
 }
 
 
+function resetFeedback() {
+    currentInteractionId = null;
+
+    feedbackSection.classList.add(
+        "hidden"
+    );
+
+    feedbackStatus.textContent =
+        "";
+
+    feedbackButtons.forEach(
+        (button) => {
+            button.disabled = false;
+            button.classList.remove(
+                "selected"
+            );
+        }
+    );
+}
+
+
 function showLoading() {
+    resetFeedback();
+
     errorPanel.classList.add(
         "hidden"
     );
@@ -432,6 +488,15 @@ function showAnswer(payload) {
         payload.sources || []
     );
 
+    currentInteractionId =
+        payload.interaction_id || null;
+
+    if (currentInteractionId) {
+        feedbackSection.classList.remove(
+            "hidden"
+        );
+    }
+
     errorPanel.classList.add(
         "hidden"
     );
@@ -473,8 +538,8 @@ async function askAssistant(question) {
 
         if (!response.ok) {
             const detail =
-                typeof payload.detail ===
-                "string"
+                typeof payload.detail
+                === "string"
                     ? payload.detail
                     : (
                         "The assistant is temporarily unavailable. " +
@@ -492,8 +557,8 @@ async function askAssistant(question) {
 
     } catch (error) {
         showError(
-            error.message ||
-            (
+            error.message
+            || (
                 "The assistant is temporarily unavailable. " +
                 "Contact a veterinarian directly if this is urgent."
             )
@@ -503,6 +568,104 @@ async function askAssistant(question) {
         stopLoading();
     }
 }
+
+
+async function submitFeedback(
+    rating,
+    selectedButton
+) {
+    if (!currentInteractionId) {
+        return;
+    }
+
+    feedbackButtons.forEach(
+        (button) => {
+            button.disabled = true;
+        }
+    );
+
+    feedbackStatus.textContent =
+        "Saving feedback...";
+
+    try {
+        const response = await fetch(
+            "/feedback",
+            {
+                method: "POST",
+
+                headers: {
+                    "Content-Type":
+                        "application/json"
+                },
+
+                body: JSON.stringify({
+                    interaction_id:
+                        currentInteractionId,
+                    rating: rating
+                })
+            }
+        );
+
+        const payload =
+            await response.json();
+
+        if (!response.ok) {
+            throw new Error(
+                payload.detail
+                || "Feedback could not be saved."
+            );
+        }
+
+        if (!payload.accepted) {
+            feedbackStatus.textContent =
+                "Feedback storage is not enabled.";
+
+            feedbackButtons.forEach(
+                (button) => {
+                    button.disabled = false;
+                }
+            );
+
+            return;
+        }
+
+        selectedButton.classList.add(
+            "selected"
+        );
+
+        feedbackStatus.textContent =
+            "Thank you for your feedback.";
+
+    } catch {
+        feedbackStatus.textContent =
+            "Feedback could not be saved right now.";
+
+        feedbackButtons.forEach(
+            (button) => {
+                button.disabled = false;
+            }
+        );
+    }
+}
+
+
+feedbackButtons.forEach(
+    (button) => {
+        button.addEventListener(
+            "click",
+            () => {
+                const rating = Number(
+                    button.dataset.rating
+                );
+
+                submitFeedback(
+                    rating,
+                    button
+                );
+            }
+        );
+    }
+);
 
 
 askForm.addEventListener(
