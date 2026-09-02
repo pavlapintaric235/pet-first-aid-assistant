@@ -3,10 +3,22 @@ from __future__ import annotations
 import logging
 from collections.abc import Callable
 from contextlib import asynccontextmanager
+from pathlib import Path
 from typing import Any, Literal, Protocol
 
-from fastapi import Depends, FastAPI, HTTPException, Request
-from pydantic import BaseModel, Field, field_validator
+from fastapi import (
+    Depends,
+    FastAPI,
+    HTTPException,
+    Request,
+)
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
+from pydantic import (
+    BaseModel,
+    Field,
+    field_validator,
+)
 
 from src.pet_first_aid_assistant.assistant import (
     PetFirstAidAssistant,
@@ -17,6 +29,16 @@ from src.pet_first_aid_assistant.emergency_conditions import (
 
 
 logger = logging.getLogger(__name__)
+
+
+PROJECT_ROOT = Path(
+    __file__
+).resolve().parents[2]
+
+FRONTEND_DIR = (
+    PROJECT_ROOT
+    / "frontend"
+)
 
 
 class AssistantService(Protocol):
@@ -130,10 +152,12 @@ class EmergencyConditionResponse(BaseModel):
     title: str
     short_description: str
     starter_question: str
+
     urgency: Literal[
         "urgent",
         "emergency",
     ]
+
     supported_species: tuple[
         Literal[
             "dog",
@@ -192,7 +216,7 @@ def create_app(
     async def lifespan(
         app: FastAPI,
     ):
-        """Create expensive application resources once at startup."""
+        """Create expensive resources once at application startup."""
 
         app.state.assistant = (
             factory()
@@ -214,9 +238,29 @@ def create_app(
             "This application does not diagnose conditions "
             "and does not replace a veterinarian."
         ),
-        version="0.2.0",
+        version="0.3.0",
         lifespan=lifespan,
     )
+
+    app.mount(
+        "/static",
+        StaticFiles(
+            directory=FRONTEND_DIR,
+        ),
+        name="static",
+    )
+
+    @app.get(
+        "/",
+        include_in_schema=False,
+    )
+    def frontend() -> FileResponse:
+        """Serve the Pet First Aid Assistant frontend."""
+
+        return FileResponse(
+            FRONTEND_DIR
+            / "index.html"
+        )
 
     @app.get(
         "/health",
@@ -248,7 +292,7 @@ def create_app(
         """
         Return predefined non-diagnostic emergency topics.
 
-        The frontend can use starter_question to populate
+        The frontend uses starter_question to populate
         the normal /ask workflow.
         """
 

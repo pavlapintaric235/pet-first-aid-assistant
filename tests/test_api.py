@@ -74,7 +74,7 @@ class BrokenAssistant:
 
 
 def make_client():
-    """Create a test client backed by one fake assistant."""
+    """Create an application backed by one fake assistant."""
 
     fake_assistant = (
         FakeAssistant()
@@ -89,6 +89,79 @@ def make_client():
     return (
         app,
         fake_assistant,
+    )
+
+
+def test_frontend_root_is_served():
+    app, _ = make_client()
+
+    with TestClient(
+        app
+    ) as client:
+        response = client.get(
+            "/"
+        )
+
+    assert (
+        response.status_code
+        == 200
+    )
+
+    assert (
+        "Pet First Aid Assistant"
+        in response.text
+    )
+
+    assert (
+        "/static/app.js"
+        in response.text
+    )
+
+
+def test_frontend_javascript_is_served():
+    app, _ = make_client()
+
+    with TestClient(
+        app
+    ) as client:
+        response = client.get(
+            "/static/app.js"
+        )
+
+    assert (
+        response.status_code
+        == 200
+    )
+
+    assert (
+        "loadEmergencyConditions"
+        in response.text
+    )
+
+    assert (
+        "askAssistant"
+        in response.text
+    )
+
+
+def test_frontend_stylesheet_is_served():
+    app, _ = make_client()
+
+    with TestClient(
+        app
+    ) as client:
+        response = client.get(
+            "/static/styles.css"
+        )
+
+    assert (
+        response.status_code
+        == 200
+    )
+
+    assert (
+        ".emergency-grid"
+        in response.text
     )
 
 
@@ -132,9 +205,15 @@ def test_emergencies_endpoint_returns_catalog():
 
     body = response.json()
 
-    assert "conditions" in body
+    assert (
+        "conditions"
+        in body
+    )
+
     assert len(
-        body["conditions"]
+        body[
+            "conditions"
+        ]
     ) >= 8
 
 
@@ -257,11 +336,15 @@ def test_ask_endpoint_returns_grounded_response():
     )
 
     assert len(
-        body["sources"]
+        body[
+            "sources"
+        ]
     ) == 1
 
     assert (
-        body["sources"][0][
+        body[
+            "sources"
+        ][0][
             "publisher"
         ]
         == "Merck Veterinary Manual"

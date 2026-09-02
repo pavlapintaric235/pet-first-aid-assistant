@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Source-grounded first-aid guidance for dog and cat emergencies."
+    >
+
+    <title>Pet First Aid Assistant</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/styles.css"
+    >
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <div>
+                <p class="eyebrow">
+                    Safety-focused RAG assistant
+                </p>
+
+                <h1>
+                    Pet First Aid Assistant
+                </h1>
+
+                <p class="header-description">
+                    Source-grounded first-aid information for
+                    dog and cat emergencies.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+
+        <section
+            class="emergency-banner"
+            aria-label="Emergency warning"
+        >
+            <div class="emergency-icon">
+                !
+            </div>
+
+            <div>
+                <h2>
+                    This does not replace a veterinarian
+                </h2>
+
+                <p>
+                    If your pet is unconscious, cannot breathe,
+                    is bleeding severely, or appears critically ill,
+                    contact an emergency veterinarian immediately.
+                </p>
+            </div>
+        </section>
+
+        <section
+            class="panel"
+            aria-labelledby="species-heading"
+        >
+            <div class="section-heading">
+                <div>
+                    <p class="step-label">
+                        Step 1
+                    </p>
+
+                    <h2 id="species-heading">
+                        Which pet needs help?
+                    </h2>
+                </div>
+            </div>
+
+            <div
+                class="species-selector"
+                id="species-selector"
+            >
+                <button
+                    type="button"
+                    class="species-button"
+                    data-species="dog"
+                    aria-pressed="false"
+                >
+                    Dog
+                </button>
+
+                <button
+                    type="button"
+                    class="species-button"
+                    data-species="cat"
+                    aria-pressed="false"
+                >
+                    Cat
+                </button>
+
+                <button
+                    type="button"
+                    class="species-button"
+                    data-species=""
+                    aria-pressed="false"
+                >
+                    Not sure
+                </button>
+            </div>
+        </section>
+
+        <section
+            class="panel"
+            aria-labelledby="emergencies-heading"
+        >
+            <div class="section-heading">
+                <div>
+                    <p class="step-label">
+                        Step 2
+                    </p>
+
+                    <h2 id="emergencies-heading">
+                        Choose an emergency
+                    </h2>
+
+                    <p>
+                        Or describe what is happening in your own words below.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                id="emergency-grid"
+                class="emergency-grid"
+                aria-live="polite"
+            >
+                <p class="muted">
+                    Loading emergency options...
+                </p>
+            </div>
+        </section>
+
+        <section
+            class="panel"
+            aria-labelledby="question-heading"
+        >
+            <div class="section-heading">
+                <div>
+                    <p class="step-label">
+                        Step 3
+                    </p>
+
+                    <h2 id="question-heading">
+                        Describe what is happening
+                    </h2>
+                </div>
+            </div>
+
+            <form id="ask-form">
+                <label
+                    for="question-input"
+                    class="input-label"
+                >
+                    What is happening with your pet?
+                </label>
+
+                <textarea
+                    id="question-input"
+                    name="question"
+                    rows="6"
+                    minlength="3"
+                    maxlength="2000"
+                    required
+                    placeholder="Example: My dog is bleeding heavily from a wound. What should I do right now?"
+                ></textarea>
+
+                <div class="form-footer">
+                    <p
+                        id="species-status"
+                        class="species-status"
+                    >
+                        Species: not specified
+                    </p>
+
+                    <button
+                        id="submit-button"
+                        type="submit"
+                        class="primary-button"
+                    >
+                        Get first-aid guidance
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section
+            id="loading-panel"
+            class="panel loading-panel hidden"
+            aria-live="polite"
+        >
+            <div class="loading-spinner"></div>
+
+            <div>
+                <h2>
+                    Checking veterinary sources...
+                </h2>
+
+                <p>
+                    Retrieving relevant first-aid information
+                    and preparing a grounded response.
+                </p>
+            </div>
+        </section>
+
+        <section
+            id="error-panel"
+            class="panel error-panel hidden"
+            role="alert"
+        >
+            <h2>
+                The assistant could not answer
+            </h2>
+
+            <p id="error-message">
+                Please contact a veterinarian directly if
+                your pet needs urgent help.
+            </p>
+        </section>
+
+        <section
+            id="answer-panel"
+            class="panel answer-panel hidden"
+            aria-labelledby="answer-heading"
+        >
+            <div class="answer-header">
+                <div>
+                    <p class="step-label">
+                        Guidance
+                    </p>
+
+                    <h2 id="answer-heading">
+                        What to do
+                    </h2>
+                </div>
+
+                <span class="grounded-badge">
+                    Source grounded
+                </span>
+            </div>
+
+            <div
+                id="answer-text"
+                class="answer-text"
+            ></div>
+
+            <div class="answer-warning">
+                This information is educational first-aid guidance.
+                It is not a diagnosis and does not replace
+                professional veterinary care.
+            </div>
+
+            <div class="sources-section">
+                <h3>
+                    Sources used
+                </h3>
+
+                <div
+                    id="sources-list"
+                    class="sources-list"
+                ></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                Pet First Aid Assistant — DataTalks.Club
+                LLM Zoomcamp Final Project
+            </p>
+
+            <p>
+                Uses retrieved veterinary reference material
+                to support grounded answers.
+            </p>
+        </div>
+    </footer>
+
+    <script
+        src="/static/app.js"
+        defer
+    ></script>
+</body>
+</html>
