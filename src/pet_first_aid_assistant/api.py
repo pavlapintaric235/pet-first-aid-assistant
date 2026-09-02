@@ -11,6 +11,9 @@ from pydantic import BaseModel, Field, field_validator
 from src.pet_first_aid_assistant.assistant import (
     PetFirstAidAssistant,
 )
+from src.pet_first_aid_assistant.emergency_conditions import (
+    list_emergency_conditions,
+)
 
 
 logger = logging.getLogger(__name__)
@@ -27,7 +30,10 @@ class AssistantService(Protocol):
         """Return one grounded pet first-aid response."""
 
 
-AssistantFactory = Callable[[], AssistantService]
+AssistantFactory = Callable[
+    [],
+    AssistantService,
+]
 
 
 class AskRequest(BaseModel):
@@ -103,7 +109,9 @@ class AskResponse(BaseModel):
 
     model: str
 
-    sources: list[SourceResponse]
+    sources: list[
+        SourceResponse
+    ]
 
     retrieval: RetrievalResponse
 
@@ -113,6 +121,34 @@ class HealthResponse(BaseModel):
 
     status: str
     service: str
+
+
+class EmergencyConditionResponse(BaseModel):
+    """One frontend-safe predefined emergency option."""
+
+    id: str
+    title: str
+    short_description: str
+    starter_question: str
+    urgency: Literal[
+        "urgent",
+        "emergency",
+    ]
+    supported_species: tuple[
+        Literal[
+            "dog",
+            "cat",
+        ],
+        ...,
+    ]
+
+
+class EmergencyCatalogResponse(BaseModel):
+    """Collection returned by GET /emergencies."""
+
+    conditions: list[
+        EmergencyConditionResponse
+    ]
 
 
 def get_assistant(
@@ -158,42 +194,78 @@ def create_app(
     ):
         """Create expensive application resources once at startup."""
 
-        app.state.assistant = factory()
+        app.state.assistant = (
+            factory()
+        )
 
         try:
             yield
+
         finally:
             app.state.assistant = None
 
     app = FastAPI(
-        title="Pet First Aid Assistant API",
+        title=(
+            "Pet First Aid Assistant API"
+        ),
         description=(
             "Safety-focused, source-grounded first-aid "
             "information for dog and cat emergencies. "
             "This application does not diagnose conditions "
             "and does not replace a veterinarian."
         ),
-        version="0.1.0",
+        version="0.2.0",
         lifespan=lifespan,
     )
 
     @app.get(
         "/health",
         response_model=HealthResponse,
-        tags=["system"],
+        tags=[
+            "system",
+        ],
     )
     def health() -> HealthResponse:
         """Return a lightweight service health check."""
 
         return HealthResponse(
             status="ok",
-            service="pet-first-aid-assistant",
+            service=(
+                "pet-first-aid-assistant"
+            ),
+        )
+
+    @app.get(
+        "/emergencies",
+        response_model=(
+            EmergencyCatalogResponse
+        ),
+        tags=[
+            "assistant",
+        ],
+    )
+    def emergencies() -> EmergencyCatalogResponse:
+        """
+        Return predefined non-diagnostic emergency topics.
+
+        The frontend can use starter_question to populate
+        the normal /ask workflow.
+        """
+
+        return (
+            EmergencyCatalogResponse(
+                conditions=(
+                    list_emergency_conditions()
+                )
+            )
         )
 
     @app.post(
         "/ask",
         response_model=AskResponse,
-        tags=["assistant"],
+        tags=[
+            "assistant",
+        ],
     )
     def ask(
         request_body: AskRequest,
@@ -208,14 +280,20 @@ def create_app(
 
         try:
             result = assistant.ask(
-                question=request_body.question,
-                species=request_body.species,
+                question=(
+                    request_body.question
+                ),
+                species=(
+                    request_body.species
+                ),
             )
 
         except ValueError as exc:
             raise HTTPException(
                 status_code=400,
-                detail=str(exc),
+                detail=str(
+                    exc
+                ),
             ) from exc
 
         except Exception as exc:

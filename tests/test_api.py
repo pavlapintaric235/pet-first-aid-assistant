@@ -28,7 +28,9 @@ class FakeAssistant:
             "sources": [
                 {
                     "label": "S1",
-                    "source_id": "merck_test",
+                    "source_id": (
+                        "merck_test"
+                    ),
                     "publisher": (
                         "Merck Veterinary Manual"
                     ),
@@ -36,12 +38,18 @@ class FakeAssistant:
                         "What to Do in a "
                         "Dog or Cat Emergency"
                     ),
-                    "section": "Bleeding",
+                    "section": (
+                        "Bleeding"
+                    ),
                     "url": (
                         "https://example.com/merck"
                     ),
-                    "retrieval_method": "hybrid",
-                    "retrieval_score": 0.04,
+                    "retrieval_method": (
+                        "hybrid"
+                    ),
+                    "retrieval_score": (
+                        0.04
+                    ),
                 }
             ],
             "retrieval": {
@@ -65,19 +73,39 @@ class BrokenAssistant:
         )
 
 
-def test_health_endpoint():
-    fake_assistant = FakeAssistant()
+def make_client():
+    """Create a test client backed by one fake assistant."""
 
-    app = create_app(
-        assistant_factory=lambda: fake_assistant
+    fake_assistant = (
+        FakeAssistant()
     )
 
-    with TestClient(app) as client:
+    app = create_app(
+        assistant_factory=(
+            lambda: fake_assistant
+        )
+    )
+
+    return (
+        app,
+        fake_assistant,
+    )
+
+
+def test_health_endpoint():
+    app, _ = make_client()
+
+    with TestClient(
+        app
+    ) as client:
         response = client.get(
             "/health"
         )
 
-    assert response.status_code == 200
+    assert (
+        response.status_code
+        == 200
+    )
 
     assert response.json() == {
         "status": "ok",
@@ -87,14 +115,108 @@ def test_health_endpoint():
     }
 
 
-def test_ask_endpoint_returns_grounded_response():
-    fake_assistant = FakeAssistant()
+def test_emergencies_endpoint_returns_catalog():
+    app, _ = make_client()
 
-    app = create_app(
-        assistant_factory=lambda: fake_assistant
+    with TestClient(
+        app
+    ) as client:
+        response = client.get(
+            "/emergencies"
+        )
+
+    assert (
+        response.status_code
+        == 200
     )
 
-    with TestClient(app) as client:
+    body = response.json()
+
+    assert "conditions" in body
+    assert len(
+        body["conditions"]
+    ) >= 8
+
+
+def test_emergencies_catalog_contains_bleeding():
+    app, _ = make_client()
+
+    with TestClient(
+        app
+    ) as client:
+        response = client.get(
+            "/emergencies"
+        )
+
+    conditions = {
+        condition["id"]: condition
+        for condition
+        in response.json()[
+            "conditions"
+        ]
+    }
+
+    assert (
+        "heavy_bleeding"
+        in conditions
+    )
+
+    bleeding = conditions[
+        "heavy_bleeding"
+    ]
+
+    assert (
+        bleeding["title"]
+        == "Heavy bleeding"
+    )
+
+    assert (
+        bleeding["urgency"]
+        == "emergency"
+    )
+
+    assert set(
+        bleeding[
+            "supported_species"
+        ]
+    ) == {
+        "dog",
+        "cat",
+    }
+
+
+def test_emergencies_catalog_has_no_cpr_preset():
+    app, _ = make_client()
+
+    with TestClient(
+        app
+    ) as client:
+        response = client.get(
+            "/emergencies"
+        )
+
+    condition_ids = {
+        condition["id"]
+        for condition
+        in response.json()[
+            "conditions"
+        ]
+    }
+
+    assert (
+        "cpr"
+        not in condition_ids
+    )
+
+
+def test_ask_endpoint_returns_grounded_response():
+    app, fake_assistant = (
+        make_client()
+    )
+
+    with TestClient(
+        app
+    ) as client:
         response = client.post(
             "/ask",
             json={
@@ -105,20 +227,32 @@ def test_ask_endpoint_returns_grounded_response():
             },
         )
 
-    assert response.status_code == 200
+    assert (
+        response.status_code
+        == 200
+    )
 
     body = response.json()
 
-    assert "[S1]" in body["answer"]
-
-    assert body["species"] == "dog"
-
-    assert body["model"] == (
-        "fake-model"
+    assert (
+        "[S1]"
+        in body["answer"]
     )
 
     assert (
-        body["retrieval"]["method"]
+        body["species"]
+        == "dog"
+    )
+
+    assert (
+        body["model"]
+        == "fake-model"
+    )
+
+    assert (
+        body["retrieval"][
+            "method"
+        ]
         == "hybrid_source_diverse"
     )
 
@@ -127,7 +261,9 @@ def test_ask_endpoint_returns_grounded_response():
     ) == 1
 
     assert (
-        body["sources"][0]["publisher"]
+        body["sources"][0][
+            "publisher"
+        ]
         == "Merck Veterinary Manual"
     )
 
@@ -143,13 +279,13 @@ def test_ask_endpoint_returns_grounded_response():
 
 
 def test_ask_endpoint_accepts_missing_species():
-    fake_assistant = FakeAssistant()
-
-    app = create_app(
-        assistant_factory=lambda: fake_assistant
+    app, fake_assistant = (
+        make_client()
     )
 
-    with TestClient(app) as client:
+    with TestClient(
+        app
+    ) as client:
         response = client.post(
             "/ask",
             json={
@@ -159,10 +295,15 @@ def test_ask_endpoint_accepts_missing_species():
             },
         )
 
-    assert response.status_code == 200
+    assert (
+        response.status_code
+        == 200
+    )
 
     assert (
-        response.json()["species"]
+        response.json()[
+            "species"
+        ]
         is None
     )
 
@@ -173,90 +314,110 @@ def test_ask_endpoint_accepts_missing_species():
 
 
 def test_ask_endpoint_rejects_invalid_species():
-    fake_assistant = FakeAssistant()
+    app, _ = make_client()
 
-    app = create_app(
-        assistant_factory=lambda: fake_assistant
-    )
-
-    with TestClient(app) as client:
+    with TestClient(
+        app
+    ) as client:
         response = client.post(
             "/ask",
             json={
                 "question": (
                     "My rabbit is bleeding."
                 ),
-                "species": "rabbit",
+                "species": (
+                    "rabbit"
+                ),
             },
         )
 
-    assert response.status_code == 422
+    assert (
+        response.status_code
+        == 422
+    )
 
 
 def test_ask_endpoint_rejects_blank_question():
-    fake_assistant = FakeAssistant()
+    app, _ = make_client()
 
-    app = create_app(
-        assistant_factory=lambda: fake_assistant
-    )
-
-    with TestClient(app) as client:
+    with TestClient(
+        app
+    ) as client:
         response = client.post(
             "/ask",
             json={
                 "question": "   ",
-                "species": "dog",
+                "species": (
+                    "dog"
+                ),
             },
         )
 
-    assert response.status_code == 422
+    assert (
+        response.status_code
+        == 422
+    )
 
 
 def test_ask_endpoint_rejects_too_short_question():
-    fake_assistant = FakeAssistant()
+    app, _ = make_client()
 
-    app = create_app(
-        assistant_factory=lambda: fake_assistant
-    )
-
-    with TestClient(app) as client:
+    with TestClient(
+        app
+    ) as client:
         response = client.post(
             "/ask",
             json={
                 "question": "hi",
-                "species": "dog",
+                "species": (
+                    "dog"
+                ),
             },
         )
 
-    assert response.status_code == 422
+    assert (
+        response.status_code
+        == 422
+    )
 
 
 def test_provider_failure_returns_safe_error():
     app = create_app(
-        assistant_factory=BrokenAssistant
+        assistant_factory=(
+            BrokenAssistant
+        )
     )
 
-    with TestClient(app) as client:
+    with TestClient(
+        app
+    ) as client:
         response = client.post(
             "/ask",
             json={
                 "question": (
                     "My dog is bleeding heavily."
                 ),
-                "species": "dog",
+                "species": (
+                    "dog"
+                ),
             },
         )
 
-    assert response.status_code == 503
+    assert (
+        response.status_code
+        == 503
+    )
 
     body = response.json()
 
-    assert "temporarily unavailable" in (
-        body["detail"]
+    assert (
+        "temporarily unavailable"
+        in body["detail"]
     )
 
-    assert "veterinarian" in (
-        body["detail"]
+    assert (
+        "veterinarian"
+        in body["detail"]
     )
 
     assert (
