@@ -11,7 +11,7 @@
   "methods": {
     "keyword_diverse_1": {
       "hit_rate": 1.0,
-      "mrr": 0.8916666666666666,
+      "mrr": 0.95,
       "num_questions": 20,
       "num_results": 5,
       "questions": [
@@ -26,21 +26,21 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_dogs",
             "merck_first_aid_transport",
             "vca_common_emergencies_dogs",
+            "vca_first_aid_dogs",
             "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e",
-            "vca_common_emergencies_dogs_0008_0685c5e8ef44fb73",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923"
+            "merck_first_aid_transport_0000_193cdb60f00b4288",
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "vca_first_aid_dogs_0002_c46964d219d79370",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177"
           ],
           "relevance": [
             1,
-            1,
             0,
+            1,
             1
           ],
           "first_relevant_rank": 1
@@ -61,9 +61,9 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_cats_0000_6a47bb477d2e9a26",
+            "merck_first_aid_transport_0000_193cdb60f00b4288"
           ],
           "relevance": [
             1,
@@ -88,10 +88,10 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "vca_common_emergencies_dogs_0002_622ed95a1a703602",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "vca_first_aid_dogs_0008_ecba4d82ee7881b4",
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_first_aid_transport_0006_8347a3f22537690b"
           ],
           "relevance": [
             1,
@@ -113,13 +113,13 @@
           ],
           "retrieved_source_ids": [
             "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
-            "merck_first_aid_transport"
+            "merck_first_aid_transport",
+            "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_first_aid_transport_0003_348d00807f586c5b"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_first_aid_transport_0003_4f633767dc636e23",
+            "vca_first_aid_cats_0008_feb1dab932daacaf"
           ],
           "relevance": [
             1,
@@ -140,20 +140,20 @@
           "retrieved_source_ids": [
             "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
-            "merck_first_aid_transport",
-            "vca_common_emergencies_dogs"
+            "vca_common_emergencies_dogs",
+            "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0001_e06421735e9c7839",
-            "vca_common_emergencies_dogs_0002_622ed95a1a703602"
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_common_emergencies_dogs_0010_323c096b3601cc58",
+            "merck_first_aid_transport_0001_d1fc338436711a28"
           ],
           "relevance": [
             1,
             0,
-            1,
-            0
+            0,
+            1
           ],
           "first_relevant_rank": 1
         },
@@ -167,21 +167,21 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
             "merck_first_aid_transport",
-            "merck_dog_cat_emergency"
+            "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_first_aid_transport_0002_5e1f055f590ce663",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f"
           ],
           "relevance": [
+            0,
             1,
-            1,
-            0
+            1
           ],
-          "first_relevant_rank": 1
+          "first_relevant_rank": 2
         },
         {
           "id": "gt_007",
@@ -196,14 +196,14 @@
           "retrieved_source_ids": [
             "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency",
-            "merck_first_aid_transport",
-            "vca_first_aid_dogs"
+            "vca_first_aid_dogs",
+            "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0005_e9b4a59b40f9cb93",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0006_aceab29347cbfdf2",
-            "vca_first_aid_dogs_0004_99d16ea86040833e"
+            "vca_common_emergencies_dogs_0005_9550b81357d64b3c",
+            "merck_dog_cat_emergency_0003_9c55f316830b71dc",
+            "vca_first_aid_dogs_0003_26b6708126e5f3ad",
+            "merck_first_aid_transport_0005_45a3389866938ef8"
           ],
           "relevance": [
             0,
@@ -224,14 +224,14 @@
             "vca_first_aid_cats"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "merck_first_aid_transport_0000_193cdb60f00b4288"
           ],
           "relevance": [
             1,
@@ -250,13 +250,13 @@
           ],
           "retrieved_source_ids": [
             "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
-            "merck_first_aid_transport"
+            "merck_first_aid_transport",
+            "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "merck_first_aid_transport_0001_e06421735e9c7839"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_first_aid_transport_0001_d1fc338436711a28",
+            "vca_first_aid_cats_0007_61758cc2be602c31"
           ],
           "relevance": [
             1,
@@ -275,21 +275,21 @@
             "vca_first_aid_dogs"
           ],
           "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
             "vca_first_aid_dogs",
             "vca_common_emergencies_dogs",
-            "merck_dog_cat_emergency",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "vca_common_emergencies_dogs_0002_622ed95a1a703602",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_first_aid_transport_0001_e06421735e9c7839"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_dogs_0011_7af85b82ed97a48b",
+            "vca_common_emergencies_dogs_0014_1c4b657a28de0917",
+            "merck_first_aid_transport_0004_8ecf5859900429e6"
           ],
           "relevance": [
             1,
-            0,
             1,
+            0,
             0
           ],
           "first_relevant_rank": 1
@@ -311,10 +311,10 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "vca_common_emergencies_dogs_0001_2c45b6201c4cc52d",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_dogs_0002_c46964d219d79370",
+            "vca_common_emergencies_dogs_0001_64984d68c6213742",
+            "merck_first_aid_transport_0000_193cdb60f00b4288"
           ],
           "relevance": [
             1,
@@ -335,14 +335,14 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_first_aid_transport_0000_193cdb60f00b4288"
           ],
           "relevance": [
             1,
@@ -368,10 +368,10 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_common_emergencies_dogs_0013_df0c2fdd055adc88",
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "merck_first_aid_transport_0001_e06421735e9c7839"
+            "vca_first_aid_dogs_0005_b4c690ce4c1856bd",
+            "vca_common_emergencies_dogs_0014_1c4b657a28de0917",
+            "merck_dog_cat_emergency_0006_7f37b8f4328ee054",
+            "merck_first_aid_transport_0001_d1fc338436711a28"
           ],
           "relevance": [
             1,
@@ -397,9 +397,9 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0002_33e45777e899e904",
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "vca_first_aid_cats_0005_7e2069bf82401c97",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "merck_first_aid_transport_0002_5e1f055f590ce663"
           ],
           "relevance": [
             1,
@@ -417,24 +417,24 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_dogs",
-            "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency",
+            "vca_common_emergencies_dogs",
+            "vca_first_aid_dogs",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_common_emergencies_dogs_0008_0685c5e8ef44fb73",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "vca_first_aid_dogs_0010_3c4b5304615f03ed",
+            "merck_first_aid_transport_0005_45a3389866938ef8"
           ],
           "relevance": [
-            0,
-            0,
             1,
+            0,
+            0,
             0
           ],
-          "first_relevant_rank": 3
+          "first_relevant_rank": 1
         },
         {
           "id": "gt_016",
@@ -446,13 +446,13 @@
           ],
           "retrieved_source_ids": [
             "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
-            "merck_first_aid_transport"
+            "merck_first_aid_transport",
+            "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_first_aid_transport_0003_348d00807f586c5b"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_first_aid_transport_0003_4f633767dc636e23",
+            "vca_first_aid_cats_0003_2673089bd5a336bb"
           ],
           "relevance": [
             1,
@@ -472,24 +472,24 @@
             "vca_first_aid_dogs"
           ],
           "retrieved_source_ids": [
-            "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency",
-            "vca_first_aid_dogs",
-            "merck_first_aid_transport"
+            "vca_common_emergencies_dogs",
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0012_0cc2bde9a08a83ed",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_dogs_0000_24113fedd957adf6",
-            "merck_first_aid_transport_0004_32a60d46d44631cf"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_common_emergencies_dogs_0013_a957e1c5e0882606",
+            "merck_first_aid_transport_0004_8ecf5859900429e6",
+            "vca_first_aid_dogs_0000_69f3b01a58920fe1"
           ],
           "relevance": [
-            0,
             1,
+            0,
             1,
             1
           ],
-          "first_relevant_rank": 2
+          "first_relevant_rank": 1
         },
         {
           "id": "gt_018",
@@ -502,14 +502,14 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_first_aid_transport_0001_d1fc338436711a28"
           ],
           "relevance": [
             1,
@@ -530,20 +530,20 @@
           "retrieved_source_ids": [
             "vca_common_emergencies_dogs",
             "merck_first_aid_transport",
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency"
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "merck_first_aid_transport_0001_e06421735e9c7839",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "merck_dog_cat_emergency_0003_16d6996968e565d3"
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "merck_first_aid_transport_0001_d1fc338436711a28",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_dogs_0007_117100b6f9adafe9"
           ],
           "relevance": [
             1,
             0,
-            0,
-            1
+            1,
+            0
           ],
           "first_relevant_rank": 1
         },
@@ -557,33 +557,33 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
-            "vca_first_aid_dogs",
             "vca_common_emergencies_dogs",
+            "vca_first_aid_cats",
+            "vca_first_aid_dogs",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0000_781e8e22f54c5835",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "vca_first_aid_dogs_0000_24113fedd957adf6",
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "merck_first_aid_transport_0004_32a60d46d44631cf"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_common_emergencies_dogs_0007_42795f2fd7a7a31e",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "vca_first_aid_dogs_0002_c46964d219d79370",
+            "merck_first_aid_transport_0004_8ecf5859900429e6"
           ],
           "relevance": [
-            0,
             1,
+            0,
             0,
             0,
             1
           ],
-          "first_relevant_rank": 2
+          "first_relevant_rank": 1
         }
       ]
     },
     "vector_diverse_1": {
       "hit_rate": 1.0,
-      "mrr": 0.7916666666666667,
+      "mrr": 0.8166666666666667,
       "num_questions": 20,
       "num_results": 5,
       "questions": [
@@ -598,24 +598,24 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
-            "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0003_348d00807f586c5b"
+            "vca_first_aid_dogs_0009_6d6e447823a6dc11",
+            "vca_common_emergencies_dogs_0003_e22a96126f7d9fa1",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "merck_first_aid_transport_0003_4f633767dc636e23"
           ],
           "relevance": [
-            0,
             1,
+            0,
             1,
             1
           ],
-          "first_relevant_rank": 2
+          "first_relevant_rank": 1
         },
         {
           "id": "gt_002",
@@ -633,9 +633,9 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0003_348d00807f586c5b"
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00",
+            "merck_first_aid_transport_0003_4f633767dc636e23"
           ],
           "relevance": [
             1,
@@ -660,10 +660,10 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_first_aid_transport_0003_348d00807f586c5b"
+            "vca_common_emergencies_dogs_0007_42795f2fd7a7a31e",
+            "vca_first_aid_dogs_0008_ecba4d82ee7881b4",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00",
+            "merck_first_aid_transport_0003_4f633767dc636e23"
           ],
           "relevance": [
             0,
@@ -689,9 +689,9 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0003_348d00807f586c5b"
+            "vca_first_aid_cats_0008_feb1dab932daacaf",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "merck_first_aid_transport_0003_4f633767dc636e23"
           ],
           "relevance": [
             1,
@@ -710,24 +710,24 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
             "vca_first_aid_dogs",
             "vca_common_emergencies_dogs",
-            "merck_dog_cat_emergency",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "vca_common_emergencies_dogs_0011_d5f54e004e9bf574",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0001_e06421735e9c7839"
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "vca_first_aid_dogs_0010_3c4b5304615f03ed",
+            "vca_common_emergencies_dogs_0012_227048a83e9057a8",
+            "merck_first_aid_transport_0005_45a3389866938ef8"
           ],
           "relevance": [
-            1,
             0,
+            1,
             0,
             1
           ],
-          "first_relevant_rank": 1
+          "first_relevant_rank": 2
         },
         {
           "id": "gt_006",
@@ -744,9 +744,9 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0003_348d00807f586c5b"
+            "vca_first_aid_cats_0007_61758cc2be602c31",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "merck_first_aid_transport_0003_4f633767dc636e23"
           ],
           "relevance": [
             1,
@@ -767,15 +767,15 @@
           ],
           "retrieved_source_ids": [
             "vca_common_emergencies_dogs",
-            "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
-            "merck_first_aid_transport"
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0005_e9b4a59b40f9cb93",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_first_aid_transport_0004_32a60d46d44631cf"
+            "vca_common_emergencies_dogs_0006_92fef60ab79a47e9",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "merck_first_aid_transport_0004_8ecf5859900429e6",
+            "vca_first_aid_dogs_0010_3c4b5304615f03ed"
           ],
           "relevance": [
             0,
@@ -796,14 +796,14 @@
             "vca_first_aid_cats"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_first_aid_transport_0000_193cdb60f00b4288"
           ],
           "relevance": [
             1,
@@ -826,9 +826,9 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "merck_dog_cat_emergency_0003_9c55f316830b71dc",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_first_aid_transport_0006_8347a3f22537690b"
           ],
           "relevance": [
             1,
@@ -847,24 +847,24 @@
             "vca_first_aid_dogs"
           ],
           "retrieved_source_ids": [
+            "merck_first_aid_transport",
             "vca_common_emergencies_dogs",
-            "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
-            "merck_first_aid_transport"
+            "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0001_2c45b6201c4cc52d",
-            "vca_first_aid_dogs_0001_e75a913aafea56c5",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "merck_first_aid_transport_0004_8ecf5859900429e6",
+            "vca_common_emergencies_dogs_0003_e22a96126f7d9fa1",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "vca_first_aid_dogs_0002_c46964d219d79370"
           ],
           "relevance": [
             0,
+            0,
             1,
-            1,
-            0
+            1
           ],
-          "first_relevant_rank": 2
+          "first_relevant_rank": 3
         },
         {
           "id": "gt_011",
@@ -877,16 +877,16 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_dogs",
+            "merck_first_aid_transport",
             "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency",
-            "merck_first_aid_transport"
+            "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0001_e75a913aafea56c5",
-            "vca_common_emergencies_dogs_0001_2c45b6201c4cc52d",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_first_aid_transport_0001_e06421735e9c7839"
+            "merck_first_aid_transport_0004_8ecf5859900429e6",
+            "vca_common_emergencies_dogs_0003_e22a96126f7d9fa1",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "vca_first_aid_dogs_0003_26b6708126e5f3ad"
           ],
           "relevance": [
             1,
@@ -907,14 +907,14 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_first_aid_transport_0003_348d00807f586c5b"
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "merck_first_aid_transport_0003_4f633767dc636e23"
           ],
           "relevance": [
             1,
@@ -934,24 +934,24 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
-            "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0003_348d00807f586c5b"
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "vca_common_emergencies_dogs_0001_64984d68c6213742",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "merck_first_aid_transport_0005_45a3389866938ef8"
           ],
           "relevance": [
-            0,
             1,
+            0,
             1,
             1
           ],
-          "first_relevant_rank": 2
+          "first_relevant_rank": 1
         },
         {
           "id": "gt_014",
@@ -969,9 +969,9 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "merck_first_aid_transport_0006_8347a3f22537690b"
           ],
           "relevance": [
             1,
@@ -995,10 +995,10 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0012_0cc2bde9a08a83ed",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "merck_first_aid_transport_0001_e06421735e9c7839"
+            "vca_common_emergencies_dogs_0013_a957e1c5e0882606",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00",
+            "vca_first_aid_dogs_0002_c46964d219d79370",
+            "merck_first_aid_transport_0006_8347a3f22537690b"
           ],
           "relevance": [
             0,
@@ -1022,9 +1022,9 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "merck_first_aid_transport_0006_8347a3f22537690b"
           ],
           "relevance": [
             0,
@@ -1044,24 +1044,24 @@
             "vca_first_aid_dogs"
           ],
           "retrieved_source_ids": [
+            "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
-            "vca_common_emergencies_dogs",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0001_e75a913aafea56c5",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "vca_common_emergencies_dogs_0004_b3b1652180470a19",
-            "merck_first_aid_transport_0001_e06421735e9c7839"
+            "vca_common_emergencies_dogs_0005_9550b81357d64b3c",
+            "vca_first_aid_dogs_0003_26b6708126e5f3ad",
+            "merck_dog_cat_emergency_0005_6599ffa6ac6906e8",
+            "merck_first_aid_transport_0004_8ecf5859900429e6"
           ],
           "relevance": [
-            1,
-            1,
             0,
+            1,
+            1,
             1
           ],
-          "first_relevant_rank": 1
+          "first_relevant_rank": 2
         },
         {
           "id": "gt_018",
@@ -1079,9 +1079,9 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_first_aid_transport_0001_e06421735e9c7839"
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_first_aid_transport_0004_8ecf5859900429e6"
           ],
           "relevance": [
             1,
@@ -1106,10 +1106,10 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0007_b76485a14d9d277a",
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "vca_common_emergencies_dogs_0008_ea860ec0d2997bdf",
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "merck_first_aid_transport_0002_5e1f055f590ce663"
           ],
           "relevance": [
             1,
@@ -1129,33 +1129,33 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
-            "vca_common_emergencies_dogs",
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency",
             "merck_first_aid_transport",
+            "vca_common_emergencies_dogs",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
             "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0008_0685c5e8ef44fb73",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_first_aid_transport_0006_aceab29347cbfdf2",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65"
+            "merck_first_aid_transport_0006_8347a3f22537690b",
+            "vca_common_emergencies_dogs_0000_9835beacf1f11d5a",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f"
           ],
           "relevance": [
-            0,
+            1,
             0,
             1,
-            1,
+            0,
             0
           ],
-          "first_relevant_rank": 3
+          "first_relevant_rank": 1
         }
       ]
     },
     "hybrid_diverse_1": {
       "hit_rate": 1.0,
-      "mrr": 0.8583333333333334,
+      "mrr": 0.85,
       "num_questions": 20,
       "num_results": 5,
       "questions": [
@@ -1176,10 +1176,10 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+            "vca_first_aid_dogs_0009_6d6e447823a6dc11",
+            "vca_common_emergencies_dogs_0012_227048a83e9057a8",
+            "merck_first_aid_transport_0000_193cdb60f00b4288",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00"
           ],
           "relevance": [
             1,
@@ -1205,9 +1205,9 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "merck_first_aid_transport_0000_193cdb60f00b4288"
           ],
           "relevance": [
             1,
@@ -1232,10 +1232,10 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "vca_common_emergencies_dogs_0004_b3b1652180470a19",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "vca_first_aid_dogs_0008_ecba4d82ee7881b4",
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_first_aid_transport_0003_4f633767dc636e23"
           ],
           "relevance": [
             1,
@@ -1261,9 +1261,9 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "merck_first_aid_transport_0003_348d00807f586c5b"
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "vca_first_aid_cats_0008_feb1dab932daacaf",
+            "merck_first_aid_transport_0003_4f633767dc636e23"
           ],
           "relevance": [
             1,
@@ -1284,20 +1284,20 @@
           "retrieved_source_ids": [
             "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
-            "vca_common_emergencies_dogs",
-            "merck_first_aid_transport"
+            "merck_first_aid_transport",
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_common_emergencies_dogs_0013_df0c2fdd055adc88",
-            "merck_first_aid_transport_0001_e06421735e9c7839"
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "merck_first_aid_transport_0001_d1fc338436711a28",
+            "vca_common_emergencies_dogs_0000_9835beacf1f11d5a"
           ],
           "relevance": [
             1,
             0,
-            0,
-            1
+            1,
+            0
           ],
           "first_relevant_rank": 1
         },
@@ -1316,9 +1316,9 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "vca_first_aid_cats_0007_61758cc2be602c31",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "merck_first_aid_transport_0002_5e1f055f590ce663"
           ],
           "relevance": [
             1,
@@ -1340,14 +1340,14 @@
           "retrieved_source_ids": [
             "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency",
-            "vca_first_aid_dogs",
-            "merck_first_aid_transport"
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0005_e9b4a59b40f9cb93",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "vca_common_emergencies_dogs_0006_92fef60ab79a47e9",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "merck_first_aid_transport_0005_45a3389866938ef8",
+            "vca_first_aid_dogs_0002_c46964d219d79370"
           ],
           "relevance": [
             0,
@@ -1368,14 +1368,14 @@
             "vca_first_aid_cats"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
-            "merck_first_aid_transport"
+            "merck_first_aid_transport",
+            "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "merck_first_aid_transport_0000_193cdb60f00b4288",
+            "vca_first_aid_cats_0002_13ae8367d402e764"
           ],
           "relevance": [
             1,
@@ -1398,9 +1398,9 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_first_aid_transport_0001_e06421735e9c7839"
+            "merck_dog_cat_emergency_0006_7f37b8f4328ee054",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_first_aid_transport_0001_d1fc338436711a28"
           ],
           "relevance": [
             1,
@@ -1419,24 +1419,24 @@
             "vca_first_aid_dogs"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_dogs",
             "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "vca_common_emergencies_dogs_0001_2c45b6201c4cc52d",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "vca_common_emergencies_dogs_0003_e22a96126f7d9fa1",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "vca_first_aid_dogs_0011_7af85b82ed97a48b",
+            "merck_first_aid_transport_0004_8ecf5859900429e6"
           ],
           "relevance": [
-            1,
             0,
+            1,
             1,
             0
           ],
-          "first_relevant_rank": 1
+          "first_relevant_rank": 2
         },
         {
           "id": "gt_011",
@@ -1449,24 +1449,24 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
-            "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
-            "merck_first_aid_transport"
+            "merck_first_aid_transport",
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0001_2c45b6201c4cc52d",
-            "vca_first_aid_dogs_0001_e75a913aafea56c5",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "vca_first_aid_dogs_0002_c46964d219d79370",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_first_aid_transport_0000_193cdb60f00b4288",
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce"
           ],
           "relevance": [
-            0,
             1,
             1,
-            1
+            1,
+            0
           ],
-          "first_relevant_rank": 2
+          "first_relevant_rank": 1
         },
         {
           "id": "gt_012",
@@ -1484,9 +1484,9 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_first_aid_transport_0000_193cdb60f00b4288"
           ],
           "relevance": [
             1,
@@ -1512,10 +1512,10 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_common_emergencies_dogs_0011_d5f54e004e9bf574",
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "merck_first_aid_transport_0001_e06421735e9c7839"
+            "vca_first_aid_dogs_0005_b4c690ce4c1856bd",
+            "vca_common_emergencies_dogs_0001_64984d68c6213742",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "merck_first_aid_transport_0001_d1fc338436711a28"
           ],
           "relevance": [
             1,
@@ -1536,14 +1536,14 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "vca_first_aid_cats_0005_7e2069bf82401c97",
+            "merck_first_aid_transport_0002_5e1f055f590ce663"
           ],
           "relevance": [
             1,
@@ -1562,23 +1562,23 @@
           ],
           "retrieved_source_ids": [
             "vca_common_emergencies_dogs",
-            "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0008_0685c5e8ef44fb73",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00",
+            "vca_first_aid_dogs_0002_c46964d219d79370",
+            "merck_first_aid_transport_0004_8ecf5859900429e6"
           ],
           "relevance": [
             0,
-            0,
             1,
+            0,
             0
           ],
-          "first_relevant_rank": 3
+          "first_relevant_rank": 2
         },
         {
           "id": "gt_016",
@@ -1594,9 +1594,9 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_first_aid_transport_0003_348d00807f586c5b"
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_first_aid_transport_0003_4f633767dc636e23"
           ],
           "relevance": [
             0,
@@ -1616,24 +1616,24 @@
             "vca_first_aid_dogs"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency",
             "vca_common_emergencies_dogs",
-            "merck_first_aid_transport"
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_common_emergencies_dogs_0000_0aea31e5ae5c83f9",
-            "merck_first_aid_transport_0004_32a60d46d44631cf"
+            "vca_common_emergencies_dogs_0006_92fef60ab79a47e9",
+            "merck_first_aid_transport_0004_8ecf5859900429e6",
+            "vca_first_aid_dogs_0002_c46964d219d79370",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177"
           ],
           "relevance": [
-            1,
-            1,
             0,
+            1,
+            1,
             1
           ],
-          "first_relevant_rank": 1
+          "first_relevant_rank": 2
         },
         {
           "id": "gt_018",
@@ -1651,9 +1651,9 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_first_aid_transport_0001_d1fc338436711a28"
           ],
           "relevance": [
             1,
@@ -1674,20 +1674,20 @@
           "retrieved_source_ids": [
             "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
-            "merck_first_aid_transport",
-            "merck_dog_cat_emergency"
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "merck_first_aid_transport_0001_e06421735e9c7839",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce",
+            "vca_first_aid_dogs_0003_26b6708126e5f3ad",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "merck_first_aid_transport_0001_d1fc338436711a28"
           ],
           "relevance": [
             1,
             0,
-            0,
-            1
+            1,
+            0
           ],
           "first_relevant_rank": 1
         },
@@ -1702,32 +1702,32 @@
           ],
           "retrieved_source_ids": [
             "vca_common_emergencies_dogs",
-            "vca_first_aid_dogs",
+            "merck_first_aid_transport",
             "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
-            "merck_first_aid_transport"
+            "vca_first_aid_dogs",
+            "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "vca_first_aid_cats_0000_781e8e22f54c5835",
-            "merck_first_aid_transport_0005_35d31d19a5140ee2"
+            "vca_common_emergencies_dogs_0004_f8f227fee8dd60b3",
+            "merck_first_aid_transport_0005_45a3389866938ef8",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_dogs_0002_c46964d219d79370",
+            "vca_first_aid_cats_0002_13ae8367d402e764"
           ],
           "relevance": [
             0,
-            0,
+            1,
             1,
             0,
-            1
+            0
           ],
-          "first_relevant_rank": 3
+          "first_relevant_rank": 2
         }
       ]
     },
     "keyword_diverse_2": {
       "hit_rate": 1.0,
-      "mrr": 0.8791666666666667,
+      "mrr": 0.9416666666666667,
       "num_questions": 20,
       "num_results": 5,
       "questions": [
@@ -1742,25 +1742,25 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_dogs",
             "merck_first_aid_transport",
-            "vca_first_aid_dogs",
             "vca_common_emergencies_dogs",
-            "merck_first_aid_transport"
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e",
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "vca_common_emergencies_dogs_0008_0685c5e8ef44fb73",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "merck_first_aid_transport_0000_193cdb60f00b4288",
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "vca_first_aid_dogs_0002_c46964d219d79370",
+            "vca_first_aid_dogs_0009_6d6e447823a6dc11",
+            "vca_common_emergencies_dogs_0006_92fef60ab79a47e9"
           ],
           "relevance": [
             1,
-            1,
-            1,
             0,
-            1
+            1,
+            1,
+            0
           ],
           "first_relevant_rank": 1
         },
@@ -1776,17 +1776,17 @@
           ],
           "retrieved_source_ids": [
             "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
             "vca_first_aid_cats",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "vca_first_aid_cats_0002_33e45777e899e904",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "vca_first_aid_cats_0000_6a47bb477d2e9a26",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_first_aid_transport_0000_193cdb60f00b4288"
           ],
           "relevance": [
             1,
@@ -1808,24 +1808,24 @@
           ],
           "retrieved_source_ids": [
             "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
-            "vca_common_emergencies_dogs",
-            "vca_common_emergencies_dogs",
-            "merck_dog_cat_emergency"
+            "merck_dog_cat_emergency",
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_common_emergencies_dogs_0002_622ed95a1a703602",
-            "vca_common_emergencies_dogs_0008_0685c5e8ef44fb73",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f"
+            "vca_first_aid_dogs_0008_ecba4d82ee7881b4",
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce",
+            "vca_first_aid_dogs_0009_6d6e447823a6dc11",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023"
           ],
           "relevance": [
             1,
+            0,
             1,
-            0,
-            0,
-            1
+            1,
+            0
           ],
           "first_relevant_rank": 1
         },
@@ -1841,17 +1841,17 @@
           ],
           "retrieved_source_ids": [
             "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
             "merck_first_aid_transport",
-            "vca_first_aid_cats",
-            "merck_first_aid_transport"
+            "merck_first_aid_transport",
+            "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_first_aid_transport_0003_348d00807f586c5b",
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "merck_first_aid_transport_0003_4f633767dc636e23",
+            "merck_first_aid_transport_0002_5e1f055f590ce663",
+            "vca_first_aid_cats_0008_feb1dab932daacaf"
           ],
           "relevance": [
             1,
@@ -1873,24 +1873,24 @@
           ],
           "retrieved_source_ids": [
             "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
             "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
-            "merck_first_aid_transport",
-            "merck_first_aid_transport"
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0001_e06421735e9c7839",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_dogs_0008_ecba4d82ee7881b4",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "vca_common_emergencies_dogs_0010_323c096b3601cc58"
           ],
           "relevance": [
             1,
-            1,
             0,
             1,
-            1
+            0,
+            0
           ],
           "first_relevant_rank": 1
         },
@@ -1904,27 +1904,27 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "merck_first_aid_transport",
             "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
             "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_first_aid_transport_0002_5e1f055f590ce663",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "vca_first_aid_cats_0008_feb1dab932daacaf",
+            "merck_dog_cat_emergency_0007_9f138b659678480a"
           ],
           "relevance": [
-            1,
-            1,
-            1,
             0,
+            1,
+            1,
+            1,
             0
           ],
-          "first_relevant_rank": 1
+          "first_relevant_rank": 2
         },
         {
           "id": "gt_007",
@@ -1938,26 +1938,26 @@
           ],
           "retrieved_source_ids": [
             "vca_common_emergencies_dogs",
-            "merck_dog_cat_emergency",
             "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency",
-            "merck_first_aid_transport"
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0005_e9b4a59b40f9cb93",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_common_emergencies_dogs_0004_b3b1652180470a19",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_first_aid_transport_0006_aceab29347cbfdf2"
+            "vca_common_emergencies_dogs_0005_9550b81357d64b3c",
+            "vca_common_emergencies_dogs_0006_92fef60ab79a47e9",
+            "merck_dog_cat_emergency_0003_9c55f316830b71dc",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "vca_first_aid_dogs_0003_26b6708126e5f3ad"
           ],
           "relevance": [
             0,
-            1,
             0,
+            1,
             1,
             1
           ],
-          "first_relevant_rank": 2
+          "first_relevant_rank": 3
         },
         {
           "id": "gt_008",
@@ -1970,18 +1970,18 @@
             "vca_first_aid_cats"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
-            "merck_first_aid_transport",
-            "merck_dog_cat_emergency"
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "vca_first_aid_cats_0002_33e45777e899e904",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_first_aid_transport_0000_193cdb60f00b4288"
           ],
           "relevance": [
             1,
@@ -2003,16 +2003,16 @@
           "retrieved_source_ids": [
             "merck_dog_cat_emergency",
             "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
             "merck_first_aid_transport",
-            "merck_first_aid_transport"
+            "vca_first_aid_cats",
+            "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "merck_first_aid_transport_0001_e06421735e9c7839",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "merck_first_aid_transport_0001_d1fc338436711a28",
+            "vca_first_aid_cats_0007_61758cc2be602c31",
+            "vca_first_aid_cats_0002_13ae8367d402e764"
           ],
           "relevance": [
             1,
@@ -2033,23 +2033,23 @@
             "vca_first_aid_dogs"
           ],
           "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
             "vca_first_aid_dogs",
             "vca_common_emergencies_dogs",
-            "vca_first_aid_dogs",
             "vca_common_emergencies_dogs",
-            "merck_dog_cat_emergency"
+            "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "vca_common_emergencies_dogs_0002_622ed95a1a703602",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_common_emergencies_dogs_0000_0aea31e5ae5c83f9",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_dogs_0011_7af85b82ed97a48b",
+            "vca_common_emergencies_dogs_0014_1c4b657a28de0917",
+            "vca_common_emergencies_dogs_0010_323c096b3601cc58",
+            "vca_first_aid_dogs_0002_c46964d219d79370"
           ],
           "relevance": [
             1,
-            0,
             1,
+            0,
             0,
             1
           ],
@@ -2068,22 +2068,22 @@
           "retrieved_source_ids": [
             "merck_dog_cat_emergency",
             "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
             "vca_common_emergencies_dogs",
+            "merck_first_aid_transport",
             "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "vca_first_aid_dogs_0000_24113fedd957adf6",
-            "vca_common_emergencies_dogs_0001_2c45b6201c4cc52d",
-            "vca_common_emergencies_dogs_0009_5b0d0c69bb47d17a"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_dogs_0002_c46964d219d79370",
+            "vca_common_emergencies_dogs_0001_64984d68c6213742",
+            "merck_first_aid_transport_0000_193cdb60f00b4288",
+            "vca_common_emergencies_dogs_0000_9835beacf1f11d5a"
           ],
           "relevance": [
             1,
             1,
-            1,
             0,
+            1,
             0
           ],
           "first_relevant_rank": 1
@@ -2099,18 +2099,18 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
             "merck_first_aid_transport",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "vca_first_aid_cats_0000_781e8e22f54c5835",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "merck_first_aid_transport_0000_193cdb60f00b4288",
+            "merck_first_aid_transport_0002_5e1f055f590ce663"
           ],
           "relevance": [
             1,
@@ -2135,22 +2135,22 @@
             "vca_first_aid_dogs",
             "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency",
-            "vca_first_aid_dogs",
-            "vca_common_emergencies_dogs"
+            "vca_common_emergencies_dogs",
+            "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_common_emergencies_dogs_0013_df0c2fdd055adc88",
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "vca_first_aid_dogs_0002_90ae701483101ce9",
-            "vca_common_emergencies_dogs_0004_b3b1652180470a19"
+            "vca_first_aid_dogs_0005_b4c690ce4c1856bd",
+            "vca_common_emergencies_dogs_0014_1c4b657a28de0917",
+            "merck_dog_cat_emergency_0006_7f37b8f4328ee054",
+            "vca_common_emergencies_dogs_0005_9550b81357d64b3c",
+            "vca_first_aid_dogs_0002_c46964d219d79370"
           ],
           "relevance": [
             1,
             0,
             1,
-            1,
-            0
+            0,
+            1
           ],
           "first_relevant_rank": 1
         },
@@ -2172,11 +2172,11 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0002_33e45777e899e904",
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "vca_first_aid_cats_0005_7e2069bf82401c97",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "vca_first_aid_cats_0009_a7eda411587ec002",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_first_aid_transport_0002_5e1f055f590ce663"
           ],
           "relevance": [
             1,
@@ -2196,27 +2196,27 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
             "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
-            "merck_dog_cat_emergency",
-            "merck_first_aid_transport"
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_common_emergencies_dogs_0008_0685c5e8ef44fb73",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "vca_first_aid_dogs_0010_3c4b5304615f03ed",
+            "vca_common_emergencies_dogs_0010_323c096b3601cc58"
           ],
           "relevance": [
-            0,
-            0,
-            0,
             1,
+            1,
+            0,
+            0,
             0
           ],
-          "first_relevant_rank": 4
+          "first_relevant_rank": 1
         },
         {
           "id": "gt_016",
@@ -2228,23 +2228,23 @@
           ],
           "retrieved_source_ids": [
             "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
-            "merck_first_aid_transport"
+            "merck_first_aid_transport",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "vca_first_aid_cats_0000_781e8e22f54c5835",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_first_aid_transport_0003_348d00807f586c5b"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_first_aid_transport_0003_4f633767dc636e23",
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "vca_first_aid_cats_0002_13ae8367d402e764"
           ],
           "relevance": [
             1,
-            0,
-            0,
             1,
+            0,
+            0,
             0
           ],
           "first_relevant_rank": 1
@@ -2260,27 +2260,27 @@
             "vca_first_aid_dogs"
           ],
           "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
             "vca_common_emergencies_dogs",
             "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency",
-            "merck_dog_cat_emergency",
-            "vca_first_aid_dogs"
+            "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0012_0cc2bde9a08a83ed",
-            "vca_common_emergencies_dogs_0007_b76485a14d9d277a",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "vca_first_aid_dogs_0000_24113fedd957adf6"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_common_emergencies_dogs_0013_a957e1c5e0882606",
+            "vca_common_emergencies_dogs_0000_9835beacf1f11d5a",
+            "merck_dog_cat_emergency_0003_9c55f316830b71dc",
+            "merck_first_aid_transport_0004_8ecf5859900429e6"
           ],
           "relevance": [
-            0,
-            0,
             1,
+            0,
+            0,
             1,
             1
           ],
-          "first_relevant_rank": 3
+          "first_relevant_rank": 1
         },
         {
           "id": "gt_018",
@@ -2293,18 +2293,18 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_first_aid_transport_0001_d1fc338436711a28"
           ],
           "relevance": [
             1,
@@ -2328,21 +2328,21 @@
             "vca_common_emergencies_dogs",
             "vca_common_emergencies_dogs",
             "merck_first_aid_transport",
-            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
             "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "vca_common_emergencies_dogs_0002_622ed95a1a703602",
-            "merck_first_aid_transport_0001_e06421735e9c7839",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c"
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce",
+            "merck_first_aid_transport_0001_d1fc338436711a28",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_dogs_0007_117100b6f9adafe9"
           ],
           "relevance": [
             1,
             1,
             0,
-            0,
+            1,
             0
           ],
           "first_relevant_rank": 1
@@ -2357,33 +2357,33 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
-            "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs",
             "vca_first_aid_cats",
-            "vca_common_emergencies_dogs"
+            "vca_common_emergencies_dogs",
+            "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0000_781e8e22f54c5835",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "vca_first_aid_dogs_0000_24113fedd957adf6",
-            "vca_first_aid_cats_0002_33e45777e899e904",
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_common_emergencies_dogs_0007_42795f2fd7a7a31e",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "vca_common_emergencies_dogs_0005_9550b81357d64b3c",
+            "vca_first_aid_dogs_0002_c46964d219d79370"
           ],
           "relevance": [
-            0,
             1,
+            0,
             0,
             0,
             0
           ],
-          "first_relevant_rank": 2
+          "first_relevant_rank": 1
         }
       ]
     },
     "vector_diverse_2": {
       "hit_rate": 1.0,
-      "mrr": 0.7541666666666667,
+      "mrr": 0.8083333333333333,
       "num_questions": 20,
       "num_results": 5,
       "questions": [
@@ -2398,27 +2398,27 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
             "vca_common_emergencies_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
             "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "vca_common_emergencies_dogs_0011_d5f54e004e9bf574",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+            "vca_first_aid_dogs_0009_6d6e447823a6dc11",
+            "vca_first_aid_dogs_0008_ecba4d82ee7881b4",
+            "vca_common_emergencies_dogs_0003_e22a96126f7d9fa1",
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce",
+            "merck_dog_cat_emergency_0007_9f138b659678480a"
           ],
           "relevance": [
+            1,
+            1,
             0,
-            1,
-            1,
             0,
             1
           ],
-          "first_relevant_rank": 2
+          "first_relevant_rank": 1
         },
         {
           "id": "gt_002",
@@ -2438,11 +2438,11 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_first_aid_transport_0003_348d00807f586c5b"
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "vca_first_aid_cats_0007_61758cc2be602c31",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "merck_first_aid_transport_0003_4f633767dc636e23"
           ],
           "relevance": [
             1,
@@ -2465,23 +2465,23 @@
           "retrieved_source_ids": [
             "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
-            "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
-            "merck_dog_cat_emergency"
+            "merck_dog_cat_emergency",
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "vca_common_emergencies_dogs_0011_d5f54e004e9bf574",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923"
+            "vca_common_emergencies_dogs_0007_42795f2fd7a7a31e",
+            "vca_first_aid_dogs_0008_ecba4d82ee7881b4",
+            "vca_first_aid_dogs_0009_6d6e447823a6dc11",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00",
+            "vca_common_emergencies_dogs_0012_227048a83e9057a8"
           ],
           "relevance": [
             0,
             1,
-            0,
             1,
-            1
+            1,
+            0
           ],
           "first_relevant_rank": 2
         },
@@ -2503,11 +2503,11 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_first_aid_transport_0003_348d00807f586c5b"
+            "vca_first_aid_cats_0008_feb1dab932daacaf",
+            "vca_first_aid_cats_0007_61758cc2be602c31",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00",
+            "merck_first_aid_transport_0003_4f633767dc636e23"
           ],
           "relevance": [
             1,
@@ -2528,27 +2528,27 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
             "vca_first_aid_dogs",
             "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
-            "merck_dog_cat_emergency",
             "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "vca_common_emergencies_dogs_0011_d5f54e004e9bf574",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45"
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "vca_first_aid_dogs_0010_3c4b5304615f03ed",
+            "vca_common_emergencies_dogs_0012_227048a83e9057a8",
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "vca_common_emergencies_dogs_0000_9835beacf1f11d5a"
           ],
           "relevance": [
-            1,
             0,
             1,
             0,
+            1,
             0
           ],
-          "first_relevant_rank": 1
+          "first_relevant_rank": 2
         },
         {
           "id": "gt_006",
@@ -2561,22 +2561,22 @@
           ],
           "retrieved_source_ids": [
             "vca_first_aid_cats",
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
             "merck_first_aid_transport",
             "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0003_348d00807f586c5b",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923"
+            "vca_first_aid_cats_0007_61758cc2be602c31",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "vca_first_aid_cats_0008_feb1dab932daacaf",
+            "merck_first_aid_transport_0003_4f633767dc636e23",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00"
           ],
           "relevance": [
             1,
-            1,
             0,
+            1,
             1,
             0
           ],
@@ -2594,26 +2594,26 @@
           ],
           "retrieved_source_ids": [
             "vca_common_emergencies_dogs",
-            "vca_common_emergencies_dogs",
-            "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
+            "vca_common_emergencies_dogs",
+            "merck_first_aid_transport",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0005_e9b4a59b40f9cb93",
-            "vca_common_emergencies_dogs_0008_0685c5e8ef44fb73",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_first_aid_transport_0004_32a60d46d44631cf"
+            "vca_common_emergencies_dogs_0006_92fef60ab79a47e9",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "vca_common_emergencies_dogs_0004_f8f227fee8dd60b3",
+            "merck_first_aid_transport_0004_8ecf5859900429e6",
+            "merck_first_aid_transport_0005_45a3389866938ef8"
           ],
           "relevance": [
             0,
-            0,
             1,
+            0,
             1,
             1
           ],
-          "first_relevant_rank": 3
+          "first_relevant_rank": 2
         },
         {
           "id": "gt_008",
@@ -2626,18 +2626,18 @@
             "vca_first_aid_cats"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
-            "merck_dog_cat_emergency",
-            "merck_first_aid_transport"
+            "vca_first_aid_cats",
+            "merck_first_aid_transport",
+            "merck_first_aid_transport",
+            "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_first_aid_transport_0000_193cdb60f00b4288",
+            "merck_first_aid_transport_0003_4f633767dc636e23",
+            "vca_first_aid_cats_0009_a7eda411587ec002"
           ],
           "relevance": [
             1,
@@ -2664,11 +2664,11 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "merck_dog_cat_emergency_0003_9c55f316830b71dc",
+            "merck_dog_cat_emergency_0006_7f37b8f4328ee054",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_first_aid_transport_0006_8347a3f22537690b"
           ],
           "relevance": [
             1,
@@ -2689,27 +2689,27 @@
             "vca_first_aid_dogs"
           ],
           "retrieved_source_ids": [
+            "merck_first_aid_transport",
             "vca_common_emergencies_dogs",
-            "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
-            "vca_first_aid_dogs",
-            "vca_common_emergencies_dogs"
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0001_2c45b6201c4cc52d",
-            "vca_first_aid_dogs_0001_e75a913aafea56c5",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "vca_first_aid_dogs_0008_e793f4e88e160cd2",
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45"
+            "merck_first_aid_transport_0004_8ecf5859900429e6",
+            "vca_common_emergencies_dogs_0003_e22a96126f7d9fa1",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "merck_first_aid_transport_0000_193cdb60f00b4288"
           ],
           "relevance": [
             0,
-            1,
+            0,
             1,
             1,
             0
           ],
-          "first_relevant_rank": 2
+          "first_relevant_rank": 3
         },
         {
           "id": "gt_011",
@@ -2722,18 +2722,18 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_dogs",
+            "merck_first_aid_transport",
             "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency",
-            "merck_first_aid_transport",
+            "merck_dog_cat_emergency",
             "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0001_e75a913aafea56c5",
-            "vca_common_emergencies_dogs_0001_2c45b6201c4cc52d",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_first_aid_transport_0001_e06421735e9c7839",
-            "vca_common_emergencies_dogs_0002_622ed95a1a703602"
+            "merck_first_aid_transport_0004_8ecf5859900429e6",
+            "vca_common_emergencies_dogs_0003_e22a96126f7d9fa1",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_dog_cat_emergency_0005_6599ffa6ac6906e8",
+            "vca_common_emergencies_dogs_0005_9550b81357d64b3c"
           ],
           "relevance": [
             1,
@@ -2755,18 +2755,18 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
             "vca_first_aid_cats",
             "merck_dog_cat_emergency",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "vca_first_aid_cats_0002_33e45777e899e904",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_first_aid_transport_0003_348d00807f586c5b"
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "merck_first_aid_transport_0003_4f633767dc636e23"
           ],
           "relevance": [
             1,
@@ -2788,27 +2788,27 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
-            "vca_common_emergencies_dogs",
-            "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
             "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "vca_common_emergencies_dogs_0011_d5f54e004e9bf574",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "vca_common_emergencies_dogs_0001_64984d68c6213742",
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce",
+            "vca_first_aid_dogs_0005_b4c690ce4c1856bd",
+            "merck_dog_cat_emergency_0007_9f138b659678480a"
           ],
           "relevance": [
-            0,
-            0,
             1,
+            0,
+            0,
             1,
             1
           ],
-          "first_relevant_rank": 3
+          "first_relevant_rank": 1
         },
         {
           "id": "gt_014",
@@ -2823,16 +2823,16 @@
           "retrieved_source_ids": [
             "vca_first_aid_cats",
             "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_first_aid_transport_0006_8347a3f22537690b"
           ],
           "relevance": [
             1,
@@ -2853,26 +2853,26 @@
           ],
           "retrieved_source_ids": [
             "vca_common_emergencies_dogs",
+            "merck_dog_cat_emergency",
             "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency",
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency"
+            "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0012_0cc2bde9a08a83ed",
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+            "vca_common_emergencies_dogs_0013_a957e1c5e0882606",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00",
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "merck_dog_cat_emergency_0005_6599ffa6ac6906e8",
+            "vca_first_aid_dogs_0002_c46964d219d79370"
           ],
           "relevance": [
             0,
-            0,
             1,
             0,
-            1
+            1,
+            0
           ],
-          "first_relevant_rank": 3
+          "first_relevant_rank": 2
         },
         {
           "id": "gt_016",
@@ -2884,26 +2884,26 @@
           ],
           "retrieved_source_ids": [
             "vca_first_aid_cats",
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "vca_first_aid_cats_0007_61758cc2be602c31",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_first_aid_transport_0006_8347a3f22537690b"
           ],
           "relevance": [
             0,
-            0,
             1,
+            0,
             1,
             0
           ],
-          "first_relevant_rank": 3
+          "first_relevant_rank": 2
         },
         {
           "id": "gt_017",
@@ -2916,27 +2916,27 @@
             "vca_first_aid_dogs"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency",
             "vca_common_emergencies_dogs",
-            "vca_common_emergencies_dogs"
+            "vca_common_emergencies_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0001_e75a913aafea56c5",
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "vca_common_emergencies_dogs_0004_b3b1652180470a19",
-            "vca_common_emergencies_dogs_0001_2c45b6201c4cc52d"
+            "vca_common_emergencies_dogs_0005_9550b81357d64b3c",
+            "vca_common_emergencies_dogs_0003_e22a96126f7d9fa1",
+            "vca_first_aid_dogs_0003_26b6708126e5f3ad",
+            "vca_first_aid_dogs_0002_c46964d219d79370",
+            "merck_dog_cat_emergency_0005_6599ffa6ac6906e8"
           ],
           "relevance": [
-            1,
-            1,
-            1,
             0,
-            0
+            0,
+            1,
+            1,
+            1
           ],
-          "first_relevant_rank": 1
+          "first_relevant_rank": 3
         },
         {
           "id": "gt_018",
@@ -2950,17 +2950,17 @@
           ],
           "retrieved_source_ids": [
             "vca_first_aid_cats",
-            "merck_dog_cat_emergency",
             "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
             "merck_dog_cat_emergency",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "vca_first_aid_cats_0002_33e45777e899e904",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0001_e06421735e9c7839"
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00",
+            "merck_first_aid_transport_0004_8ecf5859900429e6"
           ],
           "relevance": [
             1,
@@ -2984,22 +2984,22 @@
             "vca_common_emergencies_dogs",
             "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency"
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0007_b76485a14d9d277a",
-            "vca_common_emergencies_dogs_0009_5b0d0c69bb47d17a",
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+            "vca_common_emergencies_dogs_0008_ea860ec0d2997bdf",
+            "vca_common_emergencies_dogs_0010_323c096b3601cc58",
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "vca_first_aid_dogs_0011_7af85b82ed97a48b"
           ],
           "relevance": [
             1,
             1,
             0,
-            0,
-            1
+            1,
+            0
           ],
           "first_relevant_rank": 1
         },
@@ -3013,33 +3013,33 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
+            "merck_first_aid_transport",
             "vca_common_emergencies_dogs",
+            "merck_first_aid_transport",
             "vca_common_emergencies_dogs",
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency",
             "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0008_0685c5e8ef44fb73",
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f"
+            "merck_first_aid_transport_0006_8347a3f22537690b",
+            "vca_common_emergencies_dogs_0000_9835beacf1f11d5a",
+            "merck_first_aid_transport_0005_45a3389866938ef8",
+            "vca_common_emergencies_dogs_0004_f8f227fee8dd60b3",
+            "merck_dog_cat_emergency_0007_9f138b659678480a"
           ],
           "relevance": [
-            0,
-            0,
+            1,
             0,
             1,
+            0,
             1
           ],
-          "first_relevant_rank": 4
+          "first_relevant_rank": 1
         }
       ]
     },
     "hybrid_diverse_2": {
       "hit_rate": 1.0,
-      "mrr": 0.8391666666666667,
+      "mrr": 0.8166666666666667,
       "num_questions": 20,
       "num_results": 5,
       "questions": [
@@ -3061,11 +3061,11 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "vca_common_emergencies_dogs_0011_d5f54e004e9bf574",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "vca_first_aid_dogs_0009_6d6e447823a6dc11",
+            "vca_first_aid_dogs_0008_ecba4d82ee7881b4",
+            "vca_common_emergencies_dogs_0012_227048a83e9057a8",
+            "vca_common_emergencies_dogs_0001_64984d68c6213742",
+            "merck_first_aid_transport_0000_193cdb60f00b4288"
           ],
           "relevance": [
             1,
@@ -3088,17 +3088,17 @@
           ],
           "retrieved_source_ids": [
             "vca_first_aid_cats",
-            "merck_dog_cat_emergency",
             "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
             "merck_dog_cat_emergency",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "vca_first_aid_cats_0007_61758cc2be602c31",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_first_aid_transport_0000_193cdb60f00b4288"
           ],
           "relevance": [
             1,
@@ -3126,11 +3126,11 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_common_emergencies_dogs_0004_b3b1652180470a19",
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f"
+            "vca_first_aid_dogs_0008_ecba4d82ee7881b4",
+            "vca_first_aid_dogs_0009_6d6e447823a6dc11",
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8"
           ],
           "relevance": [
             1,
@@ -3156,14 +3156,14 @@
             "vca_first_aid_cats",
             "vca_first_aid_cats",
             "merck_first_aid_transport",
-            "merck_first_aid_transport"
+            "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_first_aid_transport_0003_348d00807f586c5b",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60"
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "vca_first_aid_cats_0008_feb1dab932daacaf",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_first_aid_transport_0003_4f633767dc636e23",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177"
           ],
           "relevance": [
             1,
@@ -3185,24 +3185,24 @@
           ],
           "retrieved_source_ids": [
             "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
-            "vca_common_emergencies_dogs",
-            "merck_first_aid_transport"
+            "vca_first_aid_dogs",
+            "merck_first_aid_transport",
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_common_emergencies_dogs_0013_df0c2fdd055adc88",
-            "merck_first_aid_transport_0001_e06421735e9c7839"
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "vca_first_aid_dogs_0010_3c4b5304615f03ed",
+            "merck_first_aid_transport_0001_d1fc338436711a28",
+            "vca_common_emergencies_dogs_0000_9835beacf1f11d5a"
           ],
           "relevance": [
             1,
+            0,
             1,
-            0,
-            0,
-            1
+            1,
+            0
           ],
           "first_relevant_rank": 1
         },
@@ -3223,11 +3223,11 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923"
+            "vca_first_aid_cats_0007_61758cc2be602c31",
+            "vca_first_aid_cats_0008_feb1dab932daacaf",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "merck_first_aid_transport_0002_5e1f055f590ce663",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177"
           ],
           "relevance": [
             1,
@@ -3250,26 +3250,26 @@
           ],
           "retrieved_source_ids": [
             "vca_common_emergencies_dogs",
-            "merck_dog_cat_emergency",
             "vca_common_emergencies_dogs",
-            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
             "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0005_e9b4a59b40f9cb93",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "vca_common_emergencies_dogs_0007_b76485a14d9d277a",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+            "vca_common_emergencies_dogs_0006_92fef60ab79a47e9",
+            "vca_common_emergencies_dogs_0005_9550b81357d64b3c",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "merck_first_aid_transport_0005_45a3389866938ef8",
+            "merck_dog_cat_emergency_0003_9c55f316830b71dc"
           ],
           "relevance": [
             0,
-            1,
             0,
+            1,
             1,
             1
           ],
-          "first_relevant_rank": 2
+          "first_relevant_rank": 3
         },
         {
           "id": "gt_008",
@@ -3282,18 +3282,18 @@
             "vca_first_aid_cats"
           ],
           "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
             "vca_first_aid_cats",
             "vca_first_aid_cats",
-            "merck_dog_cat_emergency",
-            "merck_dog_cat_emergency",
-            "merck_first_aid_transport"
+            "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "merck_first_aid_transport_0000_193cdb60f00b4288",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a"
           ],
           "relevance": [
             1,
@@ -3320,11 +3320,11 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "merck_first_aid_transport_0001_e06421735e9c7839"
+            "merck_dog_cat_emergency_0006_7f37b8f4328ee054",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_first_aid_transport_0001_d1fc338436711a28"
           ],
           "relevance": [
             1,
@@ -3345,27 +3345,27 @@
             "vca_first_aid_dogs"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
             "vca_common_emergencies_dogs",
             "vca_common_emergencies_dogs",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
             "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_common_emergencies_dogs_0001_2c45b6201c4cc52d",
-            "vca_common_emergencies_dogs_0000_0aea31e5ae5c83f9",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f"
+            "vca_common_emergencies_dogs_0003_e22a96126f7d9fa1",
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "vca_first_aid_dogs_0011_7af85b82ed97a48b",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177"
           ],
           "relevance": [
-            1,
-            1,
             0,
             0,
+            1,
+            1,
             1
           ],
-          "first_relevant_rank": 1
+          "first_relevant_rank": 3
         },
         {
           "id": "gt_011",
@@ -3378,27 +3378,27 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
-            "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
             "vca_common_emergencies_dogs",
-            "merck_dog_cat_emergency"
+            "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0001_2c45b6201c4cc52d",
-            "vca_first_aid_dogs_0001_e75a913aafea56c5",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "vca_common_emergencies_dogs_0002_622ed95a1a703602",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f"
+            "vca_first_aid_dogs_0002_c46964d219d79370",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_first_aid_transport_0000_193cdb60f00b4288",
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce",
+            "vca_first_aid_dogs_0003_26b6708126e5f3ad"
           ],
           "relevance": [
-            0,
+            1,
             1,
             1,
             0,
             1
           ],
-          "first_relevant_rank": 2
+          "first_relevant_rank": 1
         },
         {
           "id": "gt_012",
@@ -3414,15 +3414,15 @@
             "vca_first_aid_cats",
             "vca_first_aid_cats",
             "merck_dog_cat_emergency",
-            "merck_dog_cat_emergency",
-            "merck_first_aid_transport"
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "vca_first_aid_cats_0002_33e45777e899e904",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_first_aid_transport_0000_193cdb60f00b4288",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8"
           ],
           "relevance": [
             1,
@@ -3445,23 +3445,23 @@
           ],
           "retrieved_source_ids": [
             "vca_first_aid_dogs",
-            "vca_common_emergencies_dogs",
-            "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_common_emergencies_dogs_0011_d5f54e004e9bf574",
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "merck_dog_cat_emergency_0003_16d6996968e565d3"
+            "vca_first_aid_dogs_0005_b4c690ce4c1856bd",
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "vca_common_emergencies_dogs_0001_64984d68c6213742",
+            "vca_common_emergencies_dogs_0007_42795f2fd7a7a31e",
+            "merck_dog_cat_emergency_0007_9f138b659678480a"
           ],
           "relevance": [
             1,
-            0,
-            0,
             1,
+            0,
+            0,
             1
           ],
           "first_relevant_rank": 1
@@ -3477,18 +3477,18 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "vca_first_aid_cats_0002_33e45777e899e904",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "vca_first_aid_cats_0005_7e2069bf82401c97",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00",
+            "merck_first_aid_transport_0002_5e1f055f590ce663"
           ],
           "relevance": [
             1,
@@ -3509,26 +3509,26 @@
           ],
           "retrieved_source_ids": [
             "vca_common_emergencies_dogs",
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
             "vca_common_emergencies_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency"
+            "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0008_0685c5e8ef44fb73",
-            "vca_common_emergencies_dogs_0012_0cc2bde9a08a83ed",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582"
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00",
+            "merck_dog_cat_emergency_0005_6599ffa6ac6906e8",
+            "vca_common_emergencies_dogs_0013_a957e1c5e0882606",
+            "vca_first_aid_dogs_0002_c46964d219d79370"
           ],
           "relevance": [
             0,
+            1,
+            1,
             0,
-            0,
-            0,
-            1
+            0
           ],
-          "first_relevant_rank": 5
+          "first_relevant_rank": 2
         },
         {
           "id": "gt_016",
@@ -3546,11 +3546,11 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_first_aid_transport_0003_348d00807f586c5b"
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "merck_first_aid_transport_0003_4f633767dc636e23"
           ],
           "relevance": [
             0,
@@ -3572,27 +3572,27 @@
             "vca_first_aid_dogs"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency",
             "vca_common_emergencies_dogs",
-            "merck_dog_cat_emergency",
-            "vca_first_aid_dogs"
+            "vca_common_emergencies_dogs",
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_common_emergencies_dogs_0000_0aea31e5ae5c83f9",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "vca_first_aid_dogs_0000_24113fedd957adf6"
+            "vca_common_emergencies_dogs_0006_92fef60ab79a47e9",
+            "vca_common_emergencies_dogs_0000_9835beacf1f11d5a",
+            "merck_first_aid_transport_0004_8ecf5859900429e6",
+            "vca_first_aid_dogs_0002_c46964d219d79370",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177"
           ],
           "relevance": [
-            1,
-            1,
             0,
+            0,
+            1,
             1,
             1
           ],
-          "first_relevant_rank": 1
+          "first_relevant_rank": 3
         },
         {
           "id": "gt_018",
@@ -3612,11 +3612,11 @@
             "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_first_aid_transport_0001_d1fc338436711a28"
           ],
           "relevance": [
             1,
@@ -3640,21 +3640,21 @@
             "vca_common_emergencies_dogs",
             "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "merck_first_aid_transport"
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "vca_common_emergencies_dogs_0007_b76485a14d9d277a",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "merck_first_aid_transport_0001_e06421735e9c7839"
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce",
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "vca_first_aid_dogs_0003_26b6708126e5f3ad",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "vca_first_aid_dogs_0002_c46964d219d79370"
           ],
           "relevance": [
             1,
             1,
             0,
-            0,
+            1,
             0
           ],
           "first_relevant_rank": 1
@@ -3670,26 +3670,26 @@
           ],
           "retrieved_source_ids": [
             "vca_common_emergencies_dogs",
+            "merck_first_aid_transport",
             "vca_common_emergencies_dogs",
-            "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
-            "vca_first_aid_dogs"
+            "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_common_emergencies_dogs_0006_b13eb39365362b45",
-            "vca_common_emergencies_dogs_0005_e9b4a59b40f9cb93",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "vca_first_aid_dogs_0000_24113fedd957adf6"
+            "vca_common_emergencies_dogs_0004_f8f227fee8dd60b3",
+            "merck_first_aid_transport_0005_45a3389866938ef8",
+            "vca_common_emergencies_dogs_0007_42795f2fd7a7a31e",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_first_aid_transport_0006_8347a3f22537690b"
           ],
           "relevance": [
             0,
-            0,
+            1,
             0,
             1,
-            0
+            1
           ],
-          "first_relevant_rank": 4
+          "first_relevant_rank": 2
         }
       ]
     }

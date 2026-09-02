@@ -39,19 +39,152 @@ class EmbeddingModel(Protocol):
         """Embed multiple texts."""
 
 
+def _join_metadata_values(value: Any) -> str:
+    """Convert list-like metadata into readable text."""
+
+    if value is None:
+        return ""
+
+    if isinstance(value, (list, tuple)):
+        return ", ".join(
+            str(item).strip()
+            for item in value
+            if str(item).strip()
+        )
+
+    return str(value).strip()
+
+
+def _format_heading_path(document: dict[str, Any]) -> str:
+    """Return the best available section path for a document."""
+
+    heading_path = document.get("heading_path")
+
+    if isinstance(heading_path, (list, tuple)):
+        parts = [
+            str(part).strip()
+            for part in heading_path
+            if str(part).strip()
+        ]
+
+        if parts:
+            return " > ".join(parts)
+
+    if isinstance(heading_path, str) and heading_path.strip():
+        return heading_path.strip()
+
+    section_heading = document.get("section_heading")
+
+    if (
+        isinstance(section_heading, str)
+        and section_heading.strip()
+    ):
+        return section_heading.strip()
+
+    return ""
+
+
 def build_embedding_text(
     document: dict[str, Any],
 ) -> str:
-    """Combine document fields into text for embedding."""
+    """Return the text representation used for vector embedding."""
 
-    title = document["title"]
-    topics = ", ".join(document["topics"])
-    content = document["content"]
+    embedding_text = document.get("embedding_text")
 
-    return (
-        f"Title: {title}\n"
-        f"Topics: {topics}\n"
-        f"Content: {content}"
+    if (
+        isinstance(embedding_text, str)
+        and embedding_text.strip()
+    ):
+        return embedding_text.strip()
+
+    title = str(document.get("title", "")).strip()
+
+    species = _join_metadata_values(
+        document.get("species")
+    )
+
+    topics = _join_metadata_values(
+        document.get("topics")
+    )
+
+    section_path = _format_heading_path(document)
+
+    content = str(
+        document.get("content", "")
+    ).strip()
+
+    fields = [
+        ("Title", title),
+        ("Species", species),
+        ("Topics", topics),
+        ("Section", section_path),
+        ("Content", content),
+    ]
+
+    return "\n".join(
+        f"{label}: {value}"
+        for label, value in fields
+        if value
+    )
+
+
+def _l2_normalize_rows(
+    matrix: np.ndarray,
+) -> np.ndarray:
+    """L2-normalize every row in a two-dimensional matrix."""
+
+    array = np.asarray(
+        matrix,
+        dtype=np.float32,
+    )
+
+    if array.ndim != 2:
+        raise ValueError(
+            "Embeddings must be a two-dimensional matrix."
+        )
+
+    norms = np.linalg.norm(
+        array,
+        axis=1,
+        keepdims=True,
+    )
+
+    if np.any(norms == 0):
+        raise ValueError(
+            "Embedding vectors must have non-zero L2 norm."
+        )
+
+    return np.asarray(
+        array / norms,
+        dtype=np.float32,
+    )
+
+
+def _l2_normalize_vector(
+    vector: np.ndarray,
+) -> np.ndarray:
+    """L2-normalize one embedding vector."""
+
+    array = np.asarray(
+        vector,
+        dtype=np.float32,
+    )
+
+    if array.ndim != 1:
+        raise ValueError(
+            "The query embedding must be one-dimensional."
+        )
+
+    norm = float(np.linalg.norm(array))
+
+    if norm == 0.0:
+        raise ValueError(
+            "The query embedding must have non-zero L2 norm."
+        )
+
+    return np.asarray(
+        array / norm,
+        dtype=np.float32,
     )
 
 
@@ -60,7 +193,7 @@ def build_embedding_matrix(
     embedder: EmbeddingModel,
     batch_size: int = DEFAULT_BATCH_SIZE,
 ) -> np.ndarray:
-    """Embed every processed veterinary document."""
+    """Embed and explicitly normalize every processed document."""
 
     if not documents:
         raise ValueError(
@@ -77,13 +210,23 @@ def build_embedding_matrix(
         for document in documents
     ]
 
+    if any(not text.strip() for text in texts):
+        raise ValueError(
+            "Every document must contain text that can be embedded."
+        )
+
     batches: list[np.ndarray] = []
 
     for start in range(0, len(texts), batch_size):
-        batch = texts[start:start + batch_size]
+        batch = texts[
+            start:start + batch_size
+        ]
 
         batch_vectors = np.asarray(
-            embedder.encode_batch(batch),
+            embedder.encode_batch(
+                batch,
+                normalize=False,
+            ),
             dtype=np.float32,
         )
 
@@ -99,7 +242,11 @@ def build_embedding_matrix(
                 "the number of texts."
             )
 
-        batches.append(batch_vectors)
+        batches.append(
+            _l2_normalize_rows(
+                batch_vectors
+            )
+        )
 
     matrix = np.vstack(batches)
 
@@ -109,7 +256,10 @@ def build_embedding_matrix(
             "document collection."
         )
 
-    return matrix
+    return np.asarray(
+        matrix,
+        dtype=np.float32,
+    )
 
 
 def save_embedding_matrix(
@@ -207,7 +357,11 @@ class VectorSearch:
             )
 
         self.documents = documents
-        self.embeddings = matrix
+
+        self.embeddings = _l2_normalize_rows(
+            matrix
+        )
+
         self.embedder = embedder
 
     def search(
@@ -234,13 +388,20 @@ class VectorSearch:
             else None
         )
 
-        if normalized_species not in {None, "dog", "cat"}:
+        if normalized_species not in {
+            None,
+            "dog",
+            "cat",
+        }:
             raise ValueError(
                 "species must be 'dog', 'cat', or None."
             )
 
         query_vector = np.asarray(
-            self.embedder.encode(query),
+            self.embedder.encode(
+                query,
+                normalize=False,
+            ),
             dtype=np.float32,
         )
 
@@ -249,29 +410,55 @@ class VectorSearch:
                 "The query embedding must be one-dimensional."
             )
 
-        if query_vector.shape[0] != self.embeddings.shape[1]:
+        if (
+            query_vector.shape[0]
+            != self.embeddings.shape[1]
+        ):
             raise ValueError(
                 "The query embedding dimension does not "
                 "match the document embedding dimension."
             )
 
-        scores = self.embeddings.dot(query_vector)
-        ranked_indices = np.argsort(scores)[::-1]
+        query_vector = _l2_normalize_vector(
+            query_vector
+        )
+
+        scores = self.embeddings.dot(
+            query_vector
+        )
+
+        ranked_indices = np.argsort(
+            scores
+        )[::-1]
 
         results: list[dict[str, Any]] = []
 
         for index in ranked_indices:
-            document = self.documents[int(index)]
+            document = self.documents[
+                int(index)
+            ]
+
+            document_species = {
+                str(item).lower().strip()
+                for item in document.get(
+                    "species",
+                    [],
+                )
+            }
 
             if (
                 normalized_species is not None
                 and normalized_species
-                not in document["species"]
+                not in document_species
             ):
                 continue
 
             result = dict(document)
-            result["retrieval_score"] = float(scores[index])
+
+            result["retrieval_score"] = float(
+                scores[index]
+            )
+
             result["retrieval_method"] = "vector"
 
             results.append(result)
@@ -294,14 +481,21 @@ def parse_arguments() -> argparse.Namespace:
     parser.add_argument(
         "--query",
         required=True,
-        help="Pet first-aid question or symptom description.",
+        help=(
+            "Pet first-aid question or symptom description."
+        ),
     )
 
     parser.add_argument(
         "--species",
-        choices=["dog", "cat"],
+        choices=[
+            "dog",
+            "cat",
+        ],
         default=None,
-        help="Optionally limit results to one species.",
+        help=(
+            "Optionally limit results to one species."
+        ),
     )
 
     parser.add_argument(
@@ -323,21 +517,65 @@ def print_results(
     """Print vector-search results."""
 
     if not results:
-        print("No matching documents were found.")
+        print(
+            "No matching documents were found."
+        )
         return
 
-    for position, result in enumerate(results, start=1):
-        preview = result["content"][:400].strip()
+    for position, result in enumerate(
+        results,
+        start=1,
+    ):
+        preview = result[
+            "content"
+        ][:400].strip()
+
+        section_path = _format_heading_path(
+            result
+        )
 
         print()
-        print(f"Result {position}")
-        print(f"Score: {result['retrieval_score']:.4f}")
-        print(f"Source: {result['publisher']}")
-        print(f"Title: {result['title']}")
-        print(f"Species: {', '.join(result['species'])}")
-        print(f"Topics: {', '.join(result['topics'])}")
-        print(f"URL: {result['url']}")
-        print(f"Content: {preview}...")
+        print(
+            f"Result {position}"
+        )
+
+        print(
+            f"Score: "
+            f"{result['retrieval_score']:.4f}"
+        )
+
+        print(
+            f"Source: "
+            f"{result['publisher']}"
+        )
+
+        print(
+            f"Title: "
+            f"{result['title']}"
+        )
+
+        if section_path:
+            print(
+                f"Section: {section_path}"
+            )
+
+        print(
+            "Species: "
+            f"{', '.join(result['species'])}"
+        )
+
+        print(
+            "Topics: "
+            f"{', '.join(result['topics'])}"
+        )
+
+        print(
+            f"URL: {result['url']}"
+        )
+
+        print(
+            f"Content: {preview}..."
+        )
 
 
 def main() -> None:

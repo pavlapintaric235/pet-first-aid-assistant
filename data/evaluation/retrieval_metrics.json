@@ -7,8 +7,8 @@
   },
   "methods": {
     "keyword": {
-      "hit_rate": 0.95,
-      "mrr": 0.8875,
+      "hit_rate": 1.0,
+      "mrr": 0.9416666666666667,
       "num_questions": 20,
       "num_results": 5,
       "questions": [
@@ -24,21 +24,21 @@
           ],
           "retrieved_source_ids": [
             "merck_first_aid_transport",
-            "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
             "vca_first_aid_dogs",
             "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e",
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "vca_first_aid_dogs_0000_24113fedd957adf6"
+            "merck_first_aid_transport_0000_193cdb60f00b4288",
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "vca_first_aid_dogs_0002_c46964d219d79370",
+            "vca_first_aid_dogs_0009_6d6e447823a6dc11",
+            "vca_first_aid_dogs_0008_ecba4d82ee7881b4"
           ],
           "relevance": [
             1,
-            1,
+            0,
             1,
             1,
             1
@@ -63,11 +63,11 @@
             "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "vca_first_aid_cats_0004_92b10eebf0c249be"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "merck_dog_cat_emergency_0006_7f37b8f4328ee054",
+            "vca_first_aid_cats_0000_6a47bb477d2e9a26",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f"
           ],
           "relevance": [
             1,
@@ -89,24 +89,24 @@
           ],
           "retrieved_source_ids": [
             "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
-            "merck_dog_cat_emergency",
-            "vca_first_aid_dogs"
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec"
+            "vca_first_aid_dogs_0008_ecba4d82ee7881b4",
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce",
+            "vca_first_aid_dogs_0009_6d6e447823a6dc11",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023"
           ],
           "relevance": [
             1,
+            0,
             1,
             1,
-            1,
-            1
+            0
           ],
           "first_relevant_rank": 1
         },
@@ -121,18 +121,18 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
-            "merck_first_aid_transport",
             "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
             "merck_first_aid_transport",
-            "vca_first_aid_cats"
+            "merck_first_aid_transport",
+            "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "merck_first_aid_transport_0003_348d00807f586c5b",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60",
-            "vca_first_aid_cats_0004_92b10eebf0c249be"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "merck_first_aid_transport_0003_4f633767dc636e23",
+            "merck_first_aid_transport_0002_5e1f055f590ce663",
+            "merck_first_aid_transport_0000_193cdb60f00b4288"
           ],
           "relevance": [
             1,
@@ -154,24 +154,24 @@
           ],
           "retrieved_source_ids": [
             "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
             "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency"
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_dogs_0008_ecba4d82ee7881b4",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "vca_first_aid_dogs_0009_6d6e447823a6dc11"
           ],
           "relevance": [
             1,
+            0,
             1,
-            1,
-            1,
-            0
+            0,
+            1
           ],
           "first_relevant_rank": 1
         },
@@ -185,27 +185,27 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
             "merck_first_aid_transport",
             "vca_first_aid_cats",
             "vca_first_aid_cats",
             "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60",
-            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "vca_first_aid_cats_0001_a746563b483e054b"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_first_aid_transport_0002_5e1f055f590ce663",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "vca_first_aid_cats_0008_feb1dab932daacaf",
+            "vca_first_aid_cats_0007_61758cc2be602c31"
           ],
           "relevance": [
-            1,
+            0,
             1,
             1,
             1,
             1
           ],
-          "first_relevant_rank": 1
+          "first_relevant_rank": 2
         },
         {
           "id": "gt_007",
@@ -218,27 +218,27 @@
             "vca_first_aid_dogs"
           ],
           "retrieved_source_ids": [
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency",
             "merck_dog_cat_emergency",
-            "merck_first_aid_transport",
-            "merck_first_aid_transport",
-            "vca_first_aid_dogs"
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_first_aid_transport_0006_aceab29347cbfdf2",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60",
-            "vca_first_aid_dogs_0001_e75a913aafea56c5"
+            "vca_common_emergencies_dogs_0005_9550b81357d64b3c",
+            "vca_common_emergencies_dogs_0006_92fef60ab79a47e9",
+            "merck_dog_cat_emergency_0003_9c55f316830b71dc",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "vca_common_emergencies_dogs_0008_ea860ec0d2997bdf"
           ],
           "relevance": [
+            0,
+            0,
             1,
             1,
-            1,
-            1,
-            1
+            0
           ],
-          "first_relevant_rank": 1
+          "first_relevant_rank": 3
         },
         {
           "id": "gt_008",
@@ -251,18 +251,18 @@
             "vca_first_aid_cats"
           ],
           "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
             "vca_first_aid_cats",
             "vca_first_aid_cats",
-            "merck_first_aid_transport",
-            "merck_first_aid_transport",
-            "merck_dog_cat_emergency"
+            "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "vca_first_aid_cats_0002_33e45777e899e904",
-            "merck_first_aid_transport_0004_32a60d46d44631cf",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_first_aid_transport_0000_193cdb60f00b4288"
           ],
           "relevance": [
             1,
@@ -285,22 +285,22 @@
             "merck_dog_cat_emergency",
             "merck_dog_cat_emergency",
             "merck_first_aid_transport",
-            "merck_first_aid_transport",
-            "vca_first_aid_cats"
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_first_aid_transport_0001_e06421735e9c7839",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e",
-            "vca_first_aid_cats_0004_92b10eebf0c249be"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "merck_first_aid_transport_0001_d1fc338436711a28",
+            "merck_dog_cat_emergency_0006_7f37b8f4328ee054",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8"
           ],
           "relevance": [
             1,
             1,
             0,
-            0,
-            0
+            1,
+            1
           ],
           "first_relevant_rank": 1
         },
@@ -314,25 +314,25 @@
             "vca_first_aid_dogs"
           ],
           "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
             "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency"
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "vca_first_aid_dogs_0000_24113fedd957adf6",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_dogs_0011_7af85b82ed97a48b",
+            "vca_common_emergencies_dogs_0014_1c4b657a28de0917",
+            "vca_common_emergencies_dogs_0010_323c096b3601cc58",
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce"
           ],
           "relevance": [
             1,
             1,
-            1,
-            1,
-            1
+            0,
+            0,
+            0
           ],
           "first_relevant_rank": 1
         },
@@ -349,23 +349,23 @@
           "retrieved_source_ids": [
             "merck_dog_cat_emergency",
             "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs",
             "merck_first_aid_transport",
-            "vca_first_aid_dogs"
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "vca_first_aid_dogs_0000_24113fedd957adf6",
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e",
-            "vca_first_aid_dogs_0002_90ae701483101ce9"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_dogs_0002_c46964d219d79370",
+            "vca_common_emergencies_dogs_0001_64984d68c6213742",
+            "merck_first_aid_transport_0000_193cdb60f00b4288",
+            "vca_common_emergencies_dogs_0000_9835beacf1f11d5a"
           ],
           "relevance": [
             1,
             1,
+            0,
             1,
-            1,
-            1
+            0
           ],
           "first_relevant_rank": 1
         },
@@ -380,18 +380,18 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
             "vca_first_aid_cats",
             "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "merck_dog_cat_emergency"
+            "merck_first_aid_transport",
+            "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0000_781e8e22f54c5835",
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "vca_first_aid_cats_0002_33e45777e899e904",
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582"
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "merck_first_aid_transport_0000_193cdb60f00b4288",
+            "merck_first_aid_transport_0002_5e1f055f590ce663"
           ],
           "relevance": [
             1,
@@ -414,24 +414,24 @@
           ],
           "retrieved_source_ids": [
             "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs"
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "vca_first_aid_dogs_0002_90ae701483101ce9",
-            "vca_first_aid_dogs_0000_24113fedd957adf6",
-            "vca_first_aid_dogs_0004_99d16ea86040833e"
+            "vca_first_aid_dogs_0005_b4c690ce4c1856bd",
+            "vca_common_emergencies_dogs_0014_1c4b657a28de0917",
+            "merck_dog_cat_emergency_0006_7f37b8f4328ee054",
+            "vca_common_emergencies_dogs_0005_9550b81357d64b3c",
+            "vca_common_emergencies_dogs_0011_ea459eb354e23602"
           ],
           "relevance": [
             1,
+            0,
             1,
-            1,
-            1,
-            1
+            0,
+            0
           ],
           "first_relevant_rank": 1
         },
@@ -448,16 +448,16 @@
           "retrieved_source_ids": [
             "vca_first_aid_cats",
             "merck_dog_cat_emergency",
-            "merck_dog_cat_emergency",
             "vca_first_aid_cats",
-            "vca_first_aid_cats"
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0002_33e45777e899e904",
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "vca_first_aid_cats_0004_92b10eebf0c249be"
+            "vca_first_aid_cats_0005_7e2069bf82401c97",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "vca_first_aid_cats_0009_a7eda411587ec002",
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8"
           ],
           "relevance": [
             1,
@@ -477,18 +477,674 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "vca_common_emergencies_dogs",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "merck_dog_cat_emergency_0003_9c55f316830b71dc",
+            "vca_first_aid_dogs_0010_3c4b5304615f03ed"
+          ],
+          "relevance": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_016",
+          "question": "My cat injured its eye and is keeping it closed.",
+          "species": "cat",
+          "category": "eye_injury",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_first_aid_transport_0003_4f633767dc636e23",
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "vca_first_aid_cats_0002_13ae8367d402e764"
+          ],
+          "relevance": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_017",
+          "question": "My dog was hit by a car. How do I help it without causing more damage?",
+          "species": "dog",
+          "category": "major_trauma",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_common_emergencies_dogs_0013_a957e1c5e0882606",
+            "vca_common_emergencies_dogs_0000_9835beacf1f11d5a",
+            "vca_common_emergencies_dogs_0008_ea860ec0d2997bdf",
+            "vca_common_emergencies_dogs_0010_323c096b3601cc58"
+          ],
+          "relevance": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_018",
+          "question": "My injured cat is frightened and trying to bite me while I move it.",
+          "species": "cat",
+          "category": "handler_safety",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_019",
+          "question": "My dog is having repeated seizures and is not recovering normally.",
+          "species": "dog",
+          "category": "seizures",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "vca_common_emergencies_dogs"
+          ],
+          "retrieved_source_ids": [
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce",
+            "vca_common_emergencies_dogs_0006_92fef60ab79a47e9",
+            "vca_common_emergencies_dogs_0007_42795f2fd7a7a31e",
+            "vca_common_emergencies_dogs_0011_ea459eb354e23602"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_020",
+          "question": "My pet is in extreme pain and the symptoms are getting worse very quickly.",
+          "species": null,
+          "category": "emergency_escalation",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "vca_common_emergencies_dogs",
+            "vca_first_aid_cats",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_common_emergencies_dogs_0007_42795f2fd7a7a31e",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "vca_common_emergencies_dogs_0005_9550b81357d64b3c",
+            "vca_common_emergencies_dogs_0011_ea459eb354e23602"
+          ],
+          "relevance": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_relevant_rank": 1
+        }
+      ]
+    },
+    "vector": {
+      "hit_rate": 1.0,
+      "mrr": 0.8083333333333333,
+      "num_questions": 20,
+      "num_results": 5,
+      "questions": [
+        {
+          "id": "gt_001",
+          "question": "My dog cannot get enough air and is becoming weak.",
+          "species": "dog",
+          "category": "breathing_difficulty",
+          "relevant_source_ids": [
             "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
             "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0009_6d6e447823a6dc11",
+            "vca_first_aid_dogs_0008_ecba4d82ee7881b4",
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "vca_common_emergencies_dogs_0003_e22a96126f7d9fa1",
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_002",
+          "question": "My cat is breathing strangely and looks like it may collapse.",
+          "species": "cat",
+          "category": "breathing_difficulty",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "vca_first_aid_cats_0007_61758cc2be602c31",
+            "vca_first_aid_cats_0005_7e2069bf82401c97",
+            "vca_first_aid_cats_0008_feb1dab932daacaf",
+            "vca_first_aid_cats_0009_a7eda411587ec002"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_003",
+          "question": "My dog may have something stuck in its throat and cannot breathe normally.",
+          "species": "dog",
+          "category": "choking",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_common_emergencies_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "vca_common_emergencies_dogs_0007_42795f2fd7a7a31e",
+            "vca_first_aid_dogs_0008_ecba4d82ee7881b4",
+            "vca_first_aid_dogs_0009_6d6e447823a6dc11",
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00"
+          ],
+          "relevance": [
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "gt_004",
+          "question": "My cat is unconscious. How should I check whether it is breathing?",
+          "species": "cat",
+          "category": "unconsciousness",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0008_feb1dab932daacaf",
+            "vca_first_aid_cats_0007_61758cc2be602c31",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "vca_first_aid_cats_0005_7e2069bf82401c97"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_005",
+          "question": "My dog is unconscious and I cannot detect a heartbeat.",
+          "species": "dog",
+          "category": "cardiac_arrest",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
             "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "vca_first_aid_dogs_0000_24113fedd957adf6"
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "vca_first_aid_dogs_0010_3c4b5304615f03ed",
+            "vca_common_emergencies_dogs_0012_227048a83e9057a8",
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "vca_first_aid_dogs_0009_6d6e447823a6dc11"
+          ],
+          "relevance": [
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "gt_006",
+          "question": "How do I perform CPR on a cat that is not breathing?",
+          "species": "cat",
+          "category": "cpr",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0007_61758cc2be602c31",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "vca_first_aid_cats_0008_feb1dab932daacaf",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f"
+          ],
+          "relevance": [
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_007",
+          "question": "My dog has a deep wound and the bleeding will not stop.",
+          "species": "dog",
+          "category": "severe_bleeding",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_source_ids": [
+            "vca_common_emergencies_dogs",
+            "merck_dog_cat_emergency",
+            "vca_common_emergencies_dogs",
+            "merck_first_aid_transport",
+            "vca_common_emergencies_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_common_emergencies_dogs_0006_92fef60ab79a47e9",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "vca_common_emergencies_dogs_0004_f8f227fee8dd60b3",
+            "merck_first_aid_transport_0004_8ecf5859900429e6",
+            "vca_common_emergencies_dogs_0005_9550b81357d64b3c"
+          ],
+          "relevance": [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "id": "gt_008",
+          "question": "My injured cat is losing a lot of blood. What can I do during transport?",
+          "species": "cat",
+          "category": "severe_bleeding",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "merck_first_aid_transport",
+            "merck_first_aid_transport",
+            "merck_first_aid_transport"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_first_aid_transport_0000_193cdb60f00b4288",
+            "merck_first_aid_transport_0003_4f633767dc636e23",
+            "merck_first_aid_transport_0001_d1fc338436711a28"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_009",
+          "question": "My cat touched a hot surface and has a serious burn.",
+          "species": "cat",
+          "category": "burns",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0003_9c55f316830b71dc",
+            "merck_dog_cat_emergency_0006_7f37b8f4328ee054",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_dog_cat_emergency_0007_9f138b659678480a"
+          ],
+          "relevance": [
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_010",
+          "question": "My dog cannot put weight on its leg after an accident and I think it is broken.",
+          "species": "dog",
+          "category": "suspected_fracture",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs"
+          ],
+          "retrieved_source_ids": [
+            "merck_first_aid_transport",
+            "vca_common_emergencies_dogs",
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "merck_first_aid_transport_0004_8ecf5859900429e6",
+            "vca_common_emergencies_dogs_0003_e22a96126f7d9fa1",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "merck_dog_cat_emergency_0005_6599ffa6ac6906e8"
+          ],
+          "relevance": [
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 3
+        },
+        {
+          "id": "gt_011",
+          "question": "How can I safely move a large injured dog into my car?",
+          "species": "dog",
+          "category": "safe_transport",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "merck_first_aid_transport",
+            "vca_common_emergencies_dogs",
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "vca_common_emergencies_dogs"
+          ],
+          "retrieved_document_ids": [
+            "merck_first_aid_transport_0004_8ecf5859900429e6",
+            "vca_common_emergencies_dogs_0003_e22a96126f7d9fa1",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_dog_cat_emergency_0005_6599ffa6ac6906e8",
+            "vca_common_emergencies_dogs_0005_9550b81357d64b3c"
+          ],
+          "relevance": [
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_012",
+          "question": "How should I put an injured cat into a carrier without making the injury worse?",
+          "species": "cat",
+          "category": "safe_transport",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats"
+          ],
+          "retrieved_document_ids": [
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "vca_first_aid_cats_0009_a7eda411587ec002"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_013",
+          "question": "My dog has pale gums, cold feet, rapid breathing, and is becoming quiet.",
+          "species": "dog",
+          "category": "shock",
+          "relevant_source_ids": [
+            "vca_first_aid_dogs",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "vca_common_emergencies_dogs_0001_64984d68c6213742",
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce",
+            "vca_common_emergencies_dogs_0010_323c096b3601cc58",
+            "vca_common_emergencies_dogs_0007_42795f2fd7a7a31e"
+          ],
+          "relevance": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_014",
+          "question": "My cat is weak, cold, and has very pale gums after being injured.",
+          "species": "cat",
+          "category": "shock",
+          "relevant_source_ids": [
+            "vca_first_aid_cats",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_document_ids": [
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9"
+          ],
+          "relevance": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "id": "gt_015",
+          "question": "My dog may have swallowed something poisonous. What should I do first?",
+          "species": "dog",
+          "category": "poisoning",
+          "relevant_source_ids": [
+            "merck_dog_cat_emergency"
+          ],
+          "retrieved_source_ids": [
+            "vca_common_emergencies_dogs",
+            "merck_dog_cat_emergency",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs"
+          ],
+          "retrieved_document_ids": [
+            "vca_common_emergencies_dogs_0013_a957e1c5e0882606",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00",
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "vca_common_emergencies_dogs_0004_f8f227fee8dd60b3",
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce"
           ],
           "relevance": [
             0,
@@ -508,27 +1164,27 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
+            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
-            "merck_first_aid_transport",
-            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
             "vca_first_aid_cats",
             "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_first_aid_transport_0003_348d00807f586c5b",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "vca_first_aid_cats_0000_781e8e22f54c5835",
-            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b"
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "vca_first_aid_cats_0007_61758cc2be602c31",
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f"
           ],
           "relevance": [
-            1,
             0,
             1,
+            0,
             0,
             0
           ],
-          "first_relevant_rank": 1
+          "first_relevant_rank": 2
         },
         {
           "id": "gt_017",
@@ -541,27 +1197,27 @@
             "vca_first_aid_dogs"
           ],
           "retrieved_source_ids": [
-            "merck_dog_cat_emergency",
-            "merck_first_aid_transport",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
             "vca_first_aid_dogs",
-            "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
             "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0004_32a60d46d44631cf",
-            "vca_first_aid_dogs_0000_24113fedd957adf6",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923"
+            "vca_common_emergencies_dogs_0005_9550b81357d64b3c",
+            "vca_common_emergencies_dogs_0003_e22a96126f7d9fa1",
+            "vca_first_aid_dogs_0003_26b6708126e5f3ad",
+            "vca_first_aid_dogs_0002_c46964d219d79370",
+            "merck_dog_cat_emergency_0005_6599ffa6ac6906e8"
           ],
           "relevance": [
-            1,
-            1,
+            0,
+            0,
             1,
             1,
             1
           ],
-          "first_relevant_rank": 1
+          "first_relevant_rank": 3
         },
         {
           "id": "gt_018",
@@ -577,15 +1233,15 @@
             "vca_first_aid_cats",
             "vca_first_aid_cats",
             "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
+            "merck_dog_cat_emergency",
             "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "vca_first_aid_cats_0000_781e8e22f54c5835",
-            "vca_first_aid_cats_0004_92b10eebf0c249be"
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f"
           ],
           "relevance": [
             1,
@@ -602,30 +1258,31 @@
           "species": "dog",
           "category": "seizures",
           "relevant_source_ids": [
-            "merck_dog_cat_emergency"
+            "merck_dog_cat_emergency",
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_dogs",
-            "merck_first_aid_transport",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs"
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0000_24113fedd957adf6",
-            "merck_first_aid_transport_0001_e06421735e9c7839",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "vca_first_aid_dogs_0006_6b33a571173456dc"
+            "vca_common_emergencies_dogs_0008_ea860ec0d2997bdf",
+            "vca_common_emergencies_dogs_0010_323c096b3601cc58",
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce",
+            "vca_common_emergencies_dogs_0004_f8f227fee8dd60b3",
+            "vca_common_emergencies_dogs_0000_9835beacf1f11d5a"
           ],
           "relevance": [
-            0,
-            0,
-            0,
-            0,
-            0
+            1,
+            1,
+            1,
+            1,
+            1
           ],
-          "first_relevant_rank": null
+          "first_relevant_rank": 1
         },
         {
           "id": "gt_020",
@@ -637,33 +1294,33 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency",
-            "vca_first_aid_dogs"
+            "merck_first_aid_transport",
+            "vca_common_emergencies_dogs",
+            "merck_first_aid_transport",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0002_33e45777e899e904",
-            "vca_first_aid_cats_0000_781e8e22f54c5835",
-            "vca_first_aid_dogs_0000_24113fedd957adf6",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "vca_first_aid_dogs_0006_6b33a571173456dc"
+            "merck_first_aid_transport_0006_8347a3f22537690b",
+            "vca_common_emergencies_dogs_0000_9835beacf1f11d5a",
+            "merck_first_aid_transport_0005_45a3389866938ef8",
+            "vca_common_emergencies_dogs_0004_f8f227fee8dd60b3",
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023"
           ],
           "relevance": [
-            0,
-            0,
+            1,
             0,
             1,
+            0,
             0
           ],
-          "first_relevant_rank": 4
+          "first_relevant_rank": 1
         }
       ]
     },
-    "vector": {
-      "hit_rate": 0.95,
-      "mrr": 0.8916666666666666,
+    "hybrid": {
+      "hit_rate": 1.0,
+      "mrr": 0.8208333333333334,
       "num_questions": 20,
       "num_results": 5,
       "questions": [
@@ -681,22 +1338,22 @@
             "vca_first_aid_dogs",
             "vca_first_aid_dogs",
             "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs"
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "vca_first_aid_dogs_0001_e75a913aafea56c5",
-            "vca_first_aid_dogs_0008_e793f4e88e160cd2",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec"
+            "vca_first_aid_dogs_0009_6d6e447823a6dc11",
+            "vca_first_aid_dogs_0008_ecba4d82ee7881b4",
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "vca_common_emergencies_dogs_0012_227048a83e9057a8",
+            "vca_common_emergencies_dogs_0001_64984d68c6213742"
           ],
           "relevance": [
             1,
             1,
             1,
-            1,
-            1
+            0,
+            0
           ],
           "first_relevant_rank": 1
         },
@@ -715,14 +1372,14 @@
             "vca_first_aid_cats",
             "vca_first_aid_cats",
             "vca_first_aid_cats",
-            "vca_first_aid_cats"
+            "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "vca_first_aid_cats_0006_25632f10fb551881",
-            "vca_first_aid_cats_0001_a746563b483e054b"
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "vca_first_aid_cats_0007_61758cc2be602c31",
+            "vca_first_aid_cats_0000_6a47bb477d2e9a26",
+            "vca_first_aid_cats_0008_feb1dab932daacaf",
+            "merck_dog_cat_emergency_0007_9f138b659678480a"
           ],
           "relevance": [
             1,
@@ -746,21 +1403,21 @@
             "vca_first_aid_dogs",
             "vca_first_aid_dogs",
             "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs",
             "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "vca_first_aid_dogs_0002_90ae701483101ce9",
-            "vca_first_aid_dogs_0004_99d16ea86040833e"
+            "vca_first_aid_dogs_0008_ecba4d82ee7881b4",
+            "vca_first_aid_dogs_0009_6d6e447823a6dc11",
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "vca_first_aid_dogs_0007_117100b6f9adafe9"
           ],
           "relevance": [
             1,
             1,
             1,
-            1,
+            0,
             1
           ],
           "first_relevant_rank": 1
@@ -776,18 +1433,18 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
-            "vca_first_aid_cats"
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "merck_first_aid_transport",
+            "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_cats_0006_25632f10fb551881"
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "vca_first_aid_cats_0008_feb1dab932daacaf",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_first_aid_transport_0003_4f633767dc636e23",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177"
           ],
           "relevance": [
             1,
@@ -809,22 +1466,22 @@
           ],
           "retrieved_source_ids": [
             "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
+            "vca_first_aid_dogs",
             "vca_first_aid_dogs",
             "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec"
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "vca_first_aid_dogs_0010_3c4b5304615f03ed",
+            "vca_first_aid_dogs_0008_ecba4d82ee7881b4",
+            "vca_first_aid_dogs_0009_6d6e447823a6dc11"
           ],
           "relevance": [
             1,
-            1,
             0,
+            1,
             1,
             1
           ],
@@ -843,22 +1500,22 @@
             "vca_first_aid_cats",
             "vca_first_aid_cats",
             "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "merck_dog_cat_emergency"
+            "merck_dog_cat_emergency",
+            "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
-            "vca_first_aid_cats_0006_25632f10fb551881",
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+            "vca_first_aid_cats_0007_61758cc2be602c31",
+            "vca_first_aid_cats_0008_feb1dab932daacaf",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a",
+            "vca_first_aid_cats_0002_13ae8367d402e764"
           ],
           "relevance": [
             1,
             1,
             1,
-            1,
-            0
+            0,
+            1
           ],
           "first_relevant_rank": 1
         },
@@ -873,27 +1530,27 @@
             "vca_first_aid_dogs"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency",
             "merck_first_aid_transport",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs"
+            "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_first_aid_transport_0004_32a60d46d44631cf",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_first_aid_dogs_0002_90ae701483101ce9"
+            "vca_common_emergencies_dogs_0006_92fef60ab79a47e9",
+            "vca_common_emergencies_dogs_0005_9550b81357d64b3c",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "merck_first_aid_transport_0005_45a3389866938ef8",
+            "merck_dog_cat_emergency_0005_6599ffa6ac6906e8"
           ],
           "relevance": [
-            1,
-            1,
+            0,
+            0,
             1,
             1,
             1
           ],
-          "first_relevant_rank": 1
+          "first_relevant_rank": 3
         },
         {
           "id": "gt_008",
@@ -906,18 +1563,18 @@
             "vca_first_aid_cats"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
+            "merck_first_aid_transport",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
             "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f"
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "merck_first_aid_transport_0000_193cdb60f00b4288",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_dog_cat_emergency_0001_244bcf574476a70a"
           ],
           "relevance": [
             1,
@@ -939,22 +1596,22 @@
           "retrieved_source_ids": [
             "merck_dog_cat_emergency",
             "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
             "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+            "merck_dog_cat_emergency_0006_7f37b8f4328ee054",
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "merck_dog_cat_emergency_0003_9c55f316830b71dc",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177"
           ],
           "relevance": [
             1,
             1,
-            0,
             1,
+            0,
             1
           ],
           "first_relevant_rank": 1
@@ -969,27 +1626,27 @@
             "vca_first_aid_dogs"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs"
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0001_e75a913aafea56c5",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "vca_first_aid_dogs_0008_e793f4e88e160cd2",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "vca_first_aid_dogs_0006_6b33a571173456dc"
+            "vca_common_emergencies_dogs_0003_e22a96126f7d9fa1",
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce",
+            "vca_common_emergencies_dogs_0000_9835beacf1f11d5a",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "vca_common_emergencies_dogs_0014_1c4b657a28de0917"
           ],
           "relevance": [
+            0,
+            0,
+            0,
             1,
-            1,
-            1,
-            1,
-            1
+            0
           ],
-          "first_relevant_rank": 1
+          "first_relevant_rank": 4
         },
         {
           "id": "gt_011",
@@ -1005,21 +1662,21 @@
             "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
             "merck_first_aid_transport",
-            "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs",
             "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0001_e75a913aafea56c5",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_first_aid_transport_0001_e06421735e9c7839",
-            "vca_first_aid_dogs_0008_e793f4e88e160cd2",
-            "vca_first_aid_dogs_0006_6b33a571173456dc"
+            "vca_first_aid_dogs_0002_c46964d219d79370",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_first_aid_transport_0000_193cdb60f00b4288",
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce",
+            "vca_first_aid_dogs_0003_26b6708126e5f3ad"
           ],
           "relevance": [
             1,
             1,
             1,
-            1,
+            0,
             1
           ],
           "first_relevant_rank": 1
@@ -1036,17 +1693,17 @@
           ],
           "retrieved_source_ids": [
             "vca_first_aid_cats",
-            "merck_dog_cat_emergency",
             "vca_first_aid_cats",
             "merck_dog_cat_emergency",
-            "vca_first_aid_cats"
+            "vca_first_aid_cats",
+            "merck_first_aid_transport"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "vca_first_aid_cats_0002_33e45777e899e904",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65"
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177",
+            "vca_first_aid_cats_0007_61758cc2be602c31",
+            "merck_first_aid_transport_0000_193cdb60f00b4288"
           ],
           "relevance": [
             1,
@@ -1070,23 +1727,23 @@
           "retrieved_source_ids": [
             "vca_first_aid_dogs",
             "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency"
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+            "vca_first_aid_dogs_0005_b4c690ce4c1856bd",
+            "vca_first_aid_dogs_0006_a679cb1d38e504be",
+            "vca_common_emergencies_dogs_0001_64984d68c6213742",
+            "vca_common_emergencies_dogs_0007_42795f2fd7a7a31e",
+            "vca_common_emergencies_dogs_0012_227048a83e9057a8"
           ],
           "relevance": [
             1,
             1,
-            1,
-            1,
-            1
+            0,
+            0,
+            0
           ],
           "first_relevant_rank": 1
         },
@@ -1101,18 +1758,18 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
             "vca_first_aid_cats",
             "vca_first_aid_cats",
             "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
-            "vca_first_aid_cats_0006_25632f10fb551881",
-            "vca_first_aid_cats_0001_a746563b483e054b"
+            "merck_dog_cat_emergency_0007_9f138b659678480a",
+            "vca_first_aid_cats_0005_7e2069bf82401c97",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "vca_first_aid_cats_0009_a7eda411587ec002",
+            "vca_first_aid_cats_0002_13ae8367d402e764"
           ],
           "relevance": [
             1,
@@ -1132,27 +1789,27 @@
             "merck_dog_cat_emergency"
           ],
           "retrieved_source_ids": [
+            "vca_common_emergencies_dogs",
             "merck_dog_cat_emergency",
-            "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
-            "vca_first_aid_dogs",
+            "merck_dog_cat_emergency",
             "merck_dog_cat_emergency"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f"
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "merck_dog_cat_emergency_0004_0edeeccc2c056c00",
+            "merck_dog_cat_emergency_0005_6599ffa6ac6906e8",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "merck_dog_cat_emergency_0000_b2fc43b8d4d44177"
           ],
           "relevance": [
-            1,
             0,
             1,
-            0,
+            1,
+            1,
             1
           ],
-          "first_relevant_rank": 1
+          "first_relevant_rank": 2
         },
         {
           "id": "gt_016",
@@ -1166,21 +1823,21 @@
             "vca_first_aid_cats",
             "vca_first_aid_cats",
             "merck_dog_cat_emergency",
-            "merck_dog_cat_emergency",
+            "vca_first_aid_cats",
             "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65"
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "vca_first_aid_cats_0007_61758cc2be602c31"
           ],
           "relevance": [
             0,
             0,
             1,
-            1,
+            0,
             0
           ],
           "first_relevant_rank": 3
@@ -1196,27 +1853,27 @@
             "vca_first_aid_dogs"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_dogs",
+            "vca_common_emergencies_dogs",
+            "merck_first_aid_transport",
             "vca_first_aid_dogs",
             "merck_dog_cat_emergency",
-            "vca_first_aid_dogs",
             "vca_first_aid_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0001_e75a913aafea56c5",
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "vca_first_aid_dogs_0006_6b33a571173456dc"
+            "vca_common_emergencies_dogs_0006_92fef60ab79a47e9",
+            "merck_first_aid_transport_0004_8ecf5859900429e6",
+            "vca_first_aid_dogs_0002_c46964d219d79370",
+            "merck_dog_cat_emergency_0002_561e3bda301204b9",
+            "vca_first_aid_dogs_0000_69f3b01a58920fe1"
           ],
           "relevance": [
-            1,
+            0,
             1,
             1,
             1,
             1
           ],
-          "first_relevant_rank": 1
+          "first_relevant_rank": 2
         },
         {
           "id": "gt_018",
@@ -1230,17 +1887,17 @@
           ],
           "retrieved_source_ids": [
             "vca_first_aid_cats",
+            "vca_first_aid_cats",
+            "vca_first_aid_cats",
             "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
             "vca_first_aid_cats"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "vca_first_aid_cats_0002_33e45777e899e904",
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65"
+            "vca_first_aid_cats_0003_2673089bd5a336bb",
+            "vca_first_aid_cats_0002_13ae8367d402e764",
+            "vca_first_aid_cats_0006_002df2ec5ee73d3f",
+            "merck_dog_cat_emergency_0008_e818c1bf859276d8",
+            "vca_first_aid_cats_0007_61758cc2be602c31"
           ],
           "relevance": [
             1,
@@ -1257,30 +1914,31 @@
           "species": "dog",
           "category": "seizures",
           "relevant_source_ids": [
-            "merck_dog_cat_emergency"
+            "merck_dog_cat_emergency",
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs"
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "vca_first_aid_dogs_0001_e75a913aafea56c5"
+            "vca_common_emergencies_dogs_0002_2ba46622eac494ce",
+            "vca_common_emergencies_dogs_0009_14371824c9cbb023",
+            "vca_common_emergencies_dogs_0010_323c096b3601cc58",
+            "vca_common_emergencies_dogs_0000_9835beacf1f11d5a",
+            "vca_common_emergencies_dogs_0006_92fef60ab79a47e9"
           ],
           "relevance": [
-            0,
-            0,
-            0,
-            0,
-            0
+            1,
+            1,
+            1,
+            1,
+            1
           ],
-          "first_relevant_rank": null
+          "first_relevant_rank": 1
         },
         {
           "id": "gt_020",
@@ -1292,678 +1950,23 @@
             "merck_first_aid_transport"
           ],
           "retrieved_source_ids": [
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency",
-            "merck_dog_cat_emergency",
-            "merck_dog_cat_emergency",
-            "vca_first_aid_dogs"
-          ],
-          "retrieved_document_ids": [
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_dogs_0001_e75a913aafea56c5"
-          ],
-          "relevance": [
-            0,
-            1,
-            1,
-            1,
-            0
-          ],
-          "first_relevant_rank": 2
-        }
-      ]
-    },
-    "hybrid": {
-      "hit_rate": 0.95,
-      "mrr": 0.8625,
-      "num_questions": 20,
-      "num_results": 5,
-      "questions": [
-        {
-          "id": "gt_001",
-          "question": "My dog cannot get enough air and is becoming weak.",
-          "species": "dog",
-          "category": "breathing_difficulty",
-          "relevant_source_ids": [
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency",
-            "merck_first_aid_transport"
-          ],
-          "retrieved_source_ids": [
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs"
-          ],
-          "retrieved_document_ids": [
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "vca_first_aid_dogs_0001_e75a913aafea56c5",
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec"
-          ],
-          "relevance": [
-            1,
-            1,
-            1,
-            1,
-            1
-          ],
-          "first_relevant_rank": 1
-        },
-        {
-          "id": "gt_002",
-          "question": "My cat is breathing strangely and looks like it may collapse.",
-          "species": "cat",
-          "category": "breathing_difficulty",
-          "relevant_source_ids": [
-            "vca_first_aid_cats",
-            "merck_dog_cat_emergency",
-            "merck_first_aid_transport"
-          ],
-          "retrieved_source_ids": [
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
-            "merck_dog_cat_emergency"
-          ],
-          "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582"
-          ],
-          "relevance": [
-            1,
-            1,
-            1,
-            1,
-            1
-          ],
-          "first_relevant_rank": 1
-        },
-        {
-          "id": "gt_003",
-          "question": "My dog may have something stuck in its throat and cannot breathe normally.",
-          "species": "dog",
-          "category": "choking",
-          "relevant_source_ids": [
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency"
-          ],
-          "retrieved_source_ids": [
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency"
-          ],
-          "retrieved_document_ids": [
-            "vca_first_aid_dogs_0005_20f8f540e81044bc",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f"
-          ],
-          "relevance": [
-            1,
-            1,
-            1,
-            1,
-            1
-          ],
-          "first_relevant_rank": 1
-        },
-        {
-          "id": "gt_004",
-          "question": "My cat is unconscious. How should I check whether it is breathing?",
-          "species": "cat",
-          "category": "unconsciousness",
-          "relevant_source_ids": [
-            "vca_first_aid_cats",
-            "merck_dog_cat_emergency",
-            "merck_first_aid_transport"
-          ],
-          "retrieved_source_ids": [
-            "vca_first_aid_cats",
-            "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "merck_first_aid_transport"
-          ],
-          "retrieved_document_ids": [
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "vca_first_aid_cats_0006_25632f10fb551881",
-            "merck_first_aid_transport_0003_348d00807f586c5b"
-          ],
-          "relevance": [
-            1,
-            1,
-            1,
-            1,
-            1
-          ],
-          "first_relevant_rank": 1
-        },
-        {
-          "id": "gt_005",
-          "question": "My dog is unconscious and I cannot detect a heartbeat.",
-          "species": "dog",
-          "category": "cardiac_arrest",
-          "relevant_source_ids": [
-            "vca_first_aid_dogs",
-            "merck_first_aid_transport"
-          ],
-          "retrieved_source_ids": [
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency",
-            "vca_first_aid_dogs"
-          ],
-          "retrieved_document_ids": [
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_dogs_0006_6b33a571173456dc"
-          ],
-          "relevance": [
-            1,
-            1,
-            1,
-            0,
-            1
-          ],
-          "first_relevant_rank": 1
-        },
-        {
-          "id": "gt_006",
-          "question": "How do I perform CPR on a cat that is not breathing?",
-          "species": "cat",
-          "category": "cpr",
-          "relevant_source_ids": [
-            "vca_first_aid_cats",
-            "merck_first_aid_transport"
-          ],
-          "retrieved_source_ids": [
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "merck_dog_cat_emergency"
-          ],
-          "retrieved_document_ids": [
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
-          ],
-          "relevance": [
-            1,
-            1,
-            1,
-            1,
-            0
-          ],
-          "first_relevant_rank": 1
-        },
-        {
-          "id": "gt_007",
-          "question": "My dog has a deep wound and the bleeding will not stop.",
-          "species": "dog",
-          "category": "severe_bleeding",
-          "relevant_source_ids": [
-            "merck_dog_cat_emergency",
+            "vca_common_emergencies_dogs",
             "merck_first_aid_transport",
-            "vca_first_aid_dogs"
-          ],
-          "retrieved_source_ids": [
-            "merck_dog_cat_emergency",
-            "merck_first_aid_transport",
-            "merck_dog_cat_emergency",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs"
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs",
+            "vca_common_emergencies_dogs"
           ],
           "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "merck_first_aid_transport_0002_3e7c81ffb0414d60",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "vca_first_aid_dogs_0001_e75a913aafea56c5"
-          ],
-          "relevance": [
-            1,
-            1,
-            1,
-            1,
-            1
-          ],
-          "first_relevant_rank": 1
-        },
-        {
-          "id": "gt_008",
-          "question": "My injured cat is losing a lot of blood. What can I do during transport?",
-          "species": "cat",
-          "category": "severe_bleeding",
-          "relevant_source_ids": [
-            "merck_dog_cat_emergency",
-            "merck_first_aid_transport",
-            "vca_first_aid_cats"
-          ],
-          "retrieved_source_ids": [
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "merck_dog_cat_emergency",
-            "merck_first_aid_transport"
-          ],
-          "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e"
-          ],
-          "relevance": [
-            1,
-            1,
-            1,
-            1,
-            1
-          ],
-          "first_relevant_rank": 1
-        },
-        {
-          "id": "gt_009",
-          "question": "My cat touched a hot surface and has a serious burn.",
-          "species": "cat",
-          "category": "burns",
-          "relevant_source_ids": [
-            "merck_dog_cat_emergency"
-          ],
-          "retrieved_source_ids": [
-            "merck_dog_cat_emergency",
-            "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
-            "merck_dog_cat_emergency",
-            "vca_first_aid_cats"
-          ],
-          "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0003_16d6996968e565d3",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "vca_first_aid_cats_0002_33e45777e899e904"
-          ],
-          "relevance": [
-            1,
-            1,
-            0,
-            1,
-            0
-          ],
-          "first_relevant_rank": 1
-        },
-        {
-          "id": "gt_010",
-          "question": "My dog cannot put weight on its leg after an accident and I think it is broken.",
-          "species": "dog",
-          "category": "suspected_fracture",
-          "relevant_source_ids": [
-            "merck_dog_cat_emergency",
-            "vca_first_aid_dogs"
-          ],
-          "retrieved_source_ids": [
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency",
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency"
-          ],
-          "retrieved_document_ids": [
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "vca_first_aid_dogs_0008_e793f4e88e160cd2",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582"
-          ],
-          "relevance": [
-            1,
-            1,
-            1,
-            1,
-            1
-          ],
-          "first_relevant_rank": 1
-        },
-        {
-          "id": "gt_011",
-          "question": "How can I safely move a large injured dog into my car?",
-          "species": "dog",
-          "category": "safe_transport",
-          "relevant_source_ids": [
-            "vca_first_aid_dogs",
-            "merck_first_aid_transport",
-            "merck_dog_cat_emergency"
-          ],
-          "retrieved_source_ids": [
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency",
-            "merck_dog_cat_emergency",
-            "merck_first_aid_transport",
-            "vca_first_aid_dogs"
-          ],
-          "retrieved_document_ids": [
-            "vca_first_aid_dogs_0001_e75a913aafea56c5",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_first_aid_transport_0000_98ac1ce5bba1b65e",
-            "vca_first_aid_dogs_0000_24113fedd957adf6"
-          ],
-          "relevance": [
-            1,
-            1,
-            1,
-            1,
-            1
-          ],
-          "first_relevant_rank": 1
-        },
-        {
-          "id": "gt_012",
-          "question": "How should I put an injured cat into a carrier without making the injury worse?",
-          "species": "cat",
-          "category": "safe_transport",
-          "relevant_source_ids": [
-            "vca_first_aid_cats",
-            "merck_first_aid_transport",
-            "merck_dog_cat_emergency"
-          ],
-          "retrieved_source_ids": [
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "merck_dog_cat_emergency"
-          ],
-          "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "vca_first_aid_cats_0002_33e45777e899e904",
-            "vca_first_aid_cats_0000_781e8e22f54c5835",
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582"
-          ],
-          "relevance": [
-            1,
-            1,
-            1,
-            1,
-            1
-          ],
-          "first_relevant_rank": 1
-        },
-        {
-          "id": "gt_013",
-          "question": "My dog has pale gums, cold feet, rapid breathing, and is becoming quiet.",
-          "species": "dog",
-          "category": "shock",
-          "relevant_source_ids": [
-            "vca_first_aid_dogs",
-            "merck_first_aid_transport",
-            "merck_dog_cat_emergency"
-          ],
-          "retrieved_source_ids": [
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs"
-          ],
-          "retrieved_document_ids": [
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "vca_first_aid_dogs_0002_90ae701483101ce9",
-            "vca_first_aid_dogs_0005_20f8f540e81044bc"
-          ],
-          "relevance": [
-            1,
-            1,
-            1,
-            1,
-            1
-          ],
-          "first_relevant_rank": 1
-        },
-        {
-          "id": "gt_014",
-          "question": "My cat is weak, cold, and has very pale gums after being injured.",
-          "species": "cat",
-          "category": "shock",
-          "relevant_source_ids": [
-            "vca_first_aid_cats",
-            "merck_first_aid_transport",
-            "merck_dog_cat_emergency"
-          ],
-          "retrieved_source_ids": [
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
-            "vca_first_aid_cats"
-          ],
-          "retrieved_document_ids": [
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "vca_first_aid_cats_0002_33e45777e899e904",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "vca_first_aid_cats_0006_25632f10fb551881",
-            "vca_first_aid_cats_0004_92b10eebf0c249be"
-          ],
-          "relevance": [
-            1,
-            1,
-            1,
-            1,
-            1
-          ],
-          "first_relevant_rank": 1
-        },
-        {
-          "id": "gt_015",
-          "question": "My dog may have swallowed something poisonous. What should I do first?",
-          "species": "dog",
-          "category": "poisoning",
-          "relevant_source_ids": [
-            "merck_dog_cat_emergency"
-          ],
-          "retrieved_source_ids": [
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency",
-            "vca_first_aid_dogs"
-          ],
-          "retrieved_document_ids": [
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c"
-          ],
-          "relevance": [
-            0,
-            0,
-            0,
-            1,
-            0
-          ],
-          "first_relevant_rank": 4
-        },
-        {
-          "id": "gt_016",
-          "question": "My cat injured its eye and is keeping it closed.",
-          "species": "cat",
-          "category": "eye_injury",
-          "relevant_source_ids": [
-            "merck_dog_cat_emergency"
-          ],
-          "retrieved_source_ids": [
-            "vca_first_aid_cats",
-            "merck_dog_cat_emergency",
-            "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
-            "merck_dog_cat_emergency"
-          ],
-          "retrieved_document_ids": [
-            "vca_first_aid_cats_0005_1fc1b6a6b568ae5b",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121"
+            "vca_common_emergencies_dogs_0004_f8f227fee8dd60b3",
+            "merck_first_aid_transport_0005_45a3389866938ef8",
+            "vca_common_emergencies_dogs_0010_323c096b3601cc58",
+            "vca_common_emergencies_dogs_0006_92fef60ab79a47e9",
+            "vca_common_emergencies_dogs_0003_e22a96126f7d9fa1"
           ],
           "relevance": [
             0,
             1,
-            1,
             0,
-            1
-          ],
-          "first_relevant_rank": 2
-        },
-        {
-          "id": "gt_017",
-          "question": "My dog was hit by a car. How do I help it without causing more damage?",
-          "species": "dog",
-          "category": "major_trauma",
-          "relevant_source_ids": [
-            "merck_dog_cat_emergency",
-            "merck_first_aid_transport",
-            "vca_first_aid_dogs"
-          ],
-          "retrieved_source_ids": [
-            "merck_dog_cat_emergency",
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency",
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency"
-          ],
-          "retrieved_document_ids": [
-            "merck_dog_cat_emergency_0001_9d0a1f095607c121",
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "merck_dog_cat_emergency_0002_ae99682d7dbbe923",
-            "vca_first_aid_dogs_0000_24113fedd957adf6",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f"
-          ],
-          "relevance": [
-            1,
-            1,
-            1,
-            1,
-            1
-          ],
-          "first_relevant_rank": 1
-        },
-        {
-          "id": "gt_018",
-          "question": "My injured cat is frightened and trying to bite me while I move it.",
-          "species": "cat",
-          "category": "handler_safety",
-          "relevant_source_ids": [
-            "vca_first_aid_cats",
-            "merck_dog_cat_emergency",
-            "merck_first_aid_transport"
-          ],
-          "retrieved_source_ids": [
-            "vca_first_aid_cats",
-            "vca_first_aid_cats",
-            "merck_dog_cat_emergency",
-            "vca_first_aid_cats",
-            "vca_first_aid_cats"
-          ],
-          "retrieved_document_ids": [
-            "vca_first_aid_cats_0001_a746563b483e054b",
-            "vca_first_aid_cats_0003_f0057dbf35b7ee65",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "vca_first_aid_cats_0004_92b10eebf0c249be",
-            "vca_first_aid_cats_0002_33e45777e899e904"
-          ],
-          "relevance": [
-            1,
-            1,
-            1,
-            1,
-            1
-          ],
-          "first_relevant_rank": 1
-        },
-        {
-          "id": "gt_019",
-          "question": "My dog is having repeated seizures and is not recovering normally.",
-          "species": "dog",
-          "category": "seizures",
-          "relevant_source_ids": [
-            "merck_dog_cat_emergency"
-          ],
-          "retrieved_source_ids": [
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs"
-          ],
-          "retrieved_document_ids": [
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "vca_first_aid_dogs_0004_99d16ea86040833e",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_first_aid_dogs_0007_eb98a0fd3a803e8c",
-            "vca_first_aid_dogs_0000_24113fedd957adf6"
-          ],
-          "relevance": [
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "first_relevant_rank": null
-        },
-        {
-          "id": "gt_020",
-          "question": "My pet is in extreme pain and the symptoms are getting worse very quickly.",
-          "species": null,
-          "category": "emergency_escalation",
-          "relevant_source_ids": [
-            "merck_dog_cat_emergency",
-            "merck_first_aid_transport"
-          ],
-          "retrieved_source_ids": [
-            "vca_first_aid_dogs",
-            "merck_dog_cat_emergency",
-            "merck_dog_cat_emergency",
-            "vca_first_aid_dogs",
-            "vca_first_aid_dogs"
-          ],
-          "retrieved_document_ids": [
-            "vca_first_aid_dogs_0003_c7d5c85b85abd5ec",
-            "merck_dog_cat_emergency_0004_4d394748ce451d8f",
-            "merck_dog_cat_emergency_0000_d45ad400c5bbb582",
-            "vca_first_aid_dogs_0006_6b33a571173456dc",
-            "vca_first_aid_dogs_0000_24113fedd957adf6"
-          ],
-          "relevance": [
-            0,
-            1,
-            1,
             0,
             0
           ],
