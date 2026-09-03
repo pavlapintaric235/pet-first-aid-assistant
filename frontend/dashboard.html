@@ -2,25 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     >
+
     <meta
         name="description"
         content="Monitoring dashboard for the Pet First Aid Assistant."
     >
 
-    <title>Monitoring Dashboard | Pet First Aid Assistant</title>
+    <title>
+        Monitoring Dashboard | Pet First Aid Assistant
+    </title>
 
     <link
         rel="stylesheet"
-        href="/static/styles.css"
+        href="/static/dashboard.css"
     >
 </head>
 
 <body class="dashboard-body">
     <main class="dashboard-container">
+
         <header class="dashboard-header">
             <div>
                 <p class="dashboard-eyebrow">
@@ -32,8 +37,9 @@
                 </h1>
 
                 <p class="dashboard-subtitle">
-                    Aggregated application usage, latency,
-                    retrieval-source and user-feedback monitoring.
+                    Production usage, response latency,
+                    retrieval-source activity and user-feedback
+                    monitoring for the RAG application.
                 </p>
             </div>
 
@@ -56,13 +62,11 @@
             class="dashboard-message hidden"
         >
             Monitoring is not enabled in this environment.
-            The production deployment uses PostgreSQL-backed
-            monitoring.
         </section>
 
         <section
             class="metrics-grid"
-            aria-label="Monitoring summary"
+            aria-label="Monitoring summary metrics"
         >
             <article class="metric-card">
                 <span class="metric-label">
@@ -131,6 +135,7 @@
         </section>
 
         <section class="dashboard-grid">
+
             <article class="chart-card">
                 <div class="chart-heading">
                     <div>
@@ -162,6 +167,7 @@
                 ></p>
             </article>
 
+
             <article class="chart-card">
                 <div class="chart-heading">
                     <div>
@@ -175,7 +181,7 @@
                     </div>
 
                     <span class="chart-description">
-                        Average milliseconds
+                        Daily average
                     </span>
                 </div>
 
@@ -183,7 +189,7 @@
                     <canvas
                         id="latency-chart"
                         role="img"
-                        aria-label="Average response latency over the last seven days"
+                        aria-label="Average response latency"
                     ></canvas>
                 </div>
 
@@ -192,6 +198,7 @@
                     class="chart-summary"
                 ></p>
             </article>
+
 
             <article class="chart-card">
                 <div class="chart-heading">
@@ -214,7 +221,7 @@
                     <canvas
                         id="species-chart"
                         role="img"
-                        aria-label="Distribution of species selected by users"
+                        aria-label="Species distribution"
                     ></canvas>
                 </div>
 
@@ -223,6 +230,7 @@
                     class="chart-summary"
                 ></p>
             </article>
+
 
             <article class="chart-card">
                 <div class="chart-heading">
@@ -255,7 +263,10 @@
                 ></p>
             </article>
 
-            <article class="chart-card chart-card-wide">
+
+            <article
+                class="chart-card chart-card-wide"
+            >
                 <div class="chart-heading">
                     <div>
                         <span class="chart-number">
@@ -272,7 +283,9 @@
                     </span>
                 </div>
 
-                <div class="chart-wrapper chart-wrapper-large">
+                <div
+                    class="chart-wrapper chart-wrapper-large"
+                >
                     <canvas
                         id="sources-chart"
                         role="img"
@@ -285,15 +298,15 @@
                     class="chart-summary"
                 ></p>
             </article>
+
         </section>
 
         <footer class="dashboard-footer">
-            <p>
-                Monitoring contains aggregate operational information
-                for evaluating the RAG application. The dashboard does
-                not provide medical or diagnostic analytics.
-            </p>
+            Monitoring displays aggregate operational information
+            used to evaluate the RAG application. It does not provide
+            medical or diagnostic analytics.
         </footer>
+
     </main>
 
     <script
