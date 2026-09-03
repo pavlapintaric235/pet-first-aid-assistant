@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Monitoring dashboard for the Pet First Aid Assistant."
+    >
+
+    <title>Monitoring Dashboard | Pet First Aid Assistant</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/styles.css"
+    >
+</head>
+
+<body class="dashboard-body">
+    <main class="dashboard-container">
+        <header class="dashboard-header">
+            <div>
+                <p class="dashboard-eyebrow">
+                    Pet First Aid Assistant
+                </p>
+
+                <h1>
+                    Monitoring Dashboard
+                </h1>
+
+                <p class="dashboard-subtitle">
+                    Aggregated application usage, latency,
+                    retrieval-source and user-feedback monitoring.
+                </p>
+            </div>
+
+            <a
+                class="dashboard-back-link"
+                href="/"
+            >
+                ← Back to assistant
+            </a>
+        </header>
+
+        <section
+            id="dashboard-error"
+            class="dashboard-message hidden"
+            aria-live="polite"
+        ></section>
+
+        <section
+            id="monitoring-disabled"
+            class="dashboard-message hidden"
+        >
+            Monitoring is not enabled in this environment.
+            The production deployment uses PostgreSQL-backed
+            monitoring.
+        </section>
+
+        <section
+            class="metrics-grid"
+            aria-label="Monitoring summary"
+        >
+            <article class="metric-card">
+                <span class="metric-label">
+                    Total requests
+                </span>
+
+                <strong
+                    id="metric-total-requests"
+                    class="metric-value"
+                >
+                    —
+                </strong>
+            </article>
+
+            <article class="metric-card">
+                <span class="metric-label">
+                    Last 24 hours
+                </span>
+
+                <strong
+                    id="metric-last-24h"
+                    class="metric-value"
+                >
+                    —
+                </strong>
+            </article>
+
+            <article class="metric-card">
+                <span class="metric-label">
+                    Average latency
+                </span>
+
+                <strong
+                    id="metric-latency"
+                    class="metric-value"
+                >
+                    —
+                </strong>
+            </article>
+
+            <article class="metric-card">
+                <span class="metric-label">
+                    Feedback responses
+                </span>
+
+                <strong
+                    id="metric-feedback-total"
+                    class="metric-value"
+                >
+                    —
+                </strong>
+            </article>
+
+            <article class="metric-card">
+                <span class="metric-label">
+                    Positive feedback
+                </span>
+
+                <strong
+                    id="metric-positive-rate"
+                    class="metric-value"
+                >
+                    —
+                </strong>
+            </article>
+        </section>
+
+        <section class="dashboard-grid">
+            <article class="chart-card">
+                <div class="chart-heading">
+                    <div>
+                        <span class="chart-number">
+                            Chart 1
+                        </span>
+
+                        <h2>
+                            Requests over time
+                        </h2>
+                    </div>
+
+                    <span class="chart-description">
+                        Last 7 days
+                    </span>
+                </div>
+
+                <div class="chart-wrapper">
+                    <canvas
+                        id="requests-chart"
+                        role="img"
+                        aria-label="Requests over the last seven days"
+                    ></canvas>
+                </div>
+
+                <p
+                    id="requests-chart-summary"
+                    class="chart-summary"
+                ></p>
+            </article>
+
+            <article class="chart-card">
+                <div class="chart-heading">
+                    <div>
+                        <span class="chart-number">
+                            Chart 2
+                        </span>
+
+                        <h2>
+                            Response latency
+                        </h2>
+                    </div>
+
+                    <span class="chart-description">
+                        Average milliseconds
+                    </span>
+                </div>
+
+                <div class="chart-wrapper">
+                    <canvas
+                        id="latency-chart"
+                        role="img"
+                        aria-label="Average response latency over the last seven days"
+                    ></canvas>
+                </div>
+
+                <p
+                    id="latency-chart-summary"
+                    class="chart-summary"
+                ></p>
+            </article>
+
+            <article class="chart-card">
+                <div class="chart-heading">
+                    <div>
+                        <span class="chart-number">
+                            Chart 3
+                        </span>
+
+                        <h2>
+                            Species distribution
+                        </h2>
+                    </div>
+
+                    <span class="chart-description">
+                        Dog, cat or unspecified
+                    </span>
+                </div>
+
+                <div class="chart-wrapper">
+                    <canvas
+                        id="species-chart"
+                        role="img"
+                        aria-label="Distribution of species selected by users"
+                    ></canvas>
+                </div>
+
+                <p
+                    id="species-chart-summary"
+                    class="chart-summary"
+                ></p>
+            </article>
+
+            <article class="chart-card">
+                <div class="chart-heading">
+                    <div>
+                        <span class="chart-number">
+                            Chart 4
+                        </span>
+
+                        <h2>
+                            User feedback
+                        </h2>
+                    </div>
+
+                    <span class="chart-description">
+                        Positive vs negative
+                    </span>
+                </div>
+
+                <div class="chart-wrapper">
+                    <canvas
+                        id="feedback-chart"
+                        role="img"
+                        aria-label="Positive and negative user feedback"
+                    ></canvas>
+                </div>
+
+                <p
+                    id="feedback-chart-summary"
+                    class="chart-summary"
+                ></p>
+            </article>
+
+            <article class="chart-card chart-card-wide">
+                <div class="chart-heading">
+                    <div>
+                        <span class="chart-number">
+                            Chart 5
+                        </span>
+
+                        <h2>
+                            Most retrieved sources
+                        </h2>
+                    </div>
+
+                    <span class="chart-description">
+                        Top 5 publishers
+                    </span>
+                </div>
+
+                <div class="chart-wrapper chart-wrapper-large">
+                    <canvas
+                        id="sources-chart"
+                        role="img"
+                        aria-label="Most frequently retrieved veterinary sources"
+                    ></canvas>
+                </div>
+
+                <p
+                    id="sources-chart-summary"
+                    class="chart-summary"
+                ></p>
+            </article>
+        </section>
+
+        <footer class="dashboard-footer">
+            <p>
+                Monitoring contains aggregate operational information
+                for evaluating the RAG application. The dashboard does
+                not provide medical or diagnostic analytics.
+            </p>
+        </footer>
+    </main>
+
+    <script
+        src="/static/dashboard.js"
+        defer
+    ></script>
+</body>
+</html>

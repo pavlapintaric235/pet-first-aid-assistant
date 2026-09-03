@@ -188,13 +188,14 @@
     ]
   },
   {
-    "id": "gt_019",
-    "question": "My dog is having repeated seizures and is not recovering normally.",
-    "species": "dog",
-    "category": "seizures",
-    "relevant_source_ids": [
-      "merck_dog_cat_emergency"
-    ]
+  "id": "gt_019",
+  "question": "My dog is having repeated seizures and is not recovering normally.",
+  "species": "dog",
+  "category": "seizures",
+  "relevant_source_ids": [
+    "merck_dog_cat_emergency",
+    "vca_common_emergencies_dogs"
+  ]
   },
   {
     "id": "gt_020",

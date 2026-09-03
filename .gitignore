@@ -37,3 +37,5 @@ vector_index/
 # Operating systems and editors
 .DS_Store
 .vscode/
+!data/processed/documents.json
+!data/processed/embeddings.npy

@@ -106,5 +106,25 @@
     ],
     "language": "en",
     "ingestion_status": "planned"
-  }
+  },
+  {
+  "source_id": "vca_common_emergencies_dogs",
+  "publisher": "VCA Animal Hospitals",
+  "title": "Emergencies in Dogs",
+  "url": "https://vcahospitals.com/know-your-pet/common-emergencies-in-dogs",
+  "source_type": "web_page",
+  "authority_level": "veterinary_hospital_reference",
+  "species": ["dog"],
+  "topics": [
+    "seizures",
+    "bleeding",
+    "trauma",
+    "poisoning",
+    "heatstroke",
+    "breathing_difficulty",
+    "emergency_triage"
+  ],
+  "language": "en",
+  "ingestion_status": "planned"
+}
 ]
