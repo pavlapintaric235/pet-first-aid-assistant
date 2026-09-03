@@ -75,6 +75,28 @@ Safety is treated as part of the architecture rather than only as a disclaimer.
 
 ---
 
+## Application Screenshots
+
+### Main Interface
+
+Users can select the pet species, choose a common emergency, or describe the situation in their own words.
+
+![Pet First Aid Assistant interface](docs/images/app-home.png)
+
+### Grounded RAG Answer
+
+The assistant retrieves veterinary evidence, generates a source-grounded response, and displays the original sources used for the answer.
+
+![Grounded first-aid response](docs/images/grounded-answer.png)
+
+### Monitoring Dashboard
+
+Production monitoring includes user feedback and five charts covering usage, latency, species distribution, feedback, and retrieved sources.
+
+![Monitoring dashboard](docs/images/monitoring-dashboard.png)
+
+---
+
 # Safety Scope
 
 Pet First Aid Assistant intentionally has a narrow scope.
