@@ -10,11 +10,11 @@ Users can describe what is happening in their own words or select a predefined e
 
 ## Live Application
 
-**Web application:** `https://pet-first-aid-assistant-5a50200eabfd.herokuapp.com/`
+**Web application:** https://pet-first-aid-assistant-5a50200eabfd.herokuapp.com/
 
-**Monitoring dashboard:** `https://pet-first-aid-assistant-5a50200eabfd.herokuapp.com/static/dashboard.html`
+**Monitoring dashboard:** https://pet-first-aid-assistant-5a50200eabfd.herokuapp.com/static/dashboard.html
 
-**FastAPI documentation:** `https://pet-first-aid-assistant-5a50200eabfd.herokuapp.com/docs`
+**FastAPI documentation:** https://pet-first-aid-assistant-5a50200eabfd.herokuapp.com/docs
 
 **GitHub:** https://github.com/pavlapintaric235/pet-first-aid-assistant
 
